@@ -1,4 +1,5 @@
-/*The class definitions the Business simulation. This file will define all required classes */
+	/*The class definitions the Business simulation. This file will define all required classes. The member functions
+	will be defined in separate files */
 #pragma
 #include<iostream>
 #include<vector>
@@ -25,7 +26,7 @@ class block
 {
 };
 
-class ticket: private block
+class ticket: public block
 {
 	public:
 	string ticket_name;
@@ -38,7 +39,7 @@ class ticket: private block
 	int owner_num; //to know who owns the ticket
 	int double_rent;
 	int colour_code; // 1 if colour, -1 if white
-	virtual void set_val(){}    //This function will set the values of variables required as per the type of ticket
+	virtual void set_val();    //This function will set the values of variables required as per the type of ticket
 };
 
 //Ticket class has attributes which are common to both colour and white tickets
@@ -55,7 +56,7 @@ class colour_ticket: public ticket
 	int house_rents[4];
 	int house_cost;
 	int current_rent;
-	colour_ticket(string ticket_name,int ticket_cost,int ticket_rent, int house_cost, int mortgage_value, int house_rents[4], int double rent,int colour_code);	
+	colour_ticket(string ticket_name, int ticket_cost, int ticket_rent, int house_cost, int mortgage_value, int house_rents[4], int double rent,int colour_code);	
 };
 
 class white_ticket: public ticket
@@ -68,15 +69,16 @@ class white_ticket: public ticket
 	white_ticket(string ticket_name, int ticket_cost, int ticket_rent, int double_rent);
 };
 
-/* 	The class UNO will have several member functions as well. They will take care of transactions whenever a player
-	enters UNO
+/*The class UNO will have several member functions as well. 
+They will take care of transactions whenever a player enters UNO */
 
 
-class UNO_class: private ticket
-{		
+class UNO_class: public ticket
+{	
+
 };
 
-class chance_class: private block
+class chance_class: public block
 {
 	private:
 	int i;
@@ -85,12 +87,12 @@ class chance_class: private block
 	void chance_transaction(player *pl,int player_num,int number_of_players);
 };
 
-class resort_class: private block
+class resort_class: public block
 {
 	
 };
 
-class party_house_class: private block
+class party_house_class: public block
 {	
 };
 
@@ -98,19 +100,22 @@ class jail_class: private block
 {
 };
 
-class start_class: private block
+class start_class: public block
 {
 };
 
-class customs_duty_transactions: private blocks
+class customs_duty_transactions: public blocks
 {
 };
 
-class travelling_duty_transactions: private blocks
+class travelling_duty_transactions: public blocks
 {
+	public:
+	
 };
 
 
+				//PLAYER CLASS ATTRIBUTES
    /*	A player will have certain member functions and variables:
 	1.) A vector of throws which will be appended everytime he/she throws.
 	2.) A vector which keeps track of all his transactions
@@ -125,26 +130,32 @@ class travelling_duty_transactions: private blocks
 	11.) A member function which has only white tickets 
 	12.) A member variable which counts the number of rounds player crossed
 	13.) A member variable which is true if the player has rent, false if he doesn't;
-  */
-
+  
+*/
 class player
 {
 	public:
 	std::vector<int> throws;
 	std::vector<int> transactions;
 	std::vector<int> positions;
+	std::vector<int> rounds;
+	std::vector<int> position_of_tickets_owned;
 	std::vector<std::string> tickets;
-	std::vector<std::string> colour_tickets;
-	std::vector<std::string> white_tickets;
+	int number_of_colour_tickets;
+	int number_of_white_tickets;
 	//bool crossed_start(player &);   (see if i need this later)
 	bool UNO_seven(player &);
 	bool rent_elig;
 	bool uno_5000_pay;
 	bool house_constructor;
+	bool bankurupt;
 	int throw_;
 	int position;
 	int balance;
 	int round;
 	int last_time_at_uno;
 	int deduct_5000;
+	std::string name;
+	void after_throw(player &x, int throw);
+	player(string x): x(name) {}
 };
