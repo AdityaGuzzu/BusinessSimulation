@@ -89,29 +89,38 @@ class chance_class: public block
 
 class resort_class: public block
 {
-	
+	public:
+	void transaction(player pl_arr[],int current_player_number);
 };
 
 class party_house_class: public block
-{	
+{
+	public:
+	void transaction(player pl_arr[],int current_player_number);	
 };
 
 class jail_class: private block
 {
+	public:
+	void transaction(player &x);
 };
 
 class start_class: public block
 {
+	public:
+	void transaction(player &x);
 };
 
 class customs_duty_transactions: public blocks
 {
+	public:
+	void transaction(player &x);
 };
 
 class travelling_duty_transactions: public blocks
 {
 	public:
-	
+	void transaction(player &x);
 };
 
 
