@@ -1,6 +1,6 @@
 #include "class_definitions.h"
-#include "function_declarations.h"
-void jail_transaction(player *pl,int player_num)
+void jail_transaction(player current_player)
 {
-	current_balance -= 500;
+	visits++;
+	current_player.balance -= 500;
 }

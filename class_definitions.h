@@ -24,12 +24,13 @@ typedef current_player->balance = current_balance;
 
 class block
 {
+	string name;
+	int visits;
 };
 
 class ticket: public block
 {
 	public:
-	string ticket_name;
 	int ticket_cost;
 	int ticket_rent;
 	int mortgage_value;
