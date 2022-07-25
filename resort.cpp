@@ -1,11 +1,17 @@
+/*  This function debits 200*(number_of_players -1) from
+	the current player's account and credits 200 in all other accounts 
+	----------------------------------------------------------------------------
+	ARGUMENTS: A  pointer array of type player, Current player's pointer, number of players
+	----------------------------------------------------------------------------
+	RETURN VALUE: NONE
+*/
 #include "class_definitions.h"
-#include "function_declarations.h"
-void resort_transaction(player *pl,int player_num,int number_of_players)
+void resort_transaction(player *player_array[],player *current_player,int number_of_players)
 	{
 		current_player->balance -= (number_of_players - 1)*200;
-		for(i=0; i<number_of_players && i != player_num; i++)
+		for(int i=0; i<number_of_players && i != current_player->player_number; i++)
 			{
-				pl[i]->balance += 200;
+				player_array[i]->balance += 200;
 			}
-					
+				
 	}	

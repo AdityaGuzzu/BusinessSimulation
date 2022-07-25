@@ -83,24 +83,40 @@ class UNO_class: public block
 
 class chance_class: public block
 {
-	
 	public:
-	void chance_transaction(player *pl,int player_num,int number_of_players);
+	void chance_transaction(player *pl,int number_of_players);
 };
 
+/* the party house class contains a member function which credits 200*(number_of_players -1) from
+	the current player's account and debits 200 in all other accounts 
+	----------------------------------------------------------------------------
+	ARGUMENTS: A player pointer array, Current player's pointer, number of players
+	----------------------------------------------------------------------------
+	RETURN VALUE: NONE
+*/
 class resort_class: public block
 {
 	public:
-	void transaction(player pl_arr[],int current_player_number);
+	void transaction(player *pl_arr[],player *current_player,int number_of_players);
 };
+
+
+/* the resort class contains a member function which debits 200*(number_of_players -1) from
+	the current player's account and credits 200 in all other accounts 
+	----------------------------------------------------------------------------
+	ARGUMENTS: A player pointer array, Current player's pointer, number of players
+	----------------------------------------------------------------------------
+	RETURN VALUE: NONE
+*/
+
 
 class party_house_class: public block
 {
 	public:
-	void transaction(player pl_arr[],int current_player_number);	
+	void transaction(player *pl_arr[],player *current_player,int number_of_players);
 };
 
-class jail_class: private block
+class jail_class: public block
 {
 	public:
 	void transaction(player &x);
@@ -167,6 +183,6 @@ class player
 	int last_time_at_uno;
 	int deduct_5000;
 	std::string name;
-	void after_throw(player &x, int throw);
+	void after_throw(player &x, int throw__);
 	
 };
