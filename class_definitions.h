@@ -111,13 +111,13 @@ class start_class: public block
 	void transaction(player &x);
 };
 
-class customs_duty_transactions: public blocks
+class customs_duty_class: public block
 {
 	public:
 	void transaction(player &x);
 };
 
-class travelling_duty_transactions: public blocks
+class travelling_duty_class: public block
 {
 	public:
 	void transaction(player &x);
@@ -166,5 +166,5 @@ class player
 	int deduct_5000;
 	std::string name;
 	void after_throw(player &x, int throw);
-	player(string x): x(name) {}
+	player(string x): name(x) {}
 };
