@@ -73,7 +73,7 @@ class white_ticket: public ticket
 They will take care of transactions whenever a player enters UNO */
 
 
-class UNO_class: public ticket
+class UNO_class: public block
 {	
 
 };
@@ -108,19 +108,19 @@ class jail_class: private block
 class start_class: public block
 {
 	public:
-	void transaction(player &x);
+	void transaction(player *current_player);
 };
 
 class customs_duty_class: public block
 {
 	public:
-	void transaction(player &x);
+	void transaction(player *current_player);
 };
 
 class travelling_duty_class: public block
 {
 	public:
-	void transaction(player &x);
+	void transaction(player *current_player);
 };
 
 
