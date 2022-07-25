@@ -26,6 +26,7 @@ class block
 {
 	string name;
 	int visits;
+	string block_type;
 };
 
 class ticket: public block
@@ -37,10 +38,10 @@ class ticket: public block
 	int number_of_houses;
 	int hotel = 0;
 	int number_of_appears = 0;  //to keep track of the number of times anyone came into it
-	int owner_num; //to know who owns the ticket
+	int owner_num; 				//to know who owns the ticket
 	int double_rent;
-	int colour_code; // 1 if colour, -1 if white
-	virtual void set_val();    //This function will set the values of variables required as per the type of ticket
+	int colour_code; 			// 1 if colour, -1 if white
+	virtual void set_val();     //This function will set the values of variables required as per the type of ticket
 };
 
 //Ticket class has attributes which are common to both colour and white tickets
@@ -71,19 +72,18 @@ class white_ticket: public ticket
 };
 
 /*The class UNO will have several member functions as well. 
-They will take care of transactions whenever a player enters UNO */
+  They will take care of transactions whenever a player enters UNO */
 
 
 class UNO_class: public block
 {	
-
+	public:
+	void UNO(player *pl_arr[], player *current_player,int throw__);
 };
 
 class chance_class: public block
 {
-	private:
-	int i;
-
+	
 	public:
 	void chance_transaction(player *pl,int player_num,int number_of_players);
 };
@@ -153,6 +153,7 @@ class player
 	std::vector<std::string> tickets;
 	int number_of_colour_tickets;
 	int number_of_white_tickets;
+	int player_number;
 	//bool crossed_start(player &);   (see if i need this later)
 	bool UNO_seven(player &);
 	bool rent_elig;
@@ -167,5 +168,5 @@ class player
 	int deduct_5000;
 	std::string name;
 	void after_throw(player &x, int throw);
-	player(string x): name(x) {}
+	
 };
