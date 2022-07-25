@@ -13,6 +13,5 @@ void resort_transaction(player *player_array[],player *current_player,int number
 		for(int i=0; i<number_of_players && i != current_player->player_number; i++)
 			{
 				player_array[i]->balance -= 200;
-			}
-				
+			}		
 	}	
