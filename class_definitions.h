@@ -1,6 +1,6 @@
 	/*The class definitions the Business simulation. This file will define all required classes. The member functions
 	will be defined in separate files */
-#pragma
+#pragma once
 #include<iostream>
 #include<vector>
 #include<cstdlib>

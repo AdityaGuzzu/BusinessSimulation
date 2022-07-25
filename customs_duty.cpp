@@ -1,6 +1,5 @@
 #include "class_defintions.h"
-#include "function_declarations.h"
-void transaction(player *p1, int player_num)
+void customs_duty_class::transaction(player *current_player)
 {
-		current_balance -= (current_player->colour_tickets.size())*100;
+		current_player.balance -= current_player.number_of_colour_tickets*100;
 }
