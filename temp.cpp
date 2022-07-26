@@ -1,7 +1,8 @@
 #include<iostream>
-int main()
+using namespace std;
+class Aditya
 {
-	unsigned int x;
-	x = -10000000000;
-	std::cout<<sizeof(x);
-}
+	public:
+	static int x;
+	
+};

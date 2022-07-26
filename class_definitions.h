@@ -78,6 +78,7 @@ class white_ticket: public ticket
 class UNO_class: public block
 {	
 	public:
+	/*NOTE: We can omit the throw parameter if we call the function after updating throw in the player class */
 	void UNO(player *pl_arr[], player *current_player,int throw__);
 };
 
@@ -94,6 +95,7 @@ class chance_class: public block
 	----------------------------------------------------------------------------
 	RETURN VALUE: NONE
 */
+
 class resort_class: public block
 {
 	public:
