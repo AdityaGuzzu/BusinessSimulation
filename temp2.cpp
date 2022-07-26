@@ -1,21 +1,19 @@
 #include<iostream>
 using namespace std;
+class A
+{
+    public:
+    void helloworld()
+    {
+        cout<<endl<<"Welcome to the class A";
+    }
+};
+
 int main()
 {
-    {
-        class Aditya
-        {
-        int x;
-        public:
-           class C
-           {
-                public:
-                C() {cout<<"\nWelcome to C";}
-           };
-           C obj;
-           Aditya() {cout<<endl<<"Welcome to Aditya";}
-        };
-       Aditya obj;  
+    A *arr[] = {
+        new  obj1,
+        new  obj2,
+        new  obj3,
     }
-   
 }

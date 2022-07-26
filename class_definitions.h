@@ -5,8 +5,6 @@
 #include<vector>
 #include<cstdlib>
 using namespace std;
-typedef pl[player_num] = current_player;
-typedef current_player->balance = current_balance;
 /* We will use the concepts of OOP. All the tickets will be objects of the ticket class. We will furthur have child
    classes as colour tickets and white tickets. 
 	Member variables and functions of the parent class include:
@@ -24,6 +22,7 @@ typedef current_player->balance = current_balance;
 
 class block
 {
+	public:
 	string name;
 	int visits;
 	string block_type;
@@ -35,9 +34,7 @@ class ticket: public block
 	int ticket_cost;
 	int ticket_rent;
 	int mortgage_value;
-	int number_of_houses;
 	int hotel = 0;
-	int number_of_appears = 0;  //to keep track of the number of times anyone came into it
 	int owner_num; 				//to know who owns the ticket
 	int double_rent;
 	int colour_code; 			// 1 if colour, -1 if white
@@ -79,7 +76,7 @@ class UNO_class: public block
 {	
 	public:
 	/*NOTE: We can omit the throw parameter if we call the function after updating throw in the player class */
-	void UNO(player *pl_arr[], player *current_player,int throw__);
+	void UNO(player *pl_arr[], player *current_player,int throw__, block *arr[]);
 };
 
 class chance_class: public block
