@@ -121,10 +121,19 @@ class jail_class: public block
 	void transaction(player &x);
 };
 
+
+/* The start function checks if the player crossed start. If he did, it credits 2000
+	--------------------------------------------------------------------------------
+	ARGUMENTS: A reference of current player 
+	--------------------------------------------------------------------------------
+	RETURN VALUE: NONE
+*/
+
+
 class start_class: public block
 {
 	public:
-	void transaction(player *current_player);
+	void transaction(player &current_player);
 };
 
 class customs_duty_class: public block
@@ -169,7 +178,6 @@ class player
 	int number_of_colour_tickets;
 	int number_of_white_tickets;
 	int player_number;
-	//bool crossed_start(player &);   (see if i need this later)
 	bool UNO_seven(player &);
 	bool rent_elig;
 	bool uno_5000_pay;
