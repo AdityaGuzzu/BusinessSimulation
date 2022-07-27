@@ -175,6 +175,7 @@ class player
 	std::vector<int> positions;
 	std::vector<int> rounds;
 	std::vector<int> position_of_tickets_owned;
+	std::vector<int> position_of_tickets_sold;
 	int number_of_colour_tickets;
 	int number_of_white_tickets;
 	int player_number;
