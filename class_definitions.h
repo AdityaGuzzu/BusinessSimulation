@@ -85,8 +85,8 @@ class chance_class: public block
 	void chance_transaction(player *pl,int number_of_players);
 };
 
-/* the party house class contains a member function which credits 200*(number_of_players -1) from
-	the current player's account and debits 200 in all other accounts 
+/* the resort class contains a member function which debits 200*(number_of_players -1) from
+	the current player's account and credits 200 in all other accounts 
 	----------------------------------------------------------------------------
 	ARGUMENTS: A player pointer array, Current player's pointer, number of players
 	----------------------------------------------------------------------------
@@ -99,21 +99,22 @@ class resort_class: public block
 	void transaction(player *pl_arr[],player *current_player,int number_of_players);
 };
 
-
-/* the resort class contains a member function which debits 200*(number_of_players -1) from
-	the current player's account and credits 200 in all other accounts 
+/* the party house class contains a member function which credits 200*(number_of_players -1) from
+	the current player's account and debits 200 in all other accounts 
 	----------------------------------------------------------------------------
 	ARGUMENTS: A player pointer array, Current player's pointer, number of players
 	----------------------------------------------------------------------------
 	RETURN VALUE: NONE
 */
 
-
 class party_house_class: public block
 {
 	public:
 	void transaction(player *pl_arr[],player *current_player,int number_of_players);
 };
+
+/* The jail class contains a member function which just debits 500 when the player enters 
+	jail */
 
 class jail_class: public block
 {
@@ -174,7 +175,6 @@ class player
 	std::vector<int> positions;
 	std::vector<int> rounds;
 	std::vector<int> position_of_tickets_owned;
-	std::vector<std::string> tickets;
 	int number_of_colour_tickets;
 	int number_of_white_tickets;
 	int player_number;
