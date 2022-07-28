@@ -35,9 +35,7 @@ class ticket: public block
 	int basic_rent;
 	int current_rent;
 	int mortgage_value;
-	int hotel = 0;
 	int owner_num; 				//to know who owns the ticket
-	int double_rent;
 	int colour_code; 			// 1 if colour, -1 if white
 	virtual void set_val();     //This function will set the values of variables required as per the type of ticket
 };
