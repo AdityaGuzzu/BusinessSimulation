@@ -33,6 +33,7 @@ class ticket: public block
 	public:
 	int ticket_cost;
 	int ticket_rent;
+	int current_rent;
 	int mortgage_value;
 	int hotel = 0;
 	int owner_num; 				//to know who owns the ticket
@@ -54,7 +55,6 @@ class colour_ticket: public ticket
 	int number_of_houses;
 	int house_rents[4];
 	int house_cost;
-	int current_rent;
 	colour_ticket(string ticket_name, int ticket_cost, int ticket_rent, int house_cost, int mortgage_value, int house_rents[4], int double rent,int colour_code);	
 };
 
