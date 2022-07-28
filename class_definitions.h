@@ -220,5 +220,5 @@ void white_double_rent(block *arr[], player &current_player);
 		FALSE if the search element is not found
 */
 
-bool search(vector<int>);
+bool search(vector<int>,int);
 
