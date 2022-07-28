@@ -37,7 +37,6 @@ class ticket: public block
 	int mortgage_value;
 	int owner_num; 				//to know who owns the ticket
 	int colour_code; 			// 1 if colour, -1 if white
-	virtual void set_val();     //This function will set the values of variables required as per the type of ticket
 };
 
 //Ticket class has attributes which are common to both colour and white tickets
@@ -58,11 +57,6 @@ class colour_ticket: public ticket
 
 class white_ticket: public ticket
 {
-	private:
-	enum white_ticket_pair {SW,AP,RR};
-	public:
-	bool colour = false;
-	white_ticket_pair pair;
 	white_ticket(string ticket_name, int ticket_cost, int ticket_rent, int double_rent);
 };
 
