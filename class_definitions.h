@@ -32,7 +32,7 @@ class ticket: public block
 {
 	public:
 	int ticket_cost;
-	int ticket_rent;
+	int basic_rent;
 	int current_rent;
 	int mortgage_value;
 	int hotel = 0;
