@@ -194,3 +194,17 @@ class player
 	void after_throw(player &x, int throw__);
 	
 };
+
+/*	The following function is called whenever a player buys a white ticket
+	What is about?
+	It is a function which checks and assigns double rents to white tickets
+	-----------------------------------------------------------------------
+	ARGUMENTS:
+	1.) A pointer array of type blocks (all our blocks on the board)
+	2.) A refernace to current player
+	-----------------------------------------------------------------------
+	RETURN VALUE:
+	NONE
+*/
+
+void white_double_rent(block *arr[], player &current_player);
