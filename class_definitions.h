@@ -195,7 +195,7 @@ class player
 	
 };
 
-/*	The following function is called whenever a player buys a white ticket
+/*	The following function is called whenever a player buys or sells a white ticket.
 	What is about?
 	It is a function which checks and assigns double rents to white tickets
 	-----------------------------------------------------------------------
@@ -208,3 +208,14 @@ class player
 */
 
 void white_double_rent(block *arr[], player &current_player);
+
+
+/* 	The following function is an implementation of linear search algorithm
+	-------------------------------------------------------------------------
+	PARAMETERS: An integer vector	(vector of positions of tickets owned by a player)
+	-------------------------------------------------------------------------
+	RETURN VALUE: NONE
+*/
+
+void search(vector<int>);
+
