@@ -135,7 +135,7 @@ class chance_class: public block
 	ARGUMENTS: 
 	--->A player pointer array
 	---> Current player's pointer
-	---> number of players
+	---> number of players			(int)
 	----------------------------------------------------------------------------
 	RETURN VALUE: 
 	--->NONE
@@ -153,7 +153,7 @@ class resort_class: public block
 	ARGUMENTS: 
 	--->A player pointer array
 	--->Current player's pointer
-	--->number of players
+	--->number of players			(int)
 	----------------------------------------------------------------------------
 	RETURN VALUE: 
 	--->NONE
