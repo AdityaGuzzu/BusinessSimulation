@@ -153,9 +153,10 @@ class resort_class: public block
 	the current player's account and debits 200 in all other accounts 
 	----------------------------------------------------------------------------
 	ARGUMENTS: 
-	--->A player pointer array
-	--->Current player's pointer
-	--->number of players			(int)
+	---> A player pointer array
+	---> Current player's pointer
+	---> number of players			(int)
+	---> A reference to the party house object.
 	----------------------------------------------------------------------------
 	RETURN VALUE: 
 	--->NONE
@@ -164,7 +165,7 @@ class resort_class: public block
 class party_house_class: public block
 {
 	public:
-	void transaction(player *pl_arr[],player *current_player,int number_of_players);
+	void transaction(player *pl_arr[],player *current_player,int number_of_players, party_house_class &party_house);
 };
 
 /* The jail class contains a member function which just debits 500 when the player enters 
