@@ -80,9 +80,13 @@ class chance_class: public block
 /* the resort class contains a member function which debits 200*(number_of_players -1) from
 	the current player's account and credits 200 in all other accounts 
 	----------------------------------------------------------------------------
-	ARGUMENTS: A player pointer array, Current player's pointer, number of players
+	ARGUMENTS: 
+	--->A player pointer array
+	---> Current player's pointer
+	---> number of players
 	----------------------------------------------------------------------------
-	RETURN VALUE: NONE
+	RETURN VALUE: 
+	--->NONE
 */
 
 class resort_class: public block
@@ -94,9 +98,13 @@ class resort_class: public block
 /* the party house class contains a member function which credits 200*(number_of_players -1) from
 	the current player's account and debits 200 in all other accounts 
 	----------------------------------------------------------------------------
-	ARGUMENTS: A player pointer array, Current player's pointer, number of players
+	ARGUMENTS: 
+	--->A player pointer array
+	--->Current player's pointer
+	--->number of players
 	----------------------------------------------------------------------------
-	RETURN VALUE: NONE
+	RETURN VALUE: 
+	--->NONE
 */
 
 class party_house_class: public block
@@ -117,9 +125,11 @@ class jail_class: public block
 
 /* The start function checks if the player crossed start. If he did, it credits 2000
 	--------------------------------------------------------------------------------
-	ARGUMENTS: A reference of current player 
+	ARGUMENTS: 
+	--->A reference of current player 
 	--------------------------------------------------------------------------------
-	RETURN VALUE: NONE
+	RETURN VALUE:
+	---> NONE
 */
 
 
@@ -192,11 +202,11 @@ class player
 	It is a function which checks and assigns double rents to white tickets
 	-----------------------------------------------------------------------
 	ARGUMENTS:
-	1.) A pointer array of type blocks (all our blocks on the board)
-	2.) A refernace to current player
+	--->A pointer array of type blocks (all our blocks on the board)
+	--->A refernace to current player
 	-----------------------------------------------------------------------
 	RETURN VALUE:
-	NONE
+	--->NONE
 */
 
 void white_double_rent(block *arr[], player &current_player);
@@ -208,9 +218,27 @@ void white_double_rent(block *arr[], player &current_player);
 				integer search element
 	-------------------------------------------------------------------------
 	RETURN VALUE: 
-		TRUE if the search element is found
-		FALSE if the search element is not found
+	--->TRUE if the search element is found
+	--->FALSE if the search element is not found
 */
 
 bool search(vector<int>,int);
+
+
+/* 	The following is the mortgage function which is called whenever the balance drops negative
+	following a transaction.
+	--------------------------------------------------------------------------------------
+	PARAMETERS: 
+	---> A reference to player
+	---> The deficit amount
+	---> A pointer array of type blocks
+	---------------------------------------------------------------------------------------
+	RETURN VALUE:
+	--->NONE
+*/
+
+void mortgage(player &current_player,int deficit);
+
+
+
 

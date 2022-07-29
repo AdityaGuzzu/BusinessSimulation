@@ -1,8 +1,11 @@
 #include<iostream>
 using namespace std;
-class Aditya
+int main()
 {
-	public:
-	static int x;
-	
-};
+	int x= 6;
+	int y = 10;
+	if(!(x>10) && y>5)
+	{
+		cout<<"workz";
+	}
+}
