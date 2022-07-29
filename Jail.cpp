@@ -4,8 +4,8 @@
 */
 
 #include "class_definitions.h"
-void jail_class::transaction(player &current_player)
+void jail_class::transaction(player &current_player, jail_class &jail)
 {
-	visits++;
+	jail.visits++;
 	current_player.balance -= 500;
 }

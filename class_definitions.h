@@ -173,6 +173,7 @@ class party_house_class: public block
 	-------------------------------------------------------------------------------------
 	PARAMETERS: 
 	---> A reference to the current player 
+	---> A reference to the Jail object
 	-------------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -181,7 +182,7 @@ class party_house_class: public block
 class jail_class: public block
 {
 	public:
-	void transaction(player &current_player);
+	void transaction(player &current_player, jail_class &jail);
 };
 
 
