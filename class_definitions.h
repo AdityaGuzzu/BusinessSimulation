@@ -190,6 +190,7 @@ class jail_class: public block
 	-----------------------------------------------------------------------------------
 	PARAMETERS:
 	---> reference to the current player
+	---> Reference to the start object
 	-----------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -198,7 +199,7 @@ class jail_class: public block
 class start_class: public block
 {
 	public:
-	void transaction(player &current_player);
+	void transaction(player &current_player, start_class &start);
 };
 
 /*  The customs duty class contains a member function which deducts 100*(number of colour
