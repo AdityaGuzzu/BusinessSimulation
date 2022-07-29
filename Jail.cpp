@@ -1,6 +1,6 @@
 /* ALGORITHM:
-   1.) Increment the visits variable by one
-   2.) Debit 500 from the current player's balance
+   ---> Increment the visits variable by one
+   ---> Debit 500 from the current player's balance
 */
 
 #include "class_definitions.h"

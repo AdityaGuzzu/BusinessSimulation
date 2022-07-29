@@ -1,9 +1,9 @@
 /* This file will add 2000 to the balance of the player if he crossed start.
 	ALGORITHM:
-	1.) Take the current player's reference as an argument
-	2.) In the 'rounds' vector which has the round number of the player after every throw,
-		 Check the last two elements. If they differ by one, credit 2000 to the balance.
-	4) If the player is exactly on start, credit 2000 to the balance
+	---> Take the current player's reference as an argument
+	---> In the 'rounds' vector which has the round number of the player after every throw,
+		---> Check the last two elements. If they differ by one, credit 2000 to the balance.
+	---> If the player is exactly on start, credit 2000 to the balance
 */
 #include "class_defintions.h"
 void start_class::transaction(player &current_player)
