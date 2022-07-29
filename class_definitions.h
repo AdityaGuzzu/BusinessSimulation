@@ -117,6 +117,7 @@ class UNO_class: public block
 	---> Pointer array of type players
 	---> A reference to current player
 	---> Pointer array of type blocks
+	---> A reference to the CHANCE object
 	------------------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -126,7 +127,7 @@ class UNO_class: public block
 class chance_class: public block
 {
 	public:
-	void chance_transaction(player *pl[], player &current_player, block *blocks[]);
+	void chance_transaction(player *pl[], player &current_player, block *blocks[], chance_class &chance);
 };
 
 /* the resort class contains a member function which debits 200*(number_of_players -1) from
