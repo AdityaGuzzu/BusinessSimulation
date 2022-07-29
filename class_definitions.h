@@ -1,24 +1,22 @@
-	/*The class definitions the Business simulation. This file will define all required classes. The member functions
-	will be defined in separate files */
+	/*The class definitions the Business simulation. This file will declare all required classes. 
+	The member functions will be defined in separate files */
 #pragma once
 #include<iostream>
 #include<vector>
 #include<cstdlib>
 using namespace std;
-/* We will use the concepts of OOP. All the tickets will be objects of the ticket class. We will furthur have child
-   classes as colour tickets and white tickets. 
-	Member variables and functions of the parent class include:
-	1.) Ticket name  
-	2.) Ticket Rent  
-	3.) House cost
-	4.) Mortgage value
-	5.) A static variable to keep track of the number of times anyone came into it
-	6.) A variable to know who owns the ticket (i.e the player number)
-	7.) A variable to know how much rent was paid to the owner of the ticket. This helps to analyse the 
-	   best ticket
-	8.) Number of hosues
-	9.) A colour code to determine if its a colour or white ticket
+
+/* The class block is the base class of all tickets, general blocks.
+	-------------------------------------------------------------------------------
+	MEMBER VARIABLES:
+	---> name of the block										(string)
+	---> number of visits made to the block {by all players}	(int)
+	---> type of block											(string)
+	--------------------------------------------------------------------------------
+	MEMBER FUNCTIONS:
+	---> NONE
 */
+
 
 class block
 {
@@ -28,6 +26,22 @@ class block
 	string block_type;
 };
 
+
+/*	The class ticket is the derived from block. It is the base of all tickets be it white or 
+	colour. 
+	------------------------------------------------------------------------------------------
+	MEMBER VARIABLES:
+	--->ticket cost														(int)
+	---> basic rent {one without any houses or double rent}				(int)
+	---> current rent {one which describes the current rent.}			(int)
+	---> mortgage value													(int)
+	---> owner number {contains the number of the player who owns it}	(int)
+	---> colour code {describes white or colour}						(int)
+	------------------------------------------------------------------------------------------
+	MEMBER FUNCTIONS:
+	NONE
+*/
+
 class ticket: public block
 {
 	public:
@@ -35,11 +49,12 @@ class ticket: public block
 	int basic_rent;
 	int current_rent;
 	int mortgage_value;
-	int owner_num; 				//to know who owns the ticket
+	int owner_num; 				
 	int colour_code; 			// 1 if colour, -1 if white
 };
 
-//Ticket class has attributes which are common to both colour and white tickets
+
+
 
 class colour_ticket: public ticket
 {
@@ -55,26 +70,63 @@ class colour_ticket: public ticket
 	colour_ticket(string ticket_name, int ticket_cost, int ticket_rent, int house_cost, int mortgage_value, int house_rents[4], int double rent,int colour_code);	
 };
 
+
+
+/*
+	Class white ticket has the attributes of a white ticket
+	---------------------------------------------------------------------------------------
+	MEMBER VARIABLES:
+	---> NONE
+	---------------------------------------------------------------------------------------
+	MEMBER FUNCTIONS:
+	---> A constructor to set the inherited values.
+*/
+
+
 class white_ticket: public ticket
 {
 	white_ticket(string ticket_name, int ticket_cost, int ticket_rent, int double_rent);
 };
 
 /*The class UNO will have several member functions as well. 
-  They will take care of transactions whenever a player enters UNO */
+  They will take care of transactions whenever a player enters UNO 
+  ---------------------------------------------------------------------------------------
+  PARAMETERS:
+  ---> Pointer array of type player
+  ---> A reference to current player
+  ---> Pointer array of type blocks
+  ---------------------------------------------------------------------------------------
+  RETURN VALUE:
+  ---> NONE
+*/
 
 
 class UNO_class: public block
 {	
 	public:
 	/*NOTE: We can omit the throw parameter if we call the function after updating throw in the player class */
-	void UNO(player *pl_arr[], player *current_player,int throw__, block *arr[]);
+	void UNO(player *pl_arr[], player &current_player, block *arr[]);
 };
+
+
+/*
+	The class chance has a member function which carries out necessary tasks when a player
+	eneter the chance block.
+	------------------------------------------------------------------------------------------
+	PARAMETERS:
+	---> Pointer array of type players
+	---> A reference to current player
+	---> Pointer array of type blocks
+	------------------------------------------------------------------------------------------
+	RETURN VALUE:
+	---> NONE
+*/
+
 
 class chance_class: public block
 {
 	public:
-	void chance_transaction(player *pl,int number_of_players);
+	void chance_transaction(player *pl[], player &current_player, block *blocks[]);
 };
 
 /* the resort class contains a member function which debits 200*(number_of_players -1) from
@@ -114,24 +166,30 @@ class party_house_class: public block
 };
 
 /* The jail class contains a member function which just debits 500 when the player enters 
-	jail */
-
-class jail_class: public block
-{
-	public:
-	void transaction(player &x);
-};
-
-
-/* The start function checks if the player crossed start. If he did, it credits 2000
-	--------------------------------------------------------------------------------
-	ARGUMENTS: 
-	--->A reference of current player 
-	--------------------------------------------------------------------------------
+	jail
+	-------------------------------------------------------------------------------------
+	PARAMETERS: 
+	---> A reference to the current player 
+	-------------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
 */
 
+class jail_class: public block
+{
+	public:
+	void transaction(player &current_player);
+};
+
+
+/* The start class checks if the player crossed the START and credits 2000 if he did.
+	-----------------------------------------------------------------------------------
+	PARAMETERS:
+	---> reference to the current player
+	-----------------------------------------------------------------------------------
+	RETURN VALUE:
+	---> NONE
+*/
 
 class start_class: public block
 {
@@ -139,11 +197,31 @@ class start_class: public block
 	void transaction(player &current_player);
 };
 
+/*  The customs duty class contains a member function which deducts 100*(number of colour
+	tickets owned by the player).
+	--------------------------------------------------------------------------------------
+	PARAMETERS:
+	---> a reference to the current player
+	--------------------------------------------------------------------------------------
+	RETURN VALUE:
+	---> NONE
+*/
+
 class customs_duty_class: public block
 {
 	public:
-	void transaction(player *current_player);
+	void transaction(player &current_player);
 };
+
+/*  The customs duty class contains a member function which deducts 50*(number of colour
+	tickets owned by the player).
+	--------------------------------------------------------------------------------------
+	PARAMETERS:
+	---> a reference to the current player
+	--------------------------------------------------------------------------------------
+	RETURN VALUE:
+	---> NONE
+*/
 
 class travelling_duty_class: public block
 {
