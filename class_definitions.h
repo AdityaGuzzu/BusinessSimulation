@@ -95,6 +95,7 @@ class white_ticket: public ticket
   ---> Pointer array of type player
   ---> A reference to current player
   ---> Pointer array of type blocks
+  ---> A reference to UNO object 
   ---------------------------------------------------------------------------------------
   RETURN VALUE:
   ---> NONE
@@ -104,8 +105,7 @@ class white_ticket: public ticket
 class UNO_class: public block
 {	
 	public:
-	/*NOTE: We can omit the throw parameter if we call the function after updating throw in the player class */
-	void UNO(player *pl_arr[], player &current_player, block *arr[]);
+	void UNO(player *pl_arr[], player &current_player, block *arr[], UNO_class &UNO);
 };
 
 
