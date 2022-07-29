@@ -224,6 +224,7 @@ class customs_duty_class: public block
 	--------------------------------------------------------------------------------------
 	PARAMETERS:
 	---> a reference to the current player
+	---> A reference to travelling duty class.
 	--------------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -232,7 +233,7 @@ class customs_duty_class: public block
 class travelling_duty_class: public block
 {
 	public:
-	void transaction(player *current_player);
+	void transaction(player &current_player, travelling_duty_class &travelling_duty);
 };
 
 
