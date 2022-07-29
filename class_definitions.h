@@ -206,7 +206,8 @@ class start_class: public block
 	tickets owned by the player).
 	--------------------------------------------------------------------------------------
 	PARAMETERS:
-	---> a reference to the current player
+	---> A reference to the current player
+	---> A reference to the customs duty object
 	--------------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -215,7 +216,7 @@ class start_class: public block
 class customs_duty_class: public block
 {
 	public:
-	void transaction(player &current_player);
+	void transaction(player &current_player, customs_duty_class &customs_duty);
 };
 
 /*  The customs duty class contains a member function which deducts 50*(number of colour
