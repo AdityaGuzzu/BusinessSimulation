@@ -137,6 +137,7 @@ class chance_class: public block
 	--->A player pointer array
 	---> Current player's pointer
 	---> number of players			(int)
+	---> A reference to the resort object
 	----------------------------------------------------------------------------
 	RETURN VALUE: 
 	--->NONE
@@ -145,7 +146,7 @@ class chance_class: public block
 class resort_class: public block
 {
 	public:
-	void transaction(player *pl_arr[],player *current_player,int number_of_players);
+	void transaction(player *pl_arr[],player *current_player,int number_of_players, resort_class &resort);
 };
 
 /* the party house class contains a member function which credits 200*(number_of_players -1) from
