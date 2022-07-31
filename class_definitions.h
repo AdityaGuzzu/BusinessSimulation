@@ -9,9 +9,18 @@ using namespace std;
 /* The class block is the base class of all tickets, general blocks.
 	-------------------------------------------------------------------------------
 	MEMBER VARIABLES:
-	---> name of the block										(string)
-	---> number of visits made to the block {by all players}	(int)
-	---> type of block											(string)
+	---> name of the block												(string)
+	---> number of visits made to the block {by all players}			(int)
+	---> type of block													(string)
+	--->ticket cost														(int)
+	---> basic rent {one without any houses or double rent}				(int)
+	---> current rent {one which describes the current rent.}			(int)
+	---> mortgage value													(int)
+	---> owner number {contains the number of the player who owns it}	(int)
+	---> colour code {describes white or colour}						(int)
+	---> number of houses												(int)
+	---> array of house rents											(int)
+	---> house cost														(int)
 	--------------------------------------------------------------------------------
 	MEMBER FUNCTIONS:
 	---> NONE
@@ -30,44 +39,17 @@ class block
 	int current_rent;
 	int mortgage_value;
 	int owner_num; 				
-	int colour_code; 	//1 if colour -1 if white	
+	bool colour;		//colour ticket if true, white if false
+	int number_of_houses;
+	int house_rents[4];
+	int house_cost;
+	void white_ticket(string ticket_name, int ticket_cost, int ticket_rent, int double_rent);
 	//colour tickets attributes:
 
 
 };
 
-
-/*	The class ticket is the derived from block. It is the base of all tickets be it white or 
-	colour. 
-	------------------------------------------------------------------------------------------
-	MEMBER VARIABLES:
-	--->ticket cost														(int)
-	---> basic rent {one without any houses or double rent}				(int)
-	---> current rent {one which describes the current rent.}			(int)
-	---> mortgage value													(int)
-	---> owner number {contains the number of the player who owns it}	(int)
-	---> colour code {describes white or colour}						(int)
-	------------------------------------------------------------------------------------------
-	MEMBER FUNCTIONS:
-	NONE
-*/
-
-/* class ticket: public block
-{
-	public:
-	int ticket_cost;
-	int basic_rent;
-	int current_rent;
-	int mortgage_value;
-	int owner_num; 				
-	int colour_code; 			// 1 if colour, -1 if white
-};
-*/
-
-
-
-
-class colour_ticket: public ticket
+/* class colour_ticket: public ticket
 {
 	private:
 	enum ticket_colour {red,green,blue,yellow};
@@ -80,24 +62,13 @@ class colour_ticket: public ticket
 	int house_cost;
 	colour_ticket(string ticket_name, int ticket_cost, int ticket_rent, int house_cost, int mortgage_value, int house_rents[4], int double rent,int colour_code);	
 };
-
-
-
-/*
-	Class white ticket has the attributes of a white ticket
-	---------------------------------------------------------------------------------------
-	MEMBER VARIABLES:
-	---> NONE
-	---------------------------------------------------------------------------------------
-	MEMBER FUNCTIONS:
-	---> A constructor to set the inherited values.
 */
 
-
-class white_ticket: public ticket
+/* class white_ticket: public ticket
 {
 	white_ticket(string ticket_name, int ticket_cost, int ticket_rent, int double_rent);
 };
+*/
 
 /*The class UNO will have several member functions as well. 
   They will take care of transactions whenever a player enters UNO 
