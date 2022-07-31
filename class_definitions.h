@@ -24,6 +24,16 @@ class block
 	string name;
 	int visits;
 	string block_type;
+	//tickets attributes:
+	int ticket_cost;
+	int basic_rent;
+	int current_rent;
+	int mortgage_value;
+	int owner_num; 				
+	int colour_code; 	//1 if colour -1 if white	
+	//colour tickets attributes:
+
+
 };
 
 
@@ -42,7 +52,7 @@ class block
 	NONE
 */
 
-class ticket: public block
+/* class ticket: public block
 {
 	public:
 	int ticket_cost;
@@ -52,6 +62,7 @@ class ticket: public block
 	int owner_num; 				
 	int colour_code; 			// 1 if colour, -1 if white
 };
+*/
 
 
 
