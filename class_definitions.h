@@ -49,27 +49,6 @@ class block
 
 };
 
-/* class colour_ticket: public ticket
-{
-	private:
-	enum ticket_colour {red,green,blue,yellow};
-	public:
-	bool colour = true;
-	bool double_rent_checker;
-	ticket_colour colour;
-	int number_of_houses;
-	int house_rents[4];
-	int house_cost;
-	colour_ticket(string ticket_name, int ticket_cost, int ticket_rent, int house_cost, int mortgage_value, int house_rents[4], int double rent,int colour_code);	
-};
-*/
-
-/* class white_ticket: public ticket
-{
-	white_ticket(string ticket_name, int ticket_cost, int ticket_rent, int double_rent);
-};
-*/
-
 /*The class UNO will have several member functions as well. 
   They will take care of transactions whenever a player enters UNO 
   ---------------------------------------------------------------------------------------
