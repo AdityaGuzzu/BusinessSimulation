@@ -1,1 +1,4 @@
-This is the main branch which I'll use to push major changes until the first version is ready.
+This is my attempt to simulate the popular game 'monopoly' or 'business'.
+The code is entirely written in C++.
+I do not have any knowldge of Data Sturcutures and Algorithms, so the code is rather rudimentary.
+Would absolutely love to collaborate with any interested person.
