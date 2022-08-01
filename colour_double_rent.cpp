@@ -24,7 +24,7 @@ void colour_double_rent(player *current_player, block *blocks[])
     for(int i=0; i<4; i++)      //loop over the rows of colour_grouping 
     {
         vector<int> pl_colour_grouping;
-        for(j=0;j<PLAYER_TICKETS.size(); j++)    //to loop over the player tickets
+        for(int j=0;j<PLAYER_TICKETS.size(); j++)    //to loop over the player tickets
         {
             for(int k=0;k<5;k++)                //to loop over the columns of the ith row of colour_grouping
             {
