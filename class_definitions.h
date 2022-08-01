@@ -296,5 +296,20 @@ void mortgage(player *current_player,int deficit, block *blocks[]);
 void after_throw(player *current_player);
 
 
+/* 	The colour double rent function to set the double rents of the colour tickets:
+	--------------------------------------------------------------------------------
+	PARAMETERS:
+	---> A pointer to the current player
+	---> A pointer array of type blocks.
+	--------------------------------------------------------------------------------
+	RETURN VALUE:
+	---> NONE
+*/
+
+void colour_double_rent(player *current_player, block *blocks[]);
+
+
+
+
 
 
