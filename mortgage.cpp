@@ -64,7 +64,8 @@ void mortgage(player *current_player,int deficit, block *blocks[])
 
         if((money_raised - deficit) < 0 )
         {
-            //call bankrupt function.
+            //The player is bankrupt now.
+            current_player->bankurupt == true;
         }
     }
 }

@@ -312,4 +312,3 @@ void colour_double_rent(player *current_player, block *blocks[]);
 
 
 
-
