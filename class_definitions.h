@@ -240,7 +240,7 @@ class player
 	int last_time_at_uno;
 	int deduct_5000;
 	std::string name;
-	void after_throw(player &x, int throw__);
+	void after_throw(player *x, int throw__);
 	
 };
 
@@ -260,11 +260,13 @@ void white_double_rent(block *arr[], player &current_player);
 
 
 /* 	The following function is an implementation of linear search algorithm
-	PARAMETERS:
-    1.) Pointer array of type block (of all the blocks)
-    2.) A pointer of the current player
-    ------------------------------------------------------------------------------
-    RETURN VALUE: NONE
+	-------------------------------------------------------------------------
+	PARAMETERS: integer vector	(vector of positions of tickets owned by a player)
+				integer search element
+	-------------------------------------------------------------------------
+	RETURN VALUE: 
+	--->TRUE if the search element is found
+	--->FALSE if the search element is not found
 */
 
 bool search(vector<int>,int);
