@@ -1,6 +1,5 @@
-#include "class_defintions.h"
-#include "function_declarations.h"
-void chance_transaction(player *pl,int player_num,int number_of_players)
+#include "class_definitions.h"
+void chance_class::chance_transaction(player *pl,int player_num,int number_of_players)
 {
 		switch(current_player->throw)
 	{
