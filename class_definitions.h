@@ -195,7 +195,7 @@ class customs_duty_class: public block
 class travelling_duty_class: public block
 {
 	public:
-	void transaction(player &current_player, travelling_duty_class &travelling_duty);
+	void transaction(player *current_player, travelling_duty_class &travelling_duty);
 };
 
 
