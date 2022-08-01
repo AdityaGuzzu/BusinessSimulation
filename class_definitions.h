@@ -260,13 +260,11 @@ void white_double_rent(block *arr[], player &current_player);
 
 
 /* 	The following function is an implementation of linear search algorithm
-	-------------------------------------------------------------------------
-	PARAMETERS: integer vector	(vector of positions of tickets owned by a player)
-				integer search element
-	-------------------------------------------------------------------------
-	RETURN VALUE: 
-	--->TRUE if the search element is found
-	--->FALSE if the search element is not found
+	PARAMETERS:
+    1.) Pointer array of type block (of all the blocks)
+    2.) A pointer of the current player
+    ------------------------------------------------------------------------------
+    RETURN VALUE: NONE
 */
 
 bool search(vector<int>,int);
@@ -284,7 +282,7 @@ bool search(vector<int>,int);
 	--->NONE
 */
 
-void mortgage(player &current_player,int deficit);
+void mortgage(player *current_player,int deficit, block *blocks[]);
 
 
 
