@@ -55,7 +55,7 @@ class block
   ---------------------------------------------------------------------------------------
   PARAMETERS:
   ---> Pointer array of type player
-  ---> A reference to current player
+  ---> A pointer to current player
   ---> Pointer array of type blocks
   ---> A reference to UNO object 
   ---------------------------------------------------------------------------------------
@@ -67,7 +67,7 @@ class block
 class UNO_class: public block
 {	
 	public:
-	void UNO(player *pl_arr[], player &current_player, block *arr[], UNO_class &UNO);
+	void UNO(player *pl_arr[], player *current_player, block *arr[], UNO_class &UNO);
 };
 
 
