@@ -248,13 +248,13 @@ class player
 	-----------------------------------------------------------------------
 	ARGUMENTS:
 	--->A pointer array of type blocks (all our blocks on the board)
-	--->A refernace to current player
+	--->A pointer to current player
 	-----------------------------------------------------------------------
 	RETURN VALUE:
 	--->NONE
 */
 
-void white_double_rent(block *arr[], player &current_player);
+void white_double_rent(block *arr[], player *current_player);
 
 
 /* 	The following function is an implementation of linear search algorithm

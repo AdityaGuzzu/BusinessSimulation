@@ -39,7 +39,7 @@
 void mortgage(player *current_player,int deficit, block *blocks[])
 {
     int money_raised = 0;
-    while(!(deficit + money_raised <= 0) && current_player.position_of_tickets_owned.size() > 0 )
+    while(!(deficit + money_raised <= 0) && current_player->position_of_tickets_owned.size() > 0 )
     {
         int ticket_position;
         int mort_val;
@@ -54,7 +54,7 @@ void mortgage(player *current_player,int deficit, block *blocks[])
         {
             blocks[ticket_position]->number_of_houses = 0;
             blocks[ticket_position]->current_rent =blocks[ticket_position]->basic_rent;
-            //call double rent function
+            colour_double_rent(current_player,blocks);
         }
         else
         {
