@@ -78,7 +78,7 @@ class UNO_class: public block
 	PARAMETERS:
 	---> Pointer array of type players
 	---> A reference to current player
-	---> Pointer array of type blocks
+	---> Number of players 						(int)
 	---> A reference to the CHANCE object
 	------------------------------------------------------------------------------------------
 	RETURN VALUE:
@@ -89,7 +89,7 @@ class UNO_class: public block
 class chance_class: public block
 {
 	public:
-	void chance_transaction(player *pl[], player &current_player, block *blocks[], chance_class &chance);
+	void transaction(player *pl[], player *current_player, chance_class &chance, int number_of_players, jail_class &jail, start_class &start);
 };
 
 /* the resort class contains a member function which debits 200*(number_of_players -1) from
@@ -221,7 +221,6 @@ class player
 	public:
 	std::vector<int> throws;
 	std::vector<int> transactions;
-	std::vector<int> positions;
 	std::vector<int> rounds;
 	std::vector<int> position_of_tickets_owned;
 	std::vector<int> position_of_tickets_sold;
@@ -239,6 +238,7 @@ class player
 	int round;
 	int last_time_at_uno;
 	int deduct_5000;
+	int blocks_covered;
 	std::string name;
 	void after_throw(player *x, int throw__);
 	
