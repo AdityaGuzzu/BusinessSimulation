@@ -161,7 +161,7 @@ class jail_class: public block
 class start_class: public block
 {
 	public:
-	void transaction(player &current_player, start_class &start);
+	void transaction(player *current_player, start_class &start);
 };
 
 /*  The customs duty class contains a member function which deducts 100*(number of colour
