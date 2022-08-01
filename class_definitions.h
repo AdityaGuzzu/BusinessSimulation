@@ -49,6 +49,7 @@ class block
 
 };
 
+
 /*The class UNO will have several member functions as well. 
   They will take care of transactions whenever a player enters UNO 
   ---------------------------------------------------------------------------------------
@@ -133,8 +134,8 @@ class party_house_class: public block
 	jail
 	-------------------------------------------------------------------------------------
 	PARAMETERS: 
-	---> A reference to the current player 
-	---> A reference to the Jail object
+	---> A pointer to the current player 
+	---> A referance to the Jail object
 	-------------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -143,14 +144,14 @@ class party_house_class: public block
 class jail_class: public block
 {
 	public:
-	void transaction(player &current_player, jail_class &jail);
+	void transaction(player *current_player, jail_class &jail);
 };
 
 
 /* The start class checks if the player crossed the START and credits 2000 if he did.
 	-----------------------------------------------------------------------------------
 	PARAMETERS:
-	---> reference to the current player
+	---> Reference to the current player
 	---> Reference to the start object
 	-----------------------------------------------------------------------------------
 	RETURN VALUE:
@@ -167,7 +168,7 @@ class start_class: public block
 	tickets owned by the player).
 	--------------------------------------------------------------------------------------
 	PARAMETERS:
-	---> A reference to the current player
+	---> A pointer to the current player
 	---> A reference to the customs duty object
 	--------------------------------------------------------------------------------------
 	RETURN VALUE:
@@ -177,7 +178,7 @@ class start_class: public block
 class customs_duty_class: public block
 {
 	public:
-	void transaction(player &current_player, customs_duty_class &customs_duty);
+	void transaction(player *current_player, customs_duty_class &customs_duty);
 };
 
 /*  The customs duty class contains a member function which deducts 50*(number of colour
