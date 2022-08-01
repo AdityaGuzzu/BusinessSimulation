@@ -53,7 +53,6 @@ void chance_class::transaction(player *pl[], player *current_player, chance_clas
 			current_player->position = 27;
 			jail.visits++;
 			
-	
 		case 11:
 			current_player->balance += 1500;
 

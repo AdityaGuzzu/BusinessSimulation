@@ -240,8 +240,6 @@ class player
 	int deduct_5000;
 	int blocks_covered;
 	std::string name;
-	void after_throw(player *x, int throw__);
-	
 };
 
 /*	The following function is called whenever a player buys or sells a white ticket.
@@ -285,6 +283,17 @@ bool search(vector<int>,int);
 */
 
 void mortgage(player *current_player,int deficit, block *blocks[]);
+
+
+/* The after_throw function updates the player position, rounds etc 
+	---------------------------------------------------------------------------
+	PARAMETERS:
+	---> A pointer of type player*
+	---------------------------------------------------------------------------
+	RETURN VALUE:
+	---> NONE
+*/
+void after_throw(player *current_player);
 
 
 
