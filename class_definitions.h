@@ -309,6 +309,20 @@ void after_throw(player *current_player);
 void colour_double_rent(player *current_player, block *blocks[]);
 
 
+/* 	The random boolean generator returns random booleans 
+	------------------------------------------------------
+	PARAMETERS:
+	---> NONE
+	------------------------------------------------------
+	RETURN VALUE:
+	---> A randomly generated boolean
+*/
+
+
+void rand_bool();
+	
+
+
 
 
 
