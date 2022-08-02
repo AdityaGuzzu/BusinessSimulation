@@ -329,6 +329,18 @@ bool rand_bool();
 void UNO_seven(player *current_player);
 
 
+/* The rand throw function will generate two random dice throws and return their sum 
+	----------------------------------------------------------------------------------
+	PARAMETERS:
+	---> NONE
+	----------------------------------------------------------------------------------
+	RETURN VALUE:
+	---> INT
+*/
+
+
+int rand_throw();
+
 
 	
 
