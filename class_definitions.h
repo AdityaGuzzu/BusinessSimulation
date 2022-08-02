@@ -320,6 +320,23 @@ void colour_double_rent(player *current_player, block *blocks[]);
 
 
 bool rand_bool();
+
+
+/* 	The UNO_checker function will check if the player completed his 7 rounds after getting into 
+	UNO and throwing 7
+	--------------------------------------------------------------------------------------------
+	PARAMETERS:
+	---> A pointer to the current player
+	--------------------------------------------------------------------------------------------
+	RETURN VALUE:
+	---> NONE
+*/
+
+
+void UNO_seven(player *current_player);
+
+
+
 	
 
 
