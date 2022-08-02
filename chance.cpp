@@ -1,5 +1,5 @@
 #include "class_definitions.h"
-void chance_class::transaction(player *pl[], player *current_player, chance_class &chance, int number_of_players, jail_class &jail, start_class &start)
+void chance_class::transaction(player *players[], player *current_player, chance_class &chance, int number_of_players, jail_class &jail, start_class &start)
 {
 		chance.visits ++;
 		switch(current_player->throw_)
@@ -25,7 +25,7 @@ void chance_class::transaction(player *pl[], player *current_player, chance_clas
 			{
 				if(i != current_player->player_number)
 				{
-					pl[i]->balance -= (current_player->number_of_colour_tickets)*100;
+					players[i]->balance -= (current_player->number_of_colour_tickets)*100;
 				}
 			}
 		case 8:
