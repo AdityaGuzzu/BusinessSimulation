@@ -36,36 +36,40 @@
 
 #include<iostream>
 #include "class_definitions.h"
-void mortgage(player *current_player,int deficit, block *blocks[])
+void mortgage(player *current_player, block *blocks[])
 {
-    int money_raised = 0;
-    while(!(deficit + money_raised <= 0) && current_player->position_of_tickets_owned.size() > 0 )
+    if(current_player->balance < 0)
     {
-        int ticket_position;
-        int mort_val;
-        ticket_position = current_player->position_of_tickets_owned.back();      //last element of positions of tickets owned
-        mort_val = blocks[ticket_position]->mortgage_value;
-        current_player->transactions.push_back(mort_val);
-        current_player->balance += mort_val;
-        blocks[ticket_position]->owner_num = -1;
-        current_player->position_of_tickets_sold.push_back(ticket_position);
-        current_player->position_of_tickets_owned.pop_back();
-        if(blocks[ticket_position]->colour)
-        {
-            blocks[ticket_position]->number_of_houses = 0;
-            blocks[ticket_position]->current_rent =blocks[ticket_position]->basic_rent;
-            colour_double_rent(current_player,blocks);
-        }
-        else
-        {
-            blocks[ticket_position]->current_rent = blocks[ticket_position]->basic_rent;
-            white_double_rent(blocks,current_player);
-        }
 
-        if((money_raised - deficit) < 0 )
+    
+        while((current_player->balance < 0) && current_player->position_of_tickets_owned.size() > 0 )
         {
-            //The player is bankrupt now.
-            current_player->bankurupt == true;
+            int ticket_position;
+            int mort_val;
+            ticket_position = current_player->position_of_tickets_owned.back();      //last element of positions of tickets owned
+            mort_val = blocks[ticket_position]->mortgage_value;
+            current_player->transactions.push_back(mort_val);
+            current_player->balance += mort_val;
+            blocks[ticket_position]->owner_num = -1;
+            current_player->position_of_tickets_sold.push_back(ticket_position);
+            current_player->position_of_tickets_owned.pop_back();
+            if(blocks[ticket_position]->colour)
+            {
+                blocks[ticket_position]->number_of_houses = 0;
+                blocks[ticket_position]->current_rent =blocks[ticket_position]->basic_rent;
+                colour_double_rent(current_player,blocks);
+            }
+            else
+            {
+                blocks[ticket_position]->current_rent = blocks[ticket_position]->basic_rent;
+                white_double_rent(blocks,current_player);
+            }
+
+            if((current_player->balance) < 0 )
+            {
+                //The player is bankrupt now.
+                current_player->bankurupt == true;
+            }
         }
     }
 }

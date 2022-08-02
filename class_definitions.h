@@ -282,7 +282,7 @@ bool search(vector<int>,int);
 	--->NONE
 */
 
-void mortgage(player *current_player,int deficit, block *blocks[]);
+void mortgage(player *current_player, block *blocks[]);
 
 
 /* The after_throw function updates the player position, rounds etc 
@@ -319,7 +319,7 @@ void colour_double_rent(player *current_player, block *blocks[]);
 */
 
 
-void rand_bool();
+bool rand_bool();
 	
 
 
