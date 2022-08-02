@@ -201,19 +201,17 @@ class travelling_duty_class: public block
 
 				//PLAYER CLASS ATTRIBUTES
    /*	A player will have certain member functions and variables:
-	1.) A vector of throws which will be appended everytime he/she throws.
-	2.) A vector which keeps track of all his transactions
-	3.) A vector which keeps track of all his positions (The ticket in which he is present)
-	4.) A member function which always tells if the player crossed start or not. It'll return a boolean
-	5.) A member function which returns a boolean if a person enters into UNO by throwing 7
-	6.) A member variable which randomly decides to construct a house
-	7.) A member variable which randomly generates numbers between 2 and 12 which acts as dice
-	8.) Balance in the account of the player
-	9.) Position of the player
-	10.) Also a member function which only has colour tickets
-	11.) A member function which has only white tickets 
-	12.) A member variable which counts the number of rounds player crossed
-	13.) A member variable which is true if the player has rent, false if he doesn't;
+	1.) A vector of throws which will be appended everytime he/she throws.		(int vector)
+	2.) A vector which keeps track of all his transactions						(int vector)
+	3.) A variable which contains the number of blocks he covered 				(int)
+	5.) A member variable which 
+	8.) Balance of the player													(int)
+	9.) Position of the player													(int)
+	10.) A variable which contains the number of colour tickets					(int)							
+	12.) A vector to keep track of the rounds player is in						(int vector)
+	13.) Name of the player 													(string)
+	14.) A variable which tells if a player is bankrupt 						(boolean)
+	15.) A variable which tells the number of the player						(int)
   
 */
 class player
@@ -225,19 +223,14 @@ class player
 	std::vector<int> position_of_tickets_owned;
 	std::vector<int> position_of_tickets_sold;
 	int number_of_colour_tickets;
-	int number_of_white_tickets;
 	int player_number;
-	bool UNO_seven(player &);
 	bool rent_elig;
-	bool uno_5000_pay;
-	bool house_constructor;
 	bool bankurupt;
 	int throw_;
 	int position;
 	int balance;
 	int round;
 	int last_time_at_uno;
-	int deduct_5000;
 	int blocks_covered;
 	std::string name;
 };
