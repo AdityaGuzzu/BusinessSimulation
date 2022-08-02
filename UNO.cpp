@@ -1,6 +1,4 @@
 #include "class_definitions.h"
-#define TRANSACTION current_player->transactions.push_back
-
 void UNO(player *players[], player *current_player, block *blocks[], UNO_class &UNO)
 {
 	UNO.visits++;
@@ -146,5 +144,4 @@ void UNO(player *players[], player *current_player, block *blocks[], UNO_class &
                 current_player->balance += 3000;
                 TRANSACTION(3000);
     }
-   
 }

@@ -1,6 +1,7 @@
 	/*The class definitions the Business simulation. This file will declare all required classes. 
 	The member functions will be defined in separate files */
 #pragma once
+#define TRANSACTION current_player->transactions.push_back
 #include<iostream>
 #include<vector>
 #include<cstdlib>
