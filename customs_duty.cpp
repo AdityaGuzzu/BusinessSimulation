@@ -11,5 +11,5 @@ void customs_duty_class::transaction(player *current_player, customs_duty_class 
 		customs_duty.visits++;
 		int amount = current_player->number_of_colour_tickets*100;
 		current_player->balance -= amount;
-		current_player->transactions.push_back(amount);
+		TRANSACTION(amount);
 }

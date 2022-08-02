@@ -1,5 +1,4 @@
 #include "class_definitions.h"
-#define TRANSACTION current_player->transactions.push_back
 void chance_class::transaction(player *players[], player *current_player, chance_class &chance, int number_of_players, jail_class &jail, start_class &start)
 {
 		chance.visits ++;

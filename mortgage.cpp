@@ -48,7 +48,7 @@ void mortgage(player *current_player, block *blocks[])
             int mort_val;
             ticket_position = current_player->position_of_tickets_owned.back();      //last element of positions of tickets owned
             mort_val = blocks[ticket_position]->mortgage_value;
-            current_player->transactions.push_back(mort_val);
+            TRANSACTION(mort_val);
             current_player->balance += mort_val;
             blocks[ticket_position]->owner_num = -1;
             current_player->position_of_tickets_sold.push_back(ticket_position);

@@ -13,7 +13,7 @@ using namespace std;
 	---> name of the block												(string)
 	---> number of visits made to the block {by all players}			(int)
 	---> type of block													(string)
-	--->ticket cost														(int)
+	---> ticket cost													(int)
 	---> basic rent {one without any houses or double rent}				(int)
 	---> current rent {one which describes the current rent.}			(int)
 	---> mortgage value													(int)
