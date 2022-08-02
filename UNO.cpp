@@ -11,7 +11,7 @@ void UNO(player *players[], player *current_player, block *blocks[], UNO_class &
             if(i != current_player->player_number)
             {
                 players[i]->balance -= 500;
-                //call mortgage function 
+                mortgage(players[i], blocks);
             }
         }
 
@@ -33,7 +33,8 @@ void UNO(player *players[], player *current_player, block *blocks[], UNO_class &
                 //paying 500
                 current_player->balance -= 500;
 
-                //call mortgage function
+                //calling mortgage function
+                mortgage(current_player, blocks);
         }
         else                                            //IF he is in the second UNO
         {
@@ -52,7 +53,8 @@ void UNO(player *players[], player *current_player, block *blocks[], UNO_class &
                 //paying 500
                 current_player->balance -= 500;
 
-                //call mortgage function
+                //calling mortgage function
+                mortgage(current_player, blocks);
         }
 
         case 4:     //2500 credit
@@ -60,7 +62,9 @@ void UNO(player *players[], player *current_player, block *blocks[], UNO_class &
             
         case 5:     //2500 debit
                 current_player->balance -= 2500;
-                //call mortgage function
+
+                //calling mortgage function
+                mortgage(current_player, blocks);
         
         case 6:
                 current_player->balance += 2000;
@@ -69,7 +73,9 @@ void UNO(player *players[], player *current_player, block *blocks[], UNO_class &
                 if(rand_bool())
                 {
                     current_player->balance -= 5000;
-                    //call mortgage function
+
+                    //calling mortgage function
+                    mortgage(current_player, blocks);
                 }
                 else
                 {
@@ -103,7 +109,8 @@ void UNO(player *players[], player *current_player, block *blocks[], UNO_class &
                     {
                         players[i]->balance -= 200;
 
-                        //call mortgage function
+                        //calling mortgage function
+                        mortgage(players[i], blocks);
                     }
                 }
         
@@ -120,14 +127,18 @@ void UNO(player *players[], player *current_player, block *blocks[], UNO_class &
                             current_player->balance -= 250;
                     }   
                 }
-                //call mortgage function
+
+                //calling mortgage function
+                mortgage(current_player, blocks);
 
         case 10:
                 current_player->balance += 1500;
 
         case 11:
                 current_player->balance -= 1500;
-                //call mortgage function
+
+                //calling mortgage function
+                mortgage(current_player, blocks);
 
         case 12:
                 current_player->balance += 3000;
