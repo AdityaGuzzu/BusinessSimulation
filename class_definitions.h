@@ -4,7 +4,6 @@
 #define TRANSACTION current_player->transactions.push_back
 #include<iostream>
 #include<vector>
-#include<cstdlib>
 using namespace std;
 
 /* The class block is the base class of all tickets, general blocks.
@@ -44,10 +43,34 @@ class block
 	int number_of_houses;
 	int house_rents[4];
 	int house_cost;
-	void white_ticket(string ticket_name, int ticket_cost, int ticket_rent, int double_rent);
-	//colour tickets attributes:
 
+	//Default constructor for general blocks
 
+	block()
+	{
+		block_type = "general";
+		owner_num = -1;			//A geenral ticket is not owned by anyone.
+	}
+
+	//parameterised for tickets
+
+	block (string name, int ticket_cost, int basic_rent, int mortgage_value, bool colour, int house_costs, int house_rents[])
+	{
+		this->block_type = "ticket";
+		this->name = name;
+		this->ticket_cost = ticket_cost;
+		this->basic_rent = basic_rent;
+		this->current_rent = basic_rent;
+		this->mortgage_value = mortgage_value;
+		this->owner_num = -1;		//when a ticket is created, its not owned by anyone.
+		this->colour = colour;
+		this->house_cost = house_cost;
+		this->number_of_houses = 0;
+		for(int i=0; i<4; i++)
+		{
+			this->house_rents[i] = house_rents[i];
+		}
+	}
 };
 
 
