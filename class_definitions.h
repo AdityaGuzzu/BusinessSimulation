@@ -52,9 +52,9 @@ class block
 		owner_num = -1;			//A geenral ticket is not owned by anyone.
 	}
 
-	//parameterised for tickets
+	//This is for colour tickets.
 
-	block (string name, int ticket_cost, int basic_rent, int mortgage_value, bool colour, int house_costs, int house_rents[])
+	block(string name, int ticket_cost, int basic_rent, int mortgage_value, bool colour, int house_costs, int house_rents[])
 	{
 		this->block_type = "ticket";
 		this->name = name;
@@ -70,6 +70,16 @@ class block
 		{
 			this->house_rents[i] = house_rents[i];
 		}
+	}
+
+	//This is for white tickets. (Constructor overloading)
+	block(string name, int ticket_cost, int basic_rent, int mortgage_value, bool colour)
+	{
+		this->name = name;
+		this->ticket_cost = ticket_cost;
+		this->basic_rent = basic_rent;
+		this->mortgage_value = mortgage_value;
+		this->colour = colour;
 	}
 };
 
