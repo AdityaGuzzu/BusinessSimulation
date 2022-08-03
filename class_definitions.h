@@ -80,6 +80,8 @@ class block
 		this->basic_rent = basic_rent;
 		this->mortgage_value = mortgage_value;
 		this->colour = colour;
+		this->owner_num = -1;		//when a ticket is created, its not owned by anyone.
+		this->current_rent = basic_rent;
 	}
 };
 
