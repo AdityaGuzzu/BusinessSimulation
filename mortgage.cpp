@@ -36,7 +36,7 @@
 
 #include<iostream>
 #include "class_definitions.h"
-void mortgage(player *current_player, block *blocks[])
+void mortgage(player *current_player, block *blocks[], int &number_of_players)
 {
     if(current_player->balance < 0)
     {
@@ -67,8 +67,9 @@ void mortgage(player *current_player, block *blocks[])
 
             if((current_player->balance) < 0 )
             {
-                //The player is bankrupt now.
+                //The player is bankrupt now. Number of players must be decremeneted
                 current_player->bankurupt == true;
+                number_of_players --;
             }
         }
     }

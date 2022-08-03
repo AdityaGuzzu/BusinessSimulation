@@ -311,13 +311,15 @@ bool search(vector<int>,int);
 	--->NONE
 */
 
-void mortgage(player *current_player, block *blocks[]);
+void mortgage(player *current_player, block *blocks[], int &number_of_tickets);
 
 
 /* The after_throw function updates the player position, rounds etc 
 	---------------------------------------------------------------------------
 	PARAMETERS:
-	---> A pointer of type player*
+	---> A pointer of type player*						(player)
+	---> A pointer array of type blocks					(blocks)
+	---> A reference to the number of players			(int)
 	---------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
