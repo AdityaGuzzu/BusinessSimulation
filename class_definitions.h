@@ -269,6 +269,17 @@ class player
 	int last_time_at_uno;
 	int blocks_covered;
 	std::string name;
+	player(int player_number, int balance)
+	{
+		this->balance = balance;
+		this->player_number = player_number;
+		this->position = 0;
+		this->round = 1;
+		this->rent_elig = true;
+		this->bankurupt = false;
+		this->blocks_covered = 0;
+		this->number_of_colour_tickets = 0;
+	}
 };
 
 /*	The following function is called whenever a player buys or sells a white ticket.
