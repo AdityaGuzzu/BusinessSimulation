@@ -215,7 +215,7 @@ class start_class: public block
 class customs_duty_class: public block
 {
 	public:
-	void transaction(player *current_player, int &number_of_players, block *blocks);
+	void transaction(player *current_player, int &number_of_players, block *blocks[]);
 };
 
 /*  The customs duty class contains a member function which deducts 50*(number of colour
