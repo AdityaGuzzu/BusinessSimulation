@@ -11,6 +11,7 @@
 void after_throw(player *current_player)
 {
     current_player->blocks_covered += current_player->throw_;
+    current_player->position = (current_player->blocks_covered % 36);
     current_player->round = (current_player->blocks_covered / 36);
     current_player->rounds.push_back(current_player->round);
 }    
