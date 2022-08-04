@@ -90,7 +90,7 @@ class block
   They will take care of transactions whenever a player enters UNO 
   ---------------------------------------------------------------------------------------
   PARAMETERS:
-  ---> Pointer array of type player						(player *)
+  ---> Player pointer vector							(vector<player *>)
   ---> A pointer to current player						(player *)
   ---> A reference to the number of players				(&int)
   ---> Pointer array of blocks							(block *[])
@@ -103,7 +103,7 @@ class block
 class UNO_class: public block
 {	
 	public:
-	void UNO(player *pl_arr[], player *current_player, block *arr[], int &number_of_players);
+	void UNO(vector<player *> players, player *current_player, block *arr[], int &number_of_players);
 };
 
 
@@ -132,7 +132,7 @@ class chance_class: public block
 	the current player's account and credits 200 in all other accounts 
 	----------------------------------------------------------------------------
 	ARGUMENTS: 
-	---> A player pointer array						(player *)
+	---> A player pointer vector					(vector<player *>)
 	---> Current player's pointer					(player *[])
 	---> A reference to number of players			(&int)
 	---> An array of blocks 						(block *[])
@@ -144,14 +144,14 @@ class chance_class: public block
 class resort_class: public block
 {
 	public:
-	void transaction(player *pl_arr[],player *current_player,int &number_of_players, block *blocks[]);
+	void transaction(vector<player *> players,player *current_player,int &number_of_players, block *blocks[]);
 };
 
 /* the party house class contains a member function which credits 200*(number_of_players -1) from
 	the current player's account and debits 200 in all other accounts 
 	----------------------------------------------------------------------------
 	ARGUMENTS: 
-	---> A player pointer array										(player *)
+	---> A player pointer vector									(vector<player *>)
 	---> Current player's pointer									(player *[])
 	---> A reference to number of players							(&int)
 	---> A pointer array of type block.								(block *[])
@@ -163,7 +163,7 @@ class resort_class: public block
 class party_house_class: public block
 {
 	public:
-	void transaction(player *pl_arr[],player *current_player,int &number_of_players, block *blocks[]);
+	void transaction(vector<player *> players, player *current_player,int &number_of_players, block *blocks[]);
 };
 
 /* The jail class contains a member function which just debits 500 when the player enters 
@@ -215,7 +215,7 @@ class start_class: public block
 class customs_duty_class: public block
 {
 	public:
-	void transaction(player *current_player, int &number_of_players, block *blocks[]);
+	void transaction(player *current_player, int &number_of_players, block *blocks);
 };
 
 /*  The customs duty class contains a member function which deducts 50*(number of colour

@@ -1,5 +1,5 @@
 #include "class_definitions.h"
-void UNO_class::UNO(player *players[], player *current_player, block *blocks[],int &number_of_players)
+void UNO_class::UNO(vector<player *> players, player *current_player, block *blocks[],int &number_of_players)
 {
 	blocks[current_player->position]->visits++;
     switch (current_player->throw_)

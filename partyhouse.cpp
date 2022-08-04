@@ -1,7 +1,7 @@
 /*  
 	----------------------------------------------------------------------------
 	ARGUMENTS:
-	---> A  pointer array of type player		(*player[])
+	---> Player pointer vector 					(vector<player *>)
 	---> Current player's pointer				(*player)	
 	---> refernce to number of players			(&int)
 	---> A pointer array of type block 			(*block[])
@@ -14,7 +14,7 @@
 		---> check for the player's bankruptcy
 */
 #include "class_definitions.h"
-void party_house_class::transaction(player *players[],player *current_player,int &number_of_players, block *blocks[])
+void party_house_class::transaction(vector<player *> players,player *current_player,int &number_of_players, block *blocks[])
 	{
 		blocks[current_player->position]->visits++;
 		current_player->balance += (number_of_players - 1)*200;
