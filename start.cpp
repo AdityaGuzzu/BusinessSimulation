@@ -12,7 +12,7 @@ void start_class::transaction(player *current_player, start_class &start)
 	{
 		start.visits ++;
 	}
-	if(current_player->rounds.back() - current_player->rounds[current_player->rounds.size()-2] == 1)
+	if(current_player->rounds.size() >= 2 && (current_player->rounds.back() - current_player->rounds[current_player->rounds.size()-2] == 1))
 	{
 		current_player->balance += 2000;
 		TRANSACTION(2000);
