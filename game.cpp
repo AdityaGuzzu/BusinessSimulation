@@ -241,16 +241,36 @@ int main()
 
 	//Get the number of players
 	std::cout<<"Enter the number of players";
-	std::cin>>num_of_players;
 
+	get_players:
+	try
+	{
+		std::cin>>num_of_players;
+		if(num_of_players > 8 || num_of_players <2)
+		{
+			throw num_of_players;
+		}
+	}
+
+	catch(int)
+	{
+		cerr<<"\nEnter correct number of players. The maximum limit of players is 8 and the minimum is 2.";
+		goto get_players;
+	}
+	
 	//Create a pointer array of size 'number of players'
 	std::vector<player *> players;
+
 	for(int i=0; i<num_of_players; i++)
 	{
 		//Players will divide among themselves $100000
 		players.push_back(new player(i,(100000/num_of_players)));
 	} 
+
+	//space enhancement
+	players.shrink_to_fit();
 	
+	//Simulation starts.
 	while(num_of_players>0)
 	{
 		for(int this_player =0; this_player<num_of_players; this_player++)
