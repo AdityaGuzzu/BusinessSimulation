@@ -1,5 +1,5 @@
 #include "class_definitions.h"
-void chance_class::transaction(player *players[], player *current_player, int &number_of_players, block *blocks[], start_class &start)
+void chance_class::transaction(player *players[], player *current_player, int &number_of_players, block *blocks[])
 {
 		blocks[current_player->position]->visits ++;
 		switch(current_player->throw_)
@@ -67,7 +67,7 @@ void chance_class::transaction(player *players[], player *current_player, int &n
 				current_player->blocks_covered += 34;
 				current_player->rounds.push_back(current_player->blocks_covered / 36);
 				current_player->round = current_player->rounds.back();
-				start.transaction(current_player, start);
+				current_player->balance += 2000;
 
 			}
 			current_player->position = 27;

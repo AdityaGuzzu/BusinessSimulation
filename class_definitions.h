@@ -125,7 +125,7 @@ class UNO_class: public block
 class chance_class: public block
 {
 	public:
-	void transaction(player *pl[], player *current_player, int &number_of_players, block *blocks[], start_class &start);
+	void transaction(vector<player *> players, player *current_player, int &number_of_players, block *blocks[]);
 };
 
 /* the resort class contains a member function which debits 200*(number_of_players -1) from
