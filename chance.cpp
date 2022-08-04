@@ -1,5 +1,5 @@
 #include "class_definitions.h"
-void chance_class::transaction(player *players[], player *current_player, int &number_of_players, block *blocks[])
+void chance_class::transaction(vector<player *> players, player *current_player, int &number_of_players, block *blocks[])
 {
 		blocks[current_player->position]->visits ++;
 		switch(current_player->throw_)
