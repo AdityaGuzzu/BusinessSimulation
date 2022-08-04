@@ -18,6 +18,9 @@
 #include "white_double_rent.cpp"
 #include<cstdlib>
 #include<ctime>
+#define POSITION current_player->position
+#define OWNER_NUMBER blocks[current_player->position]->owner_num
+#define CURRENT_TICKET blocks[current_player->position]
 /*      The steps required are broadly categorised into:
 	1.) Get the number of players (maximum 8. Minimum 2)
 	2.) Create all the blocks.
@@ -248,5 +251,168 @@ int main()
 		players.push_back(new player(i,(100000/num_of_players)));
 	} 
 	
+	while(num_of_players>0)
+	{
+		for(int this_player =0; this_player<num_of_players; this_player++)
+		{
+			//to make the program more readable
+			player *current_player = players[this_player];
+
+			//If the player is bankrupt
+			if(current_player->bankrupt)
+			{
+				//move to the next iteration
+				continue;
+			}
+
+			//throw
+			current_player->throw_ = rand_throw();
+
+			//Update all throw related variables and vectors
+			after_throw(current_player);
+
+			//if player is not eligible for rent
+			if(!current_player->rent_elig)
+			{
+				UNO_seven(current_player);
+			}
+
+		
+			//For general blocks
+			if(blocks[current_player->position]->block_type == "general")
+			{
+				//is position is start
+				if(POSITION == 0)
+				{
+					start.transaction(current_player, blocks[0]);
+				}
+
+				//if position is UNO_4
+				if(POSITION == 4)
+				{
+					uno_4.UNO(players,current_player,blocks,num_of_players_ref);
+				}
+
+				//If position is resort
+				if(POSITION == 9)
+				{
+					resort.transaction(players, current_player, num_of_players_ref, blocks);
+				}
+
+				//If position is customs duty
+				if(POSITION == 13)
+				{
+					customs_duty.transaction(current_player,num_of_players_ref, blocks);
+				}
+
+				//If position is chance
+				if(POSITION == 16)
+				{
+					chance_16.transaction(players,current_player,num_of_players_ref,blocks);
+				}
+
+				//If position is party house
+				if(POSITION == 18)
+				{
+					party_house.transaction(players,current_player,num_of_players_ref,blocks);
+				}
+
+				//If position is Travelling Duty
+				if(POSITION == 21)
+				{
+					travelling_duty.transaction(current_player,num_of_players_ref,blocks);
+				}
+
+				//if position is UNO25
+				if(POSITION == 25)
+				{
+					uno_25.UNO(players,current_player, blocks, num_of_players_ref);
+				}
+
+				//If position is JAIL
+				if(POSITION == 27)
+				{
+					jail.transaction(current_player,blocks,num_of_players_ref);
+				}
+
+				//If positon is Chance29
+				if(POSITION == 29)
+				{
+					chance_29.transaction(players,current_player,num_of_players_ref,blocks);
+				}
+			}
+
+			//for tickets
+			else
+			{
+				//check if the ticket is bought by someone else
+				if(OWNER_NUMBER != -1 && OWNER_NUMBER != current_player->player_number)
+				{
+					//debit the money from current player
+					current_player->balance -= CURRENT_TICKET->current_rent;
+					TRANSACTION(-CURRENT_TICKET->current_rent);
+					mortgage(current_player, blocks, num_of_players_ref);
+
+					//credit the money to the respective player
+					players[CURRENT_TICKET->owner_num] += CURRENT_TICKET->current_rent;
+					players[CURRENT_TICKET->owner_num]->transactions.push_back(CURRENT_TICKET->current_rent);
+				}
+
+				//If no one owns the ticket, the player can buy it
+				else
+				{
+					//If the player has enough money, the decision is taken randomly
+					if(rand_bool() && (current_player->balance > CURRENT_TICKET->ticket_cost))
+					{
+						//setting the owner number of the ticket to the player number
+						CURRENT_TICKET->owner_num = current_player->player_number;
+
+						//Adding the position to the position of tickets owned by the player
+						current_player->position_of_tickets_owned.push_back(current_player->position);
+
+						//if the ticket bought is a colour one:
+						if(CURRENT_TICKET->colour)
+						{
+							colour_double_rent(current_player,blocks);
+							current_player->number_of_colour_tickets ++;
+						}
+
+						//else, the ticket is white
+						else
+						{
+							white_double_rent(blocks, current_player);
+						}
+
+					}
+				}
+
+				//Time to construct houses:
+				#define TICKET_ITER blocks[current_player->position_of_tickets_owned[i]]
+				while(rand_bool() && (current_player->balance > 0))
+				{
+					for(int i=0; i<current_player->position_of_tickets_owned.size(); i++ )
+					{
+						if(!TICKET_ITER->colour)
+						{
+							continue;
+						}
+						current_player->balance -= TICKET_ITER->house_cost;
+						TICKET_ITER->number_of_houses ++;
+						TICKET_ITER->current_rent = TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
+					}
+				}
+			}
+
+		cout<<endl<<"Player number: "<<this_player+1;
+		cout<<endl<<"Throw: "<<current_player->throw_;
+		cout<<endl<<"Balance: "<<current_player->balance;
+		cout<<endl<<"Tickets Owned:\n ";
+		for(int i=0;i<current_player->position_of_tickets_owned.size(); i++)
+		{
+			cout<<"\t"<<blocks[current_player->position_of_tickets_owned[i]]->name;
+		}
+
+		}		
+	}
 	
 }
