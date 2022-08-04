@@ -1,19 +1,30 @@
-/*  This function debits 200*(number_of_players -1) from
-	the current player's account and credits 200 in all other accounts 
+/*  
 	----------------------------------------------------------------------------
-	ARGUMENTS: A  pointer array of type player, Current player's pointer, number of players
+	ARGUMENTS:
+	---> A  pointer array of type player		(*player[])
+	---> Current player's pointer				(*player)	
+	---> refernce to number of players			(&int)
+	---> A pointer array of type block 			(*block[])
 	----------------------------------------------------------------------------
 	RETURN VALUE: NONE
+	----------------------------------------------------------------------------
+	ALGORITHM:
+	---> credit 200*(number_of_players -1) to the current player's bank account
+	---> debit 200 from all the players bank account
+		---> check for the player's bankruptcy
 */
 #include "class_definitions.h"
-void resort_transaction(player *player_array[],player *current_player,int number_of_players, party_house_class &party_house)
+void party_house_class::transaction(player *players[],player *current_player,int &number_of_players, block *blocks[])
 	{
-		party_house.visits++;
+		blocks[current_player->position]->visits++;
 		current_player->balance += (number_of_players - 1)*200;
 		TRANSACTION((number_of_players - 1)*200);
 		for(int i=0; i<number_of_players && i != current_player->player_number; i++)
 			{
-				player_array[i]->balance -= 200;
-				player_array[i]->transactions.push_back(-200);
+				players[i]->balance -= 200;
+				players[i]->transactions.push_back(-200);
+				
+				//check mortgage for the player
+				mortgage(players[i], blocks, number_of_players);
 			}	
 	}	

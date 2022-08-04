@@ -1,3 +1,4 @@
 *.exe
 *.json
+game.cpp
 BusinessSimulation.code-workspace

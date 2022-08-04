@@ -90,10 +90,10 @@ class block
   They will take care of transactions whenever a player enters UNO 
   ---------------------------------------------------------------------------------------
   PARAMETERS:
-  ---> Pointer array of type player
-  ---> A pointer to current player
-  ---> Pointer array of type blocks
-  ---> A reference to UNO object 
+  ---> Pointer array of type player						(player *)
+  ---> A pointer to current player						(player *)
+  ---> A reference to the number of players				(&int)
+  ---> Pointer array of blocks							(block *[])
   ---------------------------------------------------------------------------------------
   RETURN VALUE:
   ---> NONE
@@ -103,7 +103,7 @@ class block
 class UNO_class: public block
 {	
 	public:
-	void UNO(player *pl_arr[], player *current_player, block *arr[], UNO_class &UNO);
+	void UNO(player *pl_arr[], player *current_player, block *arr[], int &number_of_players);
 };
 
 
@@ -112,10 +112,10 @@ class UNO_class: public block
 	eneter the chance block.
 	------------------------------------------------------------------------------------------
 	PARAMETERS:
-	---> Pointer array of type players
-	---> A reference to current player
-	---> Number of players 						(int)
-	---> A reference to the CHANCE object
+	---> Pointer array of type players							(player *[])
+	---> A pointer to current player							(playerr *)				
+	---> A reference to Number of players 						(&int)
+	---> An array of blocks										(block *[])
 	------------------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -125,17 +125,17 @@ class UNO_class: public block
 class chance_class: public block
 {
 	public:
-	void transaction(player *pl[], player *current_player, chance_class &chance, int number_of_players, jail_class &jail, start_class &start);
+	void transaction(player *pl[], player *current_player, int &number_of_players, block *blocks[], start_class &start);
 };
 
 /* the resort class contains a member function which debits 200*(number_of_players -1) from
 	the current player's account and credits 200 in all other accounts 
 	----------------------------------------------------------------------------
 	ARGUMENTS: 
-	--->A player pointer array
-	---> Current player's pointer
-	---> number of players			(int)
-	---> A reference to the resort object
+	---> A player pointer array						(player *)
+	---> Current player's pointer					(player *[])
+	---> A reference to number of players			(&int)
+	---> An array of blocks 						(block *[])
 	----------------------------------------------------------------------------
 	RETURN VALUE: 
 	--->NONE
@@ -144,17 +144,17 @@ class chance_class: public block
 class resort_class: public block
 {
 	public:
-	void transaction(player *pl_arr[],player *current_player,int number_of_players, resort_class &resort);
+	void transaction(player *pl_arr[],player *current_player,int &number_of_players, block *blocks[]);
 };
 
 /* the party house class contains a member function which credits 200*(number_of_players -1) from
 	the current player's account and debits 200 in all other accounts 
 	----------------------------------------------------------------------------
 	ARGUMENTS: 
-	---> A player pointer array
-	---> Current player's pointer
-	---> number of players			(int)
-	---> A reference to the party house object.
+	---> A player pointer array										(player *)
+	---> Current player's pointer									(player *[])
+	---> A reference to number of players							(&int)
+	---> A pointer array of type block.								(block *[])
 	----------------------------------------------------------------------------
 	RETURN VALUE: 
 	--->NONE
@@ -163,24 +163,25 @@ class resort_class: public block
 class party_house_class: public block
 {
 	public:
-	void transaction(player *pl_arr[],player *current_player,int number_of_players, party_house_class &party_house);
+	void transaction(player *pl_arr[],player *current_player,int &number_of_players, block *blocks[]);
 };
 
 /* The jail class contains a member function which just debits 500 when the player enters 
 	jail
 	-------------------------------------------------------------------------------------
-	PARAMETERS: 
-	---> A pointer to the current player 
-	---> A referance to the Jail object
-	-------------------------------------------------------------------------------------
-	RETURN VALUE:
-	---> NONE
+	PARAMETERS:
+   ---> A pointer to player                     (player *)
+   ---> A pointer array of blocks               (block *[])
+   ---> A reference to the number of players    (&int)
+   ---------------------------------------------------------------------------------------
+   RETURN VALUE:
+   ---> NONE
 */
 
 class jail_class: public block
 {
 	public:
-	void transaction(player *current_player, jail_class &jail);
+	void transaction(player *current_player, block *blocks[], int &number_of_players);
 };
 
 
@@ -214,15 +215,16 @@ class start_class: public block
 class customs_duty_class: public block
 {
 	public:
-	void transaction(player *current_player, customs_duty_class &customs_duty);
+	void transaction(player *current_player, int &number_of_players, block *blocks[]);
 };
 
 /*  The customs duty class contains a member function which deducts 50*(number of colour
 	tickets owned by the player).
 	--------------------------------------------------------------------------------------
 	PARAMETERS:
-	---> a reference to the current player
-	---> A reference to travelling duty class.
+	---> a pointer to the current player			(player *)
+	---> A reference to the number of players.		(int &)
+	---> An array of blocks 						(block *[])
 	--------------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -231,12 +233,15 @@ class customs_duty_class: public block
 class travelling_duty_class: public block
 {
 	public:
-	void transaction(player *current_player, travelling_duty_class &travelling_duty);
+	void transaction(player *current_player, int &number_of_players, block *blocks[]);
 };
 
 
-				//PLAYER CLASS ATTRIBUTES
-   /*	A player will have certain member functions and variables:
+				
+   /*	PLAYER CLASS ATTRIBUTES
+   ----------------------------------------------------------------------------------------
+
+    MEMBER VARIABLES:
 	1.) A vector of throws which will be appended everytime he/she throws.		(int vector)
 	2.) A vector which keeps track of all his transactions						(int vector)
 	3.) A variable which contains the number of blocks he covered 				(int)
@@ -248,6 +253,14 @@ class travelling_duty_class: public block
 	13.) Name of the player 													(string)
 	14.) A variable which tells if a player is bankrupt 						(boolean)
 	15.) A variable which tells the number of the player						(int)
+	---------------------------------------------------------------------------------------
+	MEMBER FUNCTIONS:
+	
+	1.) A parameterised constructor
+		-----------------------------
+		PARAMETERS:
+		---> player number 		(int)
+		---> initial balance	(int)
   
 */
 class player
@@ -287,8 +300,8 @@ class player
 	It is a function which checks and assigns double rents to white tickets
 	-----------------------------------------------------------------------
 	ARGUMENTS:
-	--->A pointer array of type blocks (all our blocks on the board)
-	--->A pointer to current player
+	--->A pointer array of blocks 		(block *[])
+	--->A pointer to current player		(player *)
 	-----------------------------------------------------------------------
 	RETURN VALUE:
 	--->NONE
@@ -299,8 +312,9 @@ void white_double_rent(block *arr[], player *current_player);
 
 /* 	The following function is an implementation of linear search algorithm
 	-------------------------------------------------------------------------
-	PARAMETERS: integer vector	(vector of positions of tickets owned by a player)
-				integer search element
+	PARAMETERS: 
+	---> A vector 							(vector<int>)
+	---> integer search element				(int)
 	-------------------------------------------------------------------------
 	RETURN VALUE: 
 	--->TRUE if the search element is found
@@ -314,15 +328,15 @@ bool search(vector<int>,int);
 	following a transaction.
 	--------------------------------------------------------------------------------------
 	PARAMETERS: 
-	---> A reference to player
-	---> The deficit amount
-	---> A pointer array of type blocks
+	---> A pointer to player					(player *)						
+	---> A pointer array of type blocks			(player *[])
+	---> A reference to the number of players	(&int)
 	---------------------------------------------------------------------------------------
 	RETURN VALUE:
 	--->NONE
 */
 
-void mortgage(player *current_player, block *blocks[], int &number_of_tickets);
+void mortgage(player *current_player, block *blocks[], int &number_of_players);
 
 
 /* The after_throw function updates the player position, rounds etc 
@@ -389,6 +403,7 @@ void UNO_seven(player *current_player);
 
 
 int rand_throw();
+
 
 
 	
