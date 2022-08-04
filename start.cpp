@@ -6,11 +6,11 @@
 	---> If the player is exactly on start, credit 2000 to the balance
 */
 #include "class_definitions.h"
-void start_class::transaction(player *current_player, start_class &start)
+void start_class::transaction(player *current_player, block *start)
 {
 	if((current_player->position%36) == 0)
 	{
-		start.visits ++;
+		start->visits ++;
 	}
 	if(current_player->rounds.size() >= 2 && (current_player->rounds.back() - current_player->rounds[current_player->rounds.size()-2] == 1))
 	{

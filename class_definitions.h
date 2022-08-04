@@ -188,8 +188,8 @@ class jail_class: public block
 /* The start class checks if the player crossed the START and credits 2000 if he did.
 	-----------------------------------------------------------------------------------
 	PARAMETERS:
-	---> Reference to the current player
-	---> Reference to the start object
+	---> pointer to the current player						(player *)
+	---> Pointer of type block to the start object			(block *)
 	-----------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -198,7 +198,7 @@ class jail_class: public block
 class start_class: public block
 {
 	public:
-	void transaction(player *current_player, start_class &start);
+	void transaction(player *current_player, block *start);
 };
 
 /*  The customs duty class contains a member function which deducts 100*(number of colour
@@ -274,7 +274,7 @@ class player
 	int number_of_colour_tickets;
 	int player_number;
 	bool rent_elig;
-	bool bankurupt;
+	bool bankrupt;
 	int throw_;
 	int position;
 	int balance;
@@ -289,7 +289,7 @@ class player
 		this->position = 0;
 		this->round = 1;
 		this->rent_elig = true;
-		this->bankurupt = false;
+		this->bankrupt = false;
 		this->blocks_covered = 0;
 		this->number_of_colour_tickets = 0;
 	}
