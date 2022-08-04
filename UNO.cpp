@@ -85,26 +85,26 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
 
         case 8:
                 current_player->balance += (sizeof(players)/sizeof(int) - 1)*200;
-                TRANSACTION((sizeof(players)/sizeof(int) - 1)*200);
+                TRANSACTION(((sizeof(players)/sizeof(int)) - 1)*200);
                 blocks[18]->visits++;
 
                 //for first UNO
                 if(current_player->position == 4)
                 {
                     current_player->blocks_covered += 14;
-                    current_player->position = (current_player->blocks_covered%36);
-                    current_player->rounds.push_back(current_player->blocks_covered/36);
                 }
 
                 //for second UNO
                 else
                 {
-                    current_player->blocks_covered += 29;
-                    current_player->position = (current_player->blocks_covered%36);
-                    current_player->rounds.push_back(current_player->blocks_covered/36);
+                    current_player->blocks_covered += 29;    
                     current_player->balance += 2000; //we know the player crossed start.
                 }
-
+                
+                current_player->rounds.push_back(current_player->blocks_covered/36);
+                current_player->round = current_player->rounds.back();
+                current_player->position = (current_player->blocks_covered%36);
+                
                 for(int i=0; i<sizeof(players)/sizeof(int); i++)
                 {
                     if(i != current_player->player_number)
