@@ -43,7 +43,10 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
             current_player->position = (current_player->blocks_covered%36);
 
             //updating the rounds
-            current_player->rounds.push_back(current_player->blocks_covered/36); 
+            current_player->rounds.push_back(current_player->blocks_covered/36);
+
+            //calling the mortgage function 
+            mortgage(current_player, blocks, number_of_players); 
             break;
 
         case 4:     //2500 credit
@@ -54,6 +57,9 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
         case 5:     //2500 debit
                 current_player->balance -= 2500;
                 TRANSACTION(-2500);
+
+                //calling the mortgage function 
+                mortgage(current_player, blocks, number_of_players);
                 break;
 
         case 6:
@@ -62,7 +68,7 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
                 break;
         
         case 7:
-                if(rand_bool())
+                if(rand_bool() && (current_player->balance > 5000))
                 {
                     current_player->balance -= 5000;
                     TRANSACTION(-5000);                 
@@ -72,6 +78,9 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
                     current_player->rent_elig = false;
                     current_player->last_time_at_uno = current_player->blocks_covered;
                 }
+
+                //calling the mortgage function 
+                mortgage(current_player, blocks, number_of_players);
                 break;
 
         case 8:
@@ -124,24 +133,32 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
                             TRANSACTION(-250);
                     }   
                 }
+
+                //calling the mortgage function 
+                mortgage(current_player, blocks, number_of_players);
                 break;
 
         case 10:
                 current_player->balance += 1500;
                 TRANSACTION(1500);
-                break;
 
         case 11:
                 current_player->balance -= 1500;
                 TRANSACTION(-1500);
+
+                //calling the mortgage function 
+                mortgage(current_player, blocks, number_of_players);
                 break;
 
         case 12:
                 current_player->balance += 3000;
                 TRANSACTION(3000);
+
+                //calling the mortgage function 
+                mortgage(current_player, blocks, number_of_players);
                 break;
     }
-
-    //calling the mortgage function of current player
-    mortgage(current_player, blocks, number_of_players);
+                
 }
+
+    
