@@ -19,8 +19,12 @@ void party_house_class::transaction(vector<player *> players,player *current_pla
 		blocks[current_player->position]->visits++;
 		current_player->balance += (number_of_players - 1)*200;
 		TRANSACTION((number_of_players - 1)*200);
-		for(int i=0; i<number_of_players && i != current_player->player_number; i++)
+		for(int i=0; i<number_of_players; i++)
 			{
+				if(i == current_player->player_number)
+				{
+					continue;
+				}
 				players[i]->balance -= 200;
 				players[i]->transactions.push_back(-200);
 				
