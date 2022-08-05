@@ -13,15 +13,26 @@
 */
 
 #include<iostream>
-#include<cstdlib>
-#include<ctime>
-#include "class_definitions.h"
-int rand_throw()
+#include<random>
+#include<chrono>
+int rand_throw(int x)
 {
-    srand(time(0));
+    using namespace std::chrono;
     int dice1;
     int dice2;
-    dice1 = (1 + (rand() % 6));
-    dice2 = (1 + (rand() % 6));
-    return dice1 + dice2;
+
+    //Initialise the seed value using the system clock from the chrono header.
+    unsigned seed = system_clock::now().time_since_epoch().count();
+
+    //We are using the merienne twister mt19937 engine 
+    std::mt19937 generator (seed);
+
+    //first dice
+    dice1 = (generator()%6) + 1;
+
+    //second dice
+    dice2 = (generator()%6) + 1;
+
+    //We are goung ton generate a random number between 1 and 6
+    return dice1 + dice2; 
 }

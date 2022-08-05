@@ -1,7 +1,7 @@
 /*  This function generates a random boolean.
     ---------------------------------------------------------------------------
     ALGORITHM:
-    ---> Generate a random integer using the rand() of the cstdlib library
+    ---> Generate a random integer using the merriene twister method of the random library
     ---> Divide the number by 2.
     ---> IF (reminder is 0):
         ---> return true
@@ -10,13 +10,20 @@
 */
 
 #include<iostream>
-#include "class_definitions.h"
-bool rand_bool()
+#include<random>
+#include<chrono>
+bool rand_bool(int x)
 {
-    int decider;
-    decider = rand() % 2;   //This generates random numbers. We divide those numbers by 2. If the number is odd, return false. else return true
+    using namespace std::chrono;
 
-    if(decider == 0)
+    //Initialise the seed value using the system clock from the chrono header.
+    unsigned seed = system_clock::now().time_since_epoch().count();
+
+    //We are using the merienne twister mt19937 engine 
+    std::mt19937 generator (seed);
+
+    //if the generated number is even, return true. Else return false
+    if((generator() % 2) == 0)
     return true;
 
     else

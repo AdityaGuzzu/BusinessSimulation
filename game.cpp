@@ -10,7 +10,6 @@
 #include "rand_throw.cpp"
 #include "randbool.cpp"
 #include "resort.cpp"
-#include "search.cpp"
 #include "start.cpp"
 #include "travelling_duty.cpp"
 #include "UNO.cpp"
@@ -268,10 +267,11 @@ int main()
 	} 
 
 	//space enhancement
-	players.shrink_to_fit();
+	//players.shrink_to_fit();
 	
 	//Simulation starts.
-	while(num_of_players>0)
+	int j=0;
+	while(j < 10 )
 	{
 		for(int this_player =0; this_player<num_of_players; this_player++)
 		{
@@ -286,7 +286,7 @@ int main()
 			}
 
 			//throw
-			current_player->throw_ = rand_throw();
+			current_player->throw_ = rand_throw(current_player->blocks_covered);
 
 			//Update all throw related variables and vectors
 			after_throw(current_player);
@@ -370,9 +370,9 @@ int main()
 				{
 					//debit the money from current player
 					current_player->balance -= CURRENT_TICKET->current_rent;
-					TRANSACTION(-CURRENT_TICKET->current_rent);
+					TRANSACTION((-1)*CURRENT_TICKET->current_rent);
 					mortgage(current_player, blocks, num_of_players_ref);
-
+				
 					//credit the money to the respective player
 					players[CURRENT_TICKET->owner_num] += CURRENT_TICKET->current_rent;
 					players[CURRENT_TICKET->owner_num]->transactions.push_back(CURRENT_TICKET->current_rent);
@@ -382,8 +382,11 @@ int main()
 				else
 				{
 					//If the player has enough money, the decision is taken randomly
-					if(rand_bool() && (current_player->balance > CURRENT_TICKET->ticket_cost))
+					if(rand_bool(current_player->blocks_covered) && (current_player->balance > CURRENT_TICKET->ticket_cost))
 					{
+						//debit the ticket price from the player's balance
+						current_player->balance -= CURRENT_TICKET->ticket_cost;
+
 						//setting the owner number of the ticket to the player number
 						CURRENT_TICKET->owner_num = current_player->player_number;
 
@@ -408,7 +411,7 @@ int main()
 
 				//Time to construct houses:
 				#define TICKET_ITER blocks[current_player->position_of_tickets_owned[i]]
-				while(rand_bool() && (current_player->balance > 0))
+				while(rand_bool(current_player->blocks_covered) && (current_player->balance > 0))
 				{
 					for(int i=0; i<current_player->position_of_tickets_owned.size(); i++ )
 					{
@@ -423,16 +426,16 @@ int main()
 				}
 			}
 
-		cout<<endl<<"Player number: "<<this_player+1;
-		cout<<endl<<"Throw: "<<current_player->throw_;
-		cout<<endl<<"Balance: "<<current_player->balance;
-		cout<<endl<<"Tickets Owned:\n ";
-		for(int i=0;i<current_player->position_of_tickets_owned.size(); i++)
-		{
-			cout<<"\t"<<blocks[current_player->position_of_tickets_owned[i]]->name;
-		}
-
-		}		
+			cout<<endl<<"Player number: "<<this_player+1;
+			cout<<endl<<"Throw: "<<current_player->throw_;
+			cout<<endl<<"Balance: "<<current_player->balance;
+			cout<<endl<<"Tickets Owned:\n ";
+			for(int i=0;i<current_player->position_of_tickets_owned.size(); i++)
+			{
+				cout<<"\t"<<blocks[current_player->position_of_tickets_owned[i]]->name;
+			}
+		}	
+		j++;	
 	}
 	
 }

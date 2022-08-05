@@ -68,7 +68,7 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
                 break;
         
         case 7:
-                if(rand_bool() && (current_player->balance > 5000))
+                if(rand_bool(current_player->position) && (current_player->balance > 5000))
                 {
                     current_player->balance -= 5000;
                     TRANSACTION(-5000);                 
