@@ -85,6 +85,62 @@ class block
 	}
 };
 
+   /*	PLAYER CLASS ATTRIBUTES
+   ----------------------------------------------------------------------------------------
+
+    MEMBER VARIABLES:
+	1.) A vector of throws which will be appended everytime he/she throws.		(int vector)
+	2.) A vector which keeps track of all his transactions						(int vector)
+	3.) A variable which contains the number of blocks he covered 				(int)
+	5.) A member variable which 
+	8.) Balance of the player													(int)
+	9.) Position of the player													(int)
+	10.) A variable which contains the number of colour tickets					(int)							
+	12.) A vector to keep track of the rounds player is in						(int vector)
+	13.) Name of the player 													(string)
+	14.) A variable which tells if a player is bankrupt 						(boolean)
+	15.) A variable which tells the number of the player						(int)
+	---------------------------------------------------------------------------------------
+	MEMBER FUNCTIONS:
+	
+	1.) A parameterised constructor 
+		-----------------------------
+		PARAMETERS:
+		---> player number 		(int)
+		---> initial balance	(int)
+*/
+
+class player
+{
+	public:
+	std::vector<int> throws;
+	std::vector<int> transactions;
+	std::vector<int> rounds;
+	std::vector<int> position_of_tickets_owned;
+	std::vector<int> position_of_tickets_sold;
+	int number_of_colour_tickets;
+	int player_number;
+	bool rent_elig;
+	bool bankrupt;
+	int throw_;
+	int position;
+	int balance;
+	int round;
+	int last_time_at_uno;
+	int blocks_covered;
+	std::string name;
+	player(int player_number, int balance)
+	{
+		this->balance = balance;
+		this->player_number = player_number;
+		this->position = 0;
+		this->round = 1;
+		this->rent_elig = true;
+		this->bankrupt = false;
+		this->blocks_covered = 0;
+		this->number_of_colour_tickets = 0;
+	}
+};
 
 /*The class UNO will have several member functions as well. 
   They will take care of transactions whenever a player enters UNO 
@@ -234,65 +290,6 @@ class travelling_duty_class: public block
 {
 	public:
 	void transaction(player *current_player, int &number_of_players, block *blocks[]);
-};
-
-
-				
-   /*	PLAYER CLASS ATTRIBUTES
-   ----------------------------------------------------------------------------------------
-
-    MEMBER VARIABLES:
-	1.) A vector of throws which will be appended everytime he/she throws.		(int vector)
-	2.) A vector which keeps track of all his transactions						(int vector)
-	3.) A variable which contains the number of blocks he covered 				(int)
-	5.) A member variable which 
-	8.) Balance of the player													(int)
-	9.) Position of the player													(int)
-	10.) A variable which contains the number of colour tickets					(int)							
-	12.) A vector to keep track of the rounds player is in						(int vector)
-	13.) Name of the player 													(string)
-	14.) A variable which tells if a player is bankrupt 						(boolean)
-	15.) A variable which tells the number of the player						(int)
-	---------------------------------------------------------------------------------------
-	MEMBER FUNCTIONS:
-	
-	1.) A parameterised constructor
-		-----------------------------
-		PARAMETERS:
-		---> player number 		(int)
-		---> initial balance	(int)
-  
-*/
-class player
-{
-	public:
-	std::vector<int> throws;
-	std::vector<int> transactions;
-	std::vector<int> rounds;
-	std::vector<int> position_of_tickets_owned;
-	std::vector<int> position_of_tickets_sold;
-	int number_of_colour_tickets;
-	int player_number;
-	bool rent_elig;
-	bool bankrupt;
-	int throw_;
-	int position;
-	int balance;
-	int round;
-	int last_time_at_uno;
-	int blocks_covered;
-	std::string name;
-	player(int player_number, int balance)
-	{
-		this->balance = balance;
-		this->player_number = player_number;
-		this->position = 0;
-		this->round = 1;
-		this->rent_elig = true;
-		this->bankrupt = false;
-		this->blocks_covered = 0;
-		this->number_of_colour_tickets = 0;
-	}
 };
 
 /*	The following function is called whenever a player buys or sells a white ticket.
