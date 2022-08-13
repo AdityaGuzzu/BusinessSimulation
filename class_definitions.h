@@ -63,7 +63,7 @@ class block
 		this->current_rent = basic_rent;
 		this->mortgage_value = mortgage_value;
 		this->owner_num = -1;		//when a ticket is created, its not owned by anyone.
-		this->colour = colour;
+		this->colour = true;
 		this->house_cost = house_cost;
 		this->number_of_houses = 0;
 		for(int i=0; i<4; i++)
@@ -79,7 +79,7 @@ class block
 		this->ticket_cost = ticket_cost;
 		this->basic_rent = basic_rent;
 		this->mortgage_value = mortgage_value;
-		this->colour = colour;
+		this->colour = false;
 		this->owner_num = -1;		//when a ticket is created, its not owned by anyone.
 		this->current_rent = basic_rent;
 	}
@@ -389,7 +389,8 @@ bool rand_bool();
 void UNO_seven(player *current_player);
 
 
-/* The rand throw function will generate two random dice throws and return their sum 
+/* 	The rand throw function will generate two random dice throws and return their sum 
+	it uses the Merienne Twister method
 	----------------------------------------------------------------------------------
 	PARAMETERS:
 	---> NONE
@@ -400,6 +401,19 @@ void UNO_seven(player *current_player);
 
 
 int rand_throw();
+
+
+/*	The random number generator function will generate a random number between 0 and a 
+	given argument n and return that random number 
+	-----------------------------------------------------------------------------------
+	PARAMETERS:
+	---> Upper limit			(int)
+	-----------------------------------------------------------------------------------
+	RETURN VALUE:
+	---> INT
+*/
+
+int randnum(int upp_lim);
 
 
 

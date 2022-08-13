@@ -17,7 +17,7 @@ bool rand_bool(int x)
     using namespace std::chrono;
 
     //Initialise the seed value using the system clock from the chrono header.
-    unsigned seed = system_clock::now().time_since_epoch().count();
+    unsigned int seed = system_clock::now().time_since_epoch().count();
 
     //We are using the merienne twister mt19937 engine 
     std::mt19937 generator (seed);

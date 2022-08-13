@@ -15,6 +15,7 @@
 #include "UNO.cpp"
 #include "UNOseven.cpp"
 #include "white_double_rent.cpp"
+#include "randnum.cpp"
 #include<cstdlib>
 #include<ctime>
 #define POSITION current_player->position
@@ -267,7 +268,7 @@ int main()
 	} 
 
 	//space enhancement
-	//players.shrink_to_fit();
+	players.shrink_to_fit();
 	
 	//Simulation starts.
 	int j=0;
@@ -369,10 +370,19 @@ int main()
 				if(OWNER_NUMBER != -1 && OWNER_NUMBER != current_player->player_number)
 				{
 					//debit the money from current player
-					current_player->balance -= CURRENT_TICKET->current_rent;
+					current_player->balance -= blocks[current_player->position]->current_rent;
+					try
+					{
+						if(current_player->balance < 0)
+						throw current_player->balance;
+					}
+					catch(int x)
+					{
+						cerr<<"\nError in line 372";
+					}
 					TRANSACTION((-1)*CURRENT_TICKET->current_rent);
 					mortgage(current_player, blocks, num_of_players_ref);
-				
+
 					//credit the money to the respective player
 					players[CURRENT_TICKET->owner_num] += CURRENT_TICKET->current_rent;
 					players[CURRENT_TICKET->owner_num]->transactions.push_back(CURRENT_TICKET->current_rent);
@@ -382,19 +392,24 @@ int main()
 				else
 				{
 					//If the player has enough money, the decision is taken randomly
-					if(rand_bool(current_player->blocks_covered) && (current_player->balance > CURRENT_TICKET->ticket_cost))
+				
+					if(rand_bool(current_player->blocks_covered) && ((current_player->balance) > (blocks[POSITION]->ticket_cost)))
 					{
+						std::cout<<std::endl<<"Current player's position is "<<current_player->position;
 						//debit the ticket price from the player's balance
-						current_player->balance -= CURRENT_TICKET->ticket_cost;
+						current_player->balance -= blocks[POSITION]->ticket_cost;
+
+						if(current_player->balance < 0 || current_player->balance > 100000)
+						cout<<endl<<"Buying ticket";
 
 						//setting the owner number of the ticket to the player number
-						CURRENT_TICKET->owner_num = current_player->player_number;
+						blocks[POSITION]->owner_num = current_player->player_number;
 
 						//Adding the position to the position of tickets owned by the player
-						current_player->position_of_tickets_owned.push_back(current_player->position);
+						current_player->position_of_tickets_owned.push_back(POSITION);
 
 						//if the ticket bought is a colour one:
-						if(CURRENT_TICKET->colour)
+						if(blocks[POSITION]->colour)
 						{
 							colour_double_rent(current_player,blocks);
 							current_player->number_of_colour_tickets ++;
@@ -411,22 +426,39 @@ int main()
 
 				//Time to construct houses:
 				#define TICKET_ITER blocks[current_player->position_of_tickets_owned[i]]
-				while(rand_bool(current_player->blocks_covered) && (current_player->balance > 0))
+				while(rand_bool(current_player->blocks_covered) && (current_player->number_of_colour_tickets > 0))
 				{
-					for(int i=0; i<current_player->position_of_tickets_owned.size(); i++ )
-					{
-						if(!TICKET_ITER->colour)
+						
+						//We will generate a random number between [0,number of tickets owned by the player)
+						int i = randnum(current_player->position_of_tickets_owned.size());
+
+						if(blocks[current_player->position_of_tickets_owned[i]]->colour || blocks[current_player->position_of_tickets_owned[i]]->number_of_houses == 4)
 						{
 							continue;
 						}
-						current_player->balance -= TICKET_ITER->house_cost;
+						
+						try
+						{
+							if(current_player->balance < TICKET_ITER->house_cost)
+							throw current_player->balance;
+
+							else
+							current_player->balance -= TICKET_ITER->house_cost;
+							cout<<endl<<endl<<"House constructed in "<<blocks[current_player->position]->name;
+						}
+						catch(int)
+						{
+							continue;
+						}
 						TICKET_ITER->number_of_houses ++;
-						TICKET_ITER->current_rent = TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
+						TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
 					}
-				}
+				
 			}
 
+			
 			cout<<endl<<"Player number: "<<this_player+1;
+			cout<<"\n\nBlocks Covered = "<<current_player->blocks_covered;
 			cout<<endl<<"Throw: "<<current_player->throw_;
 			cout<<endl<<"Balance: "<<current_player->balance;
 			cout<<endl<<"Tickets Owned:\n ";
@@ -434,6 +466,8 @@ int main()
 			{
 				cout<<"\t"<<blocks[current_player->position_of_tickets_owned[i]]->name;
 			}
+			
+			
 		}	
 		j++;	
 	}
