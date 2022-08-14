@@ -307,11 +307,7 @@ int main()
 			//For general blocks
 			if(blocks[current_player->position]->block_type == "general")
 			{
-				//is position is start
-				if(POSITION == 0)
-				{
-					start.transaction(current_player, blocks[0]);
-				}
+				//We don't need to call the start transcation function as its called immediately after the throw of dice.
 
 				//if position is UNO_4
 				if(POSITION == 4)
@@ -461,9 +457,9 @@ int main()
 			std::cout<<endl<<"Throw: "<<current_player->throw_;
 			std::cout<<endl<<"Balance: "<<current_player->balance;
 			std::cout<<endl<<"Tickets Owned:\n ";
-			for(int i=0;i<current_player->position_of_tickets_owned.size(); i++)
+			for(int k=0;k<current_player->position_of_tickets_owned.size(); k++)
 			{
-				std::cout<<"\t"<<blocks[current_player->position_of_tickets_owned[i]]->name;
+				std::cout<<"\t"<<blocks[current_player->position_of_tickets_owned[k]]->name;
 			}	
 		}	
 		j++;	
