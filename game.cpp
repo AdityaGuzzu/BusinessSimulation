@@ -278,8 +278,8 @@ int main()
 		{
 			//to make the program more readable
 			player *current_player = players[this_player];
-			cout<<endl<<"-------------------------------------------------------------------";
-			cout<<endl<<"Player number: "<<this_player+1;
+			std::cout<<std::endl<<"-------------------------------------------------------------------";
+			std::cout<<std::endl<<"Player number: "<<this_player+1;
 
 			//If the player is bankrupt
 			if(current_player->bankrupt)
@@ -405,7 +405,7 @@ int main()
 						current_player->balance -= blocks[POSITION]->ticket_cost;
 
 						if(current_player->balance < 0 || current_player->balance > 100000)
-						cout<<endl<<"Buying ticket";
+						std::cout<<endl<<"Buying ticket";
 
 						//setting the owner number of the ticket to the player number
 						blocks[POSITION]->owner_num = current_player->player_number;
@@ -431,52 +431,40 @@ int main()
 
 				//Time to construct houses:
 				#define TICKET_ITER blocks[current_player->position_of_tickets_owned[j]]
+
+				//rand bool has an integer as an argument so we just pass a random integer like blocks covered which has no relevance to the program
 				while(rand_bool(current_player->blocks_covered) && (current_player->number_of_colour_tickets > 0))
 				{
 						
 						//We will generate a random number between [0,number of tickets owned by the player)
 						int j = randnum(current_player->position_of_tickets_owned.size());
 
-						if(!TICKET_ITER->colour || TICKET_ITER->number_of_houses == 4)
+						if(!(TICKET_ITER->colour) || TICKET_ITER->number_of_houses == 4 || current_player->balance < TICKET_ITER->house_cost)
 						{
 							continue;
 						}
 						
-						try
+						else
 						{
-							if(current_player->balance < TICKET_ITER->house_cost)
-							throw current_player->balance;
-
-							else
-							{
-							current_player->balance -= TICKET_ITER->house_cost;
-							cout<<endl<<"House constructed in "<<TICKET_ITER->name;
-							TICKET_ITER->number_of_houses ++;
-							TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
-							}
-							
+						current_player->balance -= TICKET_ITER->house_cost;
+						std::cout<<std::endl<<"House constructed in "<<TICKET_ITER->name;
+						TICKET_ITER->number_of_houses ++;
+						TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
 						}
-						catch(int)
-						{
-							continue;
-						}
+								
 						
 				}
 				
 			}
 
-			
-			
-			cout<<"\n\nBlocks Covered = "<<current_player->blocks_covered;
-			cout<<endl<<"Throw: "<<current_player->throw_;
-			cout<<endl<<"Balance: "<<current_player->balance;
-			cout<<endl<<"Tickets Owned:\n ";
+			std::cout<<"\n\nBlocks Covered = "<<current_player->blocks_covered;
+			std::cout<<endl<<"Throw: "<<current_player->throw_;
+			std::cout<<endl<<"Balance: "<<current_player->balance;
+			std::cout<<endl<<"Tickets Owned:\n ";
 			for(int i=0;i<current_player->position_of_tickets_owned.size(); i++)
 			{
-				cout<<"\t"<<blocks[current_player->position_of_tickets_owned[i]]->name;
-			}
-			
-			
+				std::cout<<"\t"<<blocks[current_player->position_of_tickets_owned[i]]->name;
+			}	
 		}	
 		j++;	
 	}
