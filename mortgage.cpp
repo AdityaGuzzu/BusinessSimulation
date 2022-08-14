@@ -12,7 +12,7 @@
     ALGORITHM:
     ---> Declare int money_raised 
     ---> money_raised = 0
-    ---> WHILE (deficit - money_raised) <= 0 AND number of tickets owned by the player > 0:
+    ---> WHILE (current balance) <= 0 AND number of tickets owned by the player > 0:
         ---> Initialise a variable ticket_position
         ---> Select the last element of positions of tickets owned vector
         ---> Initialise ticket_position with the lase element.
@@ -40,13 +40,13 @@ void mortgage(player *current_player, block *blocks[], int &number_of_players)
 {
     if(current_player->balance < 0)
     {
-
-    
         while((current_player->balance < 0) && current_player->position_of_tickets_owned.size() > 0 )
         {
             int ticket_position;
             int mort_val;
-            ticket_position = current_player->position_of_tickets_owned.back();      //last element of positions of tickets owned
+            //choosing the ticket to be sold randomly
+            ticket_position = randnum(current_player->position_of_tickets_owned.size()); 
+
             mort_val = blocks[ticket_position]->mortgage_value;
             TRANSACTION(mort_val);
             current_player->balance += mort_val;
@@ -65,12 +65,12 @@ void mortgage(player *current_player, block *blocks[], int &number_of_players)
                 white_double_rent(blocks,current_player);
             }
 
-            if((current_player->balance) < 0 )
-            {
-                //The player is bankrupt now. Number of players must be decremeneted
-                current_player->bankrupt = true;
-                number_of_players --;
-            }
+        }
+        if((current_player->balance) < 0 )
+        {
+            //The player is bankrupt now. Number of players must be decremeneted
+            current_player->bankrupt = true;
+            number_of_players -= 1;
         }
     }
 }

@@ -48,6 +48,7 @@ class block
 
 	block()
 	{
+
 		block_type = "general";
 		owner_num = -1;			//A geenral ticket is not owned by anyone.
 	}
@@ -64,7 +65,7 @@ class block
 		this->mortgage_value = mortgage_value;
 		this->owner_num = -1;		//when a ticket is created, its not owned by anyone.
 		this->colour = true;
-		this->house_cost = house_cost;
+		this->house_cost = house_costs;
 		this->number_of_houses = 0;
 		for(int i=0; i<4; i++)
 		{
