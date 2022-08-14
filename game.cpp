@@ -278,6 +278,8 @@ int main()
 		{
 			//to make the program more readable
 			player *current_player = players[this_player];
+			cout<<endl<<"-------------------------------------------------------------------";
+			cout<<endl<<"Player number: "<<this_player+1;
 
 			//If the player is bankrupt
 			if(current_player->bankrupt)
@@ -291,6 +293,9 @@ int main()
 
 			//Update all throw related variables and vectors
 			after_throw(current_player);
+
+			//Call the start function
+			start.transaction(current_player,blocks[0]);
 
 			//if player is not eligible for rent
 			if(!current_player->rent_elig)
@@ -425,14 +430,14 @@ int main()
 				}
 
 				//Time to construct houses:
-				#define TICKET_ITER blocks[current_player->position_of_tickets_owned[i]]
+				#define TICKET_ITER blocks[current_player->position_of_tickets_owned[j]]
 				while(rand_bool(current_player->blocks_covered) && (current_player->number_of_colour_tickets > 0))
 				{
 						
 						//We will generate a random number between [0,number of tickets owned by the player)
-						int i = randnum(current_player->position_of_tickets_owned.size());
+						int j = randnum(current_player->position_of_tickets_owned.size());
 
-						if(blocks[current_player->position_of_tickets_owned[i]]->colour || blocks[current_player->position_of_tickets_owned[i]]->number_of_houses == 4)
+						if(!TICKET_ITER->colour || TICKET_ITER->number_of_houses == 4)
 						{
 							continue;
 						}
@@ -443,21 +448,25 @@ int main()
 							throw current_player->balance;
 
 							else
+							{
 							current_player->balance -= TICKET_ITER->house_cost;
-							cout<<endl<<endl<<"House constructed in "<<blocks[current_player->position]->name;
+							cout<<endl<<"House constructed in "<<TICKET_ITER->name;
+							TICKET_ITER->number_of_houses ++;
+							TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
+							}
+							
 						}
 						catch(int)
 						{
 							continue;
 						}
-						TICKET_ITER->number_of_houses ++;
-						TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
-					}
+						
+				}
 				
 			}
 
 			
-			cout<<endl<<"Player number: "<<this_player+1;
+			
 			cout<<"\n\nBlocks Covered = "<<current_player->blocks_covered;
 			cout<<endl<<"Throw: "<<current_player->throw_;
 			cout<<endl<<"Balance: "<<current_player->balance;
@@ -471,5 +480,5 @@ int main()
 		}	
 		j++;	
 	}
-	
+
 }
