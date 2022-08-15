@@ -66,6 +66,7 @@ int main()
 
 	//Passing the address of start object as the first element
 	blocks[0] = &start;
+	start.name = "Start";
 
 	//ENGLAND
 	{
@@ -85,6 +86,7 @@ int main()
 
 	//UNO_4
 	blocks[4] = &uno_4;
+	uno_4.name = "UNO";
 
 	//FRANCE
 	{
@@ -127,6 +129,7 @@ int main()
 
 	//CUSTOMS DUTY
 	blocks[13] = &customs_duty;
+	customs_duty.name = "Customs Duty";
 
 	//SWITZERLAND
 	{
@@ -142,6 +145,7 @@ int main()
 
 	//CHANCE
 	blocks[16] = &chance_16;
+	chance_16.name = "Chance";
 
 	//ITALY
 	{
@@ -151,6 +155,7 @@ int main()
 
 	//PARTY HOUSE
 	blocks[18] = &party_house;
+	party_house.name = "Party House";
 
 	//JAPAN
 	{
@@ -166,6 +171,7 @@ int main()
 
 	//TRAVELLING DUTY
 	blocks[21] = &travelling_duty;
+	travelling_duty.name = "Travelling Duty";
 
 	//ROADWAYS
 	blocks[22] = new block("Roadways", 3500, 800, 1800, false);
@@ -184,6 +190,7 @@ int main()
 
 	//UNO
 	blocks[25] = &uno_25;
+	uno_25.name = "UNO";
 
 	//AUSTRALIA
 	{
@@ -193,6 +200,7 @@ int main()
 
 	//JAIL
 	blocks[27] = &jail;
+	jail.name = "Jail";
 
 	//INDIA
 	{
@@ -202,6 +210,7 @@ int main()
 
 	//CHANCE
 	blocks[29] = &chance_29;
+	chance_29.name = "Chance";
 
 	//SAUDI ARABIA
 	{
@@ -271,8 +280,8 @@ int main()
 	players.shrink_to_fit();
 	
 	//Simulation starts.
-	int j=0;
-	while(j < 10 )
+	//int j=0;
+	while(num_of_players > 1)
 	{
 		for(int this_player =0; this_player<num_of_players; this_player++)
 		{
@@ -280,6 +289,7 @@ int main()
 			player *current_player = players[this_player];
 			std::cout<<std::endl<<"-------------------------------------------------------------------";
 			std::cout<<std::endl<<"Player number: "<<this_player+1;
+			
 
 			//If the player is bankrupt
 			if(current_player->bankrupt)
@@ -293,6 +303,9 @@ int main()
 
 			//Update all throw related variables and vectors
 			after_throw(current_player);
+			std::cout<<std::endl<<"Player is in :"<<blocks[current_player->position]->name;
+			std::cout<<"\n\nBlocks Covered = "<<current_player->blocks_covered;
+			std::cout<<endl<<"Throw: "<<current_player->throw_;
 
 			//Call the start function
 			start.transaction(current_player,blocks[0]);
@@ -371,21 +384,13 @@ int main()
 				if(OWNER_NUMBER != -1 && OWNER_NUMBER != current_player->player_number)
 				{
 					//debit the money from current player
-					current_player->balance -= blocks[current_player->position]->current_rent;
-					try
-					{
-						if(current_player->balance < 0)
-						throw current_player->balance;
-					}
-					catch(int x)
-					{
-						cerr<<"\nError in line 372";
-					}
+					current_player->balance -= CURRENT_TICKET->current_rent;
+					std::cout<<std::endl<<"Paid "<<CURRENT_TICKET->current_rent<<" to player number "<<OWNER_NUMBER+1;
 					TRANSACTION((-1)*CURRENT_TICKET->current_rent);
 					mortgage(current_player, blocks, num_of_players_ref);
 
 					//credit the money to the respective player
-					players[CURRENT_TICKET->owner_num] += CURRENT_TICKET->current_rent;
+					players[CURRENT_TICKET->owner_num]->balance += CURRENT_TICKET->current_rent;
 					players[CURRENT_TICKET->owner_num]->transactions.push_back(CURRENT_TICKET->current_rent);
 				}
 
@@ -394,14 +399,13 @@ int main()
 				{
 					//If the player has enough money, the decision is taken randomly
 				
-					if(rand_bool(current_player->blocks_covered) && ((current_player->balance) > (blocks[POSITION]->ticket_cost)))
+					if(rand_bool(current_player->blocks_covered) && ((current_player->balance) > (blocks[POSITION]->ticket_cost)) && OWNER_NUMBER != current_player->player_number)
 					{
 						std::cout<<std::endl<<"Current player's position is "<<current_player->position;
 						//debit the ticket price from the player's balance
 						current_player->balance -= blocks[POSITION]->ticket_cost;
 
-						if(current_player->balance < 0 || current_player->balance > 100000)
-						std::cout<<endl<<"Buying ticket";
+	
 
 						//setting the owner number of the ticket to the player number
 						blocks[POSITION]->owner_num = current_player->player_number;
@@ -453,8 +457,7 @@ int main()
 				
 			}
 
-			std::cout<<"\n\nBlocks Covered = "<<current_player->blocks_covered;
-			std::cout<<endl<<"Throw: "<<current_player->throw_;
+			
 			std::cout<<endl<<"Balance: "<<current_player->balance;
 			std::cout<<endl<<"Tickets Owned:\n ";
 			for(int k=0;k<current_player->position_of_tickets_owned.size(); k++)
@@ -462,7 +465,18 @@ int main()
 				std::cout<<"\t"<<blocks[current_player->position_of_tickets_owned[k]]->name;
 			}	
 		}	
-		j++;	
+	}
+	
+	std::cout<<"---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
+	//deleting pointers
+	for(int i=0; i<36; i++)
+	{
+		delete blocks[i];
 	}
 
+	for(int i=0; i<players.size(); i++)
+	{
+		delete players[i];
+	}
+	
 }

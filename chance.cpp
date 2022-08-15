@@ -58,7 +58,7 @@ void chance_class::transaction(vector<player *> players, player *current_player,
 			TRANSACTION(-500);
 			if(current_player->position == 16)
 			{
-				current_player->blocks_covered += 9;
+				current_player->blocks_covered += 11;
 				current_player->rounds.push_back(current_player->blocks_covered / 36);
 				current_player->round = current_player->rounds.back();
 			}
