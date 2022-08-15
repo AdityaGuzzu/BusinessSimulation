@@ -307,6 +307,7 @@ int main()
 
 			//Update all throw related variables and vectors
 			after_throw(current_player);
+			
 			std::cout<<std::endl<<"Player is in :"<<blocks[current_player->position]->name;
 			std::cout<<"\n\nBlocks Covered = "<<current_player->blocks_covered;
 			std::cout<<endl<<"Throw: "<<current_player->throw_;
