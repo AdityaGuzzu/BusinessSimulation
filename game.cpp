@@ -287,7 +287,7 @@ int main()
 	//int j=0;
 	while(num_of_players > 1)
 	{
-		for(int this_player =0; this_player<org_num_of_players; this_player++)
+		for(int this_player =0; this_player<org_num_of_players && num_of_players > 1; this_player++)
 		{
 			//to make the program more readable
 			player *current_player = players[this_player];
