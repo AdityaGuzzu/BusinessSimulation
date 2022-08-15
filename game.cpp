@@ -245,6 +245,9 @@ int main()
 	//A variable to stor the number of players
 	int num_of_players;
 
+	//original number of players
+	int org_num_of_players;
+
 	//lets create a reference to number of players 
 	int &num_of_players_ref = num_of_players;
 
@@ -259,6 +262,7 @@ int main()
 		{
 			throw num_of_players;
 		}
+		org_num_of_players = num_of_players;
 	}
 
 	catch(int)
@@ -283,7 +287,7 @@ int main()
 	//int j=0;
 	while(num_of_players > 1)
 	{
-		for(int this_player =0; this_player<num_of_players; this_player++)
+		for(int this_player =0; this_player<org_num_of_players; this_player++)
 		{
 			//to make the program more readable
 			player *current_player = players[this_player];
