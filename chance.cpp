@@ -1,5 +1,5 @@
 #include "class_definitions.h"
-void chance_class::transaction(vector<player *> players, player *current_player, int &number_of_players, block *blocks[])
+void chance_class::transaction(vector<player *> players, player *current_player,int org_num_of_players ,int &number_of_players, block *blocks[])
 {
 		blocks[current_player->position]->visits ++;
 		switch(current_player->throw_)
@@ -32,9 +32,9 @@ void chance_class::transaction(vector<player *> players, player *current_player,
 		case 7:
 			current_player->balance += (current_player->number_of_colour_tickets)*number_of_players*100;
 			TRANSACTION((current_player->number_of_colour_tickets)*number_of_players*100);
-			for(int i=0;i<number_of_players;i++)
+			for(int i=0;i<org_num_of_players;i++)
 			{
-				if(i != current_player->player_number)
+				if(i != current_player->player_number && !players[i]->bankrupt)
 				{
 					players[i]->balance -= (current_player->number_of_colour_tickets)*100;
 					players[i]->transactions.push_back((current_player->number_of_colour_tickets)*(-100));

@@ -348,7 +348,7 @@ int main()
 				//If position is chance
 				if(POSITION == 16)
 				{
-					chance_16.transaction(players,current_player,num_of_players_ref,blocks);
+					chance_16.transaction(players,current_player,org_num_of_players,num_of_players_ref,blocks);
 				}
 
 				//If position is party house
@@ -378,7 +378,7 @@ int main()
 				//If positon is Chance29
 				if(POSITION == 29)
 				{
-					chance_29.transaction(players,current_player,num_of_players_ref,blocks);
+					chance_29.transaction(players,current_player,org_num_of_players,num_of_players_ref,blocks);
 				}
 			}
 

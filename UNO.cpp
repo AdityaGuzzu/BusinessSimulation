@@ -157,6 +157,7 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
                 //calling the mortgage function 
                 mortgage(current_player, blocks, number_of_players);
                 break;
+                
     }
                 
 }
