@@ -55,6 +55,7 @@ void mortgage(player *current_player, block *blocks[], int &number_of_players)
             current_player->position_of_tickets_owned.pop_back();
             if(blocks[ticket_position]->colour)
             {
+                current_player->number_of_colour_tickets -= 1;
                 blocks[ticket_position]->number_of_houses = 0;
                 blocks[ticket_position]->current_rent =blocks[ticket_position]->basic_rent;
                 colour_double_rent(current_player,blocks);
