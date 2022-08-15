@@ -71,6 +71,7 @@ void mortgage(player *current_player, block *blocks[], int &number_of_players)
             //The player is bankrupt now. Number of players must be decremeneted
             current_player->bankrupt = true;
             number_of_players -= 1;
+            std::cout<<std::endl<<"Player "<<current_player->player_number + 1<<" eliminated";
         }
     }
 }

@@ -193,6 +193,7 @@ class chance_class: public block
 	---> Current player's pointer					(player *[])
 	---> A reference to number of players			(&int)
 	---> An array of blocks 						(block *[])
+	---> Initial number of players					(int)
 	----------------------------------------------------------------------------
 	RETURN VALUE: 
 	--->NONE
@@ -201,7 +202,7 @@ class chance_class: public block
 class resort_class: public block
 {
 	public:
-	void transaction(vector<player *> players,player *current_player,int &number_of_players, block *blocks[]);
+	void transaction(vector<player *> players,player *current_player,int org_num_of_players, int &number_of_players, block *blocks[]);
 };
 
 /* the party house class contains a member function which credits 200*(number_of_players -1) from

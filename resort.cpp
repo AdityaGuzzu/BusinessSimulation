@@ -14,15 +14,15 @@
 	----------------------------------------------------------------------------
 */
 #include "class_definitions.h"
-void resort_class::transaction(vector<player *> players, player *current_player,int &number_of_players, block *blocks[])
+void resort_class::transaction(vector<player *> players, player *current_player,int org_num_of_players,int &number_of_players, block *blocks[])
 	{
 		blocks[current_player->position]->visits++;
 		current_player->balance -= (number_of_players - 1)*200;
 		TRANSACTION((number_of_players - 1)*(-200));
 		
-		for(int i=0; i<number_of_players; i++)
+		for(int i=0; i<org_num_of_players; i++)
 			{
-				if(i==current_player->player_number)
+				if(i==current_player->player_number || players[i]->bankrupt)
 				{
 					continue;
 				}

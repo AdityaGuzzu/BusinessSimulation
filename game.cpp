@@ -1,4 +1,5 @@
 /*The main file where actual simulation takes place */
+
 #include "class_definitions.h"
 #include "after_throw.cpp"
 #include "chance.cpp"
@@ -307,11 +308,10 @@ int main()
 
 			//Update all throw related variables and vectors
 			after_throw(current_player);
-			
-			std::cout<<std::endl<<"Player is in :"<<blocks[current_player->position]->name;
-			std::cout<<"\n\nBlocks Covered = "<<current_player->blocks_covered;
 			std::cout<<endl<<"Throw: "<<current_player->throw_;
-
+			std::cout<<std::endl<<"Player is in :"<<blocks[current_player->position]->name;
+			std::cout<<"\nBlocks Covered = "<<current_player->blocks_covered;
+			
 			//Call the start function
 			start.transaction(current_player,blocks[0]);
 
@@ -336,7 +336,7 @@ int main()
 				//If position is resort
 				if(POSITION == 9)
 				{
-					resort.transaction(players, current_player, num_of_players_ref, blocks);
+					resort.transaction(players, current_player, org_num_of_players,num_of_players_ref, blocks);
 				}
 
 				//If position is customs duty
@@ -472,7 +472,7 @@ int main()
 		}	
 	}
 	
-	std::cout<<"---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
+	std::cout<<"\n---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
 	//deleting pointers
 	for(int i=0; i<36; i++)
 	{
