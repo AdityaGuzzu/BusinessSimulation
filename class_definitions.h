@@ -221,7 +221,7 @@ class resort_class: public block
 class party_house_class: public block
 {
 	public:
-	void transaction(vector<player *> players, player *current_player,int &number_of_players, block *blocks[]);
+	void transaction(vector<player *> players, player *current_player,int org_num_of_players,int &number_of_players, block *blocks[]);
 };
 
 /* The jail class contains a member function which just debits 500 when the player enters 

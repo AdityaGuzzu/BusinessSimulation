@@ -354,7 +354,7 @@ int main()
 				//If position is party house
 				if(POSITION == 18)
 				{
-					party_house.transaction(players,current_player,num_of_players_ref,blocks);
+					party_house.transaction(players,current_player,org_num_of_players,num_of_players_ref,blocks);
 				}
 
 				//If position is Travelling Duty

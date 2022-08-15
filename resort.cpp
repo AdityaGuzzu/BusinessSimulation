@@ -8,8 +8,8 @@
 	RETURN VALUE: NONE
 	----------------------------------------------------------------------------
 	ALGORITHM:
-	---> Debit 200*(number_of_players -1) from the current player's account
-	---> Add 200 to all other players
+	---> Debit 200*(number_of_players -1) from the current player's account 
+	---> Add 200 to all other players except those who are bankrupt
 	---> Check for the bankruptcy of the current player
 	----------------------------------------------------------------------------
 */
