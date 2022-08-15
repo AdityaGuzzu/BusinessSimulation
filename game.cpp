@@ -330,7 +330,7 @@ int main()
 				//if position is UNO_4
 				if(POSITION == 4)
 				{
-					uno_4.UNO(players,current_player,blocks,num_of_players_ref);
+					uno_4.UNO(players,current_player,blocks,org_num_of_players,num_of_players_ref);
 				}
 
 				//If position is resort
@@ -366,7 +366,7 @@ int main()
 				//if position is UNO25
 				if(POSITION == 25)
 				{
-					uno_25.UNO(players,current_player, blocks, num_of_players_ref);
+					uno_25.UNO(players,current_player, blocks,org_num_of_players,num_of_players_ref);
 				}
 
 				//If position is JAIL

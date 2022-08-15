@@ -149,6 +149,7 @@ class player
   PARAMETERS:
   ---> Player pointer vector							(vector<player *>)
   ---> A pointer to current player						(player *)
+  ---> Number of initial players						(int)
   ---> A reference to the number of players				(&int)
   ---> Pointer array of blocks							(block *[])
   ---------------------------------------------------------------------------------------
@@ -160,7 +161,7 @@ class player
 class UNO_class: public block
 {	
 	public:
-	void UNO(vector<player *> players, player *current_player, block *arr[], int &number_of_players);
+	void UNO(vector<player *> players, player *current_player, block *arr[],int org_num_of_players,int &number_of_players);
 };
 
 

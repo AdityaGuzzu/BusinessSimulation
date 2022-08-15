@@ -1,15 +1,15 @@
 #include "class_definitions.h"
-void UNO_class::UNO(vector<player *> players, player *current_player, block *blocks[],int &number_of_players)
+void UNO_class::UNO(vector<player *> players, player *current_player, block *blocks[],int org_num_of_players, int &number_of_players)
 {
 	blocks[current_player->position]->visits++;
     switch (current_player->throw_)
     {
         case 2:
-            current_player->balance += (sizeof(players)/sizeof(int) - 1)*500;
-            TRANSACTION((sizeof(players)/sizeof(int) - 1)*500);
-            for(int i=0; i<(sizeof(players)/sizeof(int));i++)
+            current_player->balance += number_of_players*500;
+            TRANSACTION(number_of_players*500);
+            for(int i=0; i<org_num_of_players;i++)
             {
-                if(i != current_player->player_number)
+                if(i != current_player->player_number && !players[i]->bankrupt)
                 {
                     players[i]->balance -= 500;
                     players[i]->transactions.push_back(-500);
@@ -84,8 +84,8 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
                 break;
 
         case 8:
-                current_player->balance += (sizeof(players)/sizeof(int) - 1)*200;
-                TRANSACTION(((sizeof(players)/sizeof(int)) - 1)*200);
+                current_player->balance += number_of_players*200;
+                TRANSACTION(number_of_players*200);
                 blocks[18]->visits++;
 
                 //for first UNO
@@ -105,9 +105,9 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
                 current_player->round = current_player->rounds.back();
                 current_player->position = (current_player->blocks_covered%36);
                 
-                for(int i=0; i<sizeof(players)/sizeof(int); i++)
+                for(int i=0; i<org_num_of_players; i++)
                 {
-                    if(i != current_player->player_number)
+                    if(i != current_player->player_number && !players[i]->bankrupt)
                     {
                         players[i]->balance -= 200;
                         players[i]->transactions.push_back(-200);
