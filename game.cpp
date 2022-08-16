@@ -229,7 +229,7 @@ int main()
 	}
 
 	//RAILWAYS
-	blocks[32] = new block("Railways", 9500, 1500, 5000, false);
+	blocks[33] = new block("Railways", 9500, 1500, 5000, false);
 	
 	//MALAYSIA
 	{
@@ -261,7 +261,7 @@ int main()
 		std::cin>>num_of_players;
 		if(num_of_players > 8 || num_of_players <2)
 		{
-			throw num_of_players;
+			//throw num_of_players;
 		}
 		org_num_of_players = num_of_players;
 	}
@@ -270,7 +270,7 @@ int main()
 	{
 		cerr<<"\nEnter correct number of players. The maximum limit of players is 8 and the minimum is 2.";
 		goto get_players;
-	}
+	} 
 	
 	//Create a pointer array of size 'number of players'
 	std::vector<player *> players;
@@ -292,8 +292,8 @@ int main()
 		{
 			//to make the program more readable
 			player *current_player = players[this_player];
-			std::cout<<std::endl<<"-------------------------------------------------------------------";
-			std::cout<<std::endl<<"Player number: "<<this_player+1;
+			std::cout<<"\n-------------------------------------------------------------------";
+			std::cout<<"\nPlayer number: "<<this_player+1;
 			
 
 			//If the player is bankrupt
@@ -309,7 +309,7 @@ int main()
 			//Update all throw related variables and vectors
 			after_throw(current_player);
 			std::cout<<endl<<"Throw: "<<current_player->throw_;
-			std::cout<<std::endl<<"Player is in :"<<blocks[current_player->position]->name;
+			std::cout<<"\nPlayer is in :"<<blocks[current_player->position]->name;
 			std::cout<<"\nBlocks Covered = "<<current_player->blocks_covered;
 			
 			//Call the start function
@@ -456,8 +456,7 @@ int main()
 						TICKET_ITER->number_of_houses ++;
 						TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
 						}
-								
-						
+										
 				}
 				
 			}
