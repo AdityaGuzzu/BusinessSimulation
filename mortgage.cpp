@@ -52,7 +52,7 @@ void mortgage(player *current_player, block *blocks[], int &number_of_players)
             current_player->balance += mort_val;
             blocks[ticket_position]->owner_num = -1;
             current_player->position_of_tickets_sold.push_back(ticket_position);
-            current_player->position_of_tickets_owned.pop_back();
+            current_player->position_of_tickets_owned.erase(current_player->position_of_tickets_owned.begin() + ticket_position);
             if(blocks[ticket_position]->colour)
             {
                 current_player->number_of_colour_tickets -= 1;
