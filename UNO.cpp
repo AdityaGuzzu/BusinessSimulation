@@ -1,3 +1,33 @@
+/*
+    The Rules of UNO:
+    ---> A player can arrive into UNO by throwing any number from 2 to 12
+	---> Every number has a different transaction rule
+        ---> 2:
+            ---> Collect $500 from all other players
+        ---> 3:
+            ---> Go to Jail
+        ---> 4:
+            ---> Credit $2500 to the current player's balance
+        ---> 5:
+            ---> Debit $2500 from current player's balance
+        ---> 6:
+            ---> Credit $2000 to current player's balance
+        ---> 7:
+            ---> Either debit $5000 from current player's balance or current player
+                wont recieve rent for 5 rounds
+        ---> 8:
+            ---> Go to Party House
+        ---> 9:
+            ---> Debit $50 for each house current player owns and $100 for each hotel from the
+                current player's balance
+        ---> 10:
+            ---> Credit $1500 to the current player's balance
+        ---> 11:
+            ---> Debit $1500 from current player's balance
+        ---> 12:
+            ---> Credit $3000 to the current player's balance
+*/
+
 #include "class_definitions.h"
 void UNO_class::UNO(vector<player *> players, player *current_player, block *blocks[],int org_num_of_players, int &number_of_players)
 {
