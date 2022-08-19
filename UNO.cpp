@@ -74,9 +74,6 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
 
             //updating the rounds
             current_player->rounds.push_back(current_player->blocks_covered/36);
-
-            //calling the mortgage function 
-            mortgage(current_player, blocks, number_of_players); 
             break;
 
         case 4:     //2500 credit
@@ -171,6 +168,7 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
         case 10:
                 current_player->balance += 1500;
                 TRANSACTION(1500);
+                break;
 
         case 11:
                 current_player->balance -= 1500;
