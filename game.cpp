@@ -261,7 +261,7 @@ int main()
 		std::cin>>num_of_players;
 		if(num_of_players > 8 || num_of_players <2)
 		{
-			//throw num_of_players;
+			throw num_of_players;
 		}
 		org_num_of_players = num_of_players;
 	}
