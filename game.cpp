@@ -455,16 +455,15 @@ int main()
 						std::cout<<std::endl<<"House constructed in "<<TICKET_ITER->name;
 						TICKET_ITER->number_of_houses ++;
 						TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
-						}
-										
+						}						
 				}
 				
 			}
 
 			
 			std::cout<<endl<<"Balance: "<<current_player->balance;
-			std::cout<<endl<<"Tickets Owned:\n ";
 			std::cout<<std::endl<<"Number of throws = "<<current_player->throws.size()<<std::endl;
+			std::cout<<endl<<"Tickets Owned:\n ";
 			for(int k=0;k<current_player->position_of_tickets_owned.size(); k++)
 			{
 				std::cout<<"\t"<<blocks[current_player->position_of_tickets_owned[k]]->name;
