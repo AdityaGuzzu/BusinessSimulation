@@ -3,6 +3,7 @@
 #pragma once
 #define TRANSACTION current_player->transactions.push_back
 #include<iostream>
+#include<fstream>
 #include<vector>
 using namespace std;
 
@@ -24,7 +25,7 @@ using namespace std;
 	---> A vector of transactions										(std::vector<int>)
 	--------------------------------------------------------------------------------
 	MEMBER FUNCTIONS:
-	---> NONE
+	--->(void) TRANSACTION	
 */
 
 
@@ -44,6 +45,7 @@ class block
 	int number_of_houses;
 	int house_rents[4];
 	int house_cost;
+	std::vector<int> transactions;
 
 	//Default constructor for general blocks
 
@@ -85,6 +87,17 @@ class block
 		this->owner_num = -1;		//when a ticket is created, its not owned by anyone.
 		this->current_rent = basic_rent;
 	}
+
+		/*
+		 This function will append the amount to the respective csv file of the block
+		 ----------------------------------------------------------------------------
+		 ---> PARAMETERS:
+		 	---> amount of money								(int)
+		 -----------------------------------------------------------------------------
+		 --->RETURN VALUE:
+			--->NONE
+		*/
+		void transaction(int);
 };
 
    /*	PLAYER CLASS ATTRIBUTES
