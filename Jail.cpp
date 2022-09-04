@@ -20,6 +20,13 @@ void jail_class::transaction(player *current_player, block *blocks[], int &numbe
 	current_player->balance -= 500;
    TRANSACTION(-500);
 
+   //This appends 500 to the Jail.csv file
+   blocks[current_player->position]->transaction(500);
+
+   //appends 500 to the transactions vector
+   blocks[current_player->position]->transactions.push_back(500);
+
+
    //calling mortgage function
    mortgage(current_player,blocks,number_of_players);
 }

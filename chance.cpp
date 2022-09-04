@@ -35,26 +35,56 @@ void chance_class::transaction(vector<player *> players, player *current_player,
 			case 2:
 				current_player->balance -= 2000;
 				TRANSACTION(-2000);
+
+				//Appending the respective csv file
+				blocks[current_player->position]->transaction(2000);
+
+				//Appending the transactions vector
+				blocks[current_player->position]->transactions.push_back(2000);
 				break;
 			
 			case 3:
 				current_player->balance += 2500;
 				TRANSACTION(2500);
+
+				//Appending the CSV file
+				blocks[current_player->position]->transaction(-2500);
+
+				//Appending the transactions vector
+				blocks[current_player->position]->transactions.push_back(-2500);
 				break;
 
 			case 4:
 				current_player->balance -= 1000;
 				TRANSACTION(-1000);
+
+				//Appedning to the CSV file
+				blocks[current_player->position]->transaction(1000);
+
+				//Appending to the transactions vector
+				blocks[current_player->position]->transactions.push_back(1000);
 				break;
 
 			case 5:
 				current_player->balance += 1000;
 				TRANSACTION(1000);
+
+				//Appending to the CSV file
+				blocks[current_player->position]->transaction(-1000);
+				
+				//Appending to the transactions vector
+				blocks[current_player->position]->transactions.push_back(-1000);
 				break;
 
 			case 6:
 				current_player->balance -= 1500;
 				TRANSACTION(-1500);
+
+				//Appending to the CSV file
+				blocks[current_player->position]->transaction(1500);
+
+				//Appending to the transactions vector
+				blocks[current_player->position]->transactions.push_back(1500);
 				break;
 
 			case 7:
@@ -98,6 +128,13 @@ void chance_class::transaction(vector<player *> players, player *current_player,
 					current_player->balance += 2000;
 
 				}
+
+				//Appending to the CSV file
+				blocks[current_player->position]->transaction(500);
+
+				//Appending to the transactions vector
+				blocks[current_player->position]->transactions.push_back(500);
+
 				current_player->position = 27;
 				blocks[27]->visits++;
 				break;
@@ -105,11 +142,24 @@ void chance_class::transaction(vector<player *> players, player *current_player,
 			case 11:
 				current_player->balance += 1500;
 				TRANSACTION(1500);
+
+				//Appending to the CSV file
+				blocks[current_player->position]->transaction(-1500);
+
+				//Appending to the transactions vector
+				blocks[current_player->position]->transactions.push_back(-1500);
+
 				break;
 
 			case 12:
 				current_player->balance -= 200;
 				TRANSACTION(-200);
+
+				//Appending to the CSV file
+				blocks[current_player->position]->transaction(200);
+
+				//Appending to the transactions vector
+				blocks[current_player->position]->transactions.push_back(200);
 				break;
 		}
 

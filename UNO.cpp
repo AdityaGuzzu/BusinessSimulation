@@ -52,6 +52,12 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
             //paying 500
             current_player->balance -= 500;
             TRANSACTION(-500);
+
+            //Appending to the CSV file
+            blocks[current_player->position]->transaction(500);
+
+            //Appending to the transactions vector
+            blocks[current_player->position]->transactions.push_back(500);
             
             //incrementing the jail visits    
              blocks[27]->visits++;
@@ -67,7 +73,7 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
             else                                     //IF he is in the second UNO
             {
                 //Moving the player to jail
-                    current_player->blocks_covered += 2;            
+                current_player->blocks_covered += 2;   
             }
             //updating the position 
             current_player->position = (current_player->blocks_covered%36);
@@ -79,26 +85,50 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
         case 4:     //2500 credit
                 current_player->balance += 2500;
                 TRANSACTION(2500);
+
+                 //appending -2500 to the UNO4.csv file
+                    blocks[current_player->position]->transaction(-2500);
+
+                 //appending -2500 to the transactions vector
+                    blocks[current_player->position]->transactions.push_back(-2500);
                 break;
             
-        case 5:     //2500 debit
+        case 5:     
                 current_player->balance -= 2500;
                 TRANSACTION(-2500);
 
                 //calling the mortgage function 
                 mortgage(current_player, blocks, number_of_players);
+
+                //Appending to the CSV file
+                blocks[current_player->position]->transaction(2500);
+
+                //Appending to the transactions vector
+                blocks[current_player->position]->transactions.push_back(2500);
                 break;
 
         case 6:
                 current_player->balance += 2000;
                 TRANSACTION(2000);
+                
+                //Appending to the CSV file
+                blocks[current_player->position]->transaction(-2000);
+
+                //Appending to the transactions vector
+                blocks[current_player->position]->transactions.push_back(-2000);
                 break;
         
         case 7:
                 if(rand_bool(current_player->position) && (current_player->balance > 5000))
                 {
                     current_player->balance -= 5000;
-                    TRANSACTION(-5000);                 
+                    TRANSACTION(-5000);    
+
+                    //Appending to the CSV file
+                    blocks[current_player->position]->transaction(5000);
+
+                    //Appending to the transactions vector
+                    blocks[current_player->position]->transactions.push_back(5000);     
                 }
                 else
                 {
@@ -168,11 +198,23 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
         case 10:
                 current_player->balance += 1500;
                 TRANSACTION(1500);
+
+                //Appending to CSV file
+                blocks[current_player->position]->transaction(-1500);
+
+                //Appending to transactions vector
+                blocks[current_player->position]->transactions.push_back(-1500);
                 break;
 
         case 11:
                 current_player->balance -= 1500;
                 TRANSACTION(-1500);
+
+                //Appending to the CSV file
+                blocks[current_player->position]->transaction(1500);
+
+                //Appending to the transactions vector
+                blocks[current_player->position]->transactions.push_back(1500);
 
                 //calling the mortgage function 
                 mortgage(current_player, blocks, number_of_players);
@@ -181,6 +223,12 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
         case 12:
                 current_player->balance += 3000;
                 TRANSACTION(3000);
+
+                //Appending to the CSV file
+                blocks[current_player->position]->transaction(-3000);
+
+                //Appending to the transactions vector
+                blocks[current_player->position]->transactions.push_back(-3000);
 
                 //calling the mortgage function 
                 mortgage(current_player, blocks, number_of_players);

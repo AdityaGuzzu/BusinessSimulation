@@ -66,6 +66,9 @@ void mortgage(player *current_player, block *blocks[], int &number_of_players)
                 white_double_rent(blocks,current_player);
             }
 
+            // Will append the mortgage amount to the respective ticket's csv file
+            blocks[ticket_position]->transaction(blocks[ticket_position]->mortgage_value);
+
         }
         if((current_player->balance) < 0 )
         {
