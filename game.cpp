@@ -87,7 +87,7 @@ int main()
 
 	//UNO_4
 	blocks[4] = &uno_4;
-	uno_4.name = "UNO";
+	uno_4.name = "UNO4";
 
 	//FRANCE
 	{
@@ -112,6 +112,7 @@ int main()
 
 	//RESORT
 	blocks[9] = &resort;
+	resort.name = "Resort";
 
 	//CANADA
 	{
@@ -146,7 +147,7 @@ int main()
 
 	//CHANCE
 	blocks[16] = &chance_16;
-	chance_16.name = "Chance";
+	chance_16.name = "Chance16";
 
 	//ITALY
 	{
@@ -191,7 +192,7 @@ int main()
 
 	//UNO
 	blocks[25] = &uno_25;
-	uno_25.name = "UNO";
+	uno_25.name = "UNO25";
 
 	//AUSTRALIA
 	{
@@ -211,7 +212,7 @@ int main()
 
 	//CHANCE
 	blocks[29] = &chance_29;
-	chance_29.name = "Chance";
+	chance_29.name = "Chance29";
 
 	//SAUDI ARABIA
 	{

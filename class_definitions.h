@@ -21,6 +21,7 @@ using namespace std;
 	---> number of houses												(int)
 	---> array of house rents											(int)
 	---> house cost														(int)
+	---> A vector of transactions										(std::vector<int>)
 	--------------------------------------------------------------------------------
 	MEMBER FUNCTIONS:
 	---> NONE
