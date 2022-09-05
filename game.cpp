@@ -391,6 +391,13 @@ int main()
 				{
 					//debit the money from current player
 					current_player->balance -= CURRENT_TICKET->current_rent;
+
+					//appending the rent to the CSV file of the respective ticket
+					CURRENT_TICKET->transaction(CURRENT_TICKET->current_rent);
+
+					//Appending the rent to the transactions vector
+					CURRENT_TICKET->transactions.push_back(CURRENT_TICKET->current_rent);
+
 					std::cout<<std::endl<<"Paid "<<CURRENT_TICKET->current_rent<<" to player number "<<OWNER_NUMBER+1;
 					TRANSACTION((-1)*CURRENT_TICKET->current_rent);
 					mortgage(current_player, blocks, num_of_players_ref);
@@ -411,13 +418,18 @@ int main()
 						//debit the ticket price from the player's balance
 						current_player->balance -= blocks[POSITION]->ticket_cost;
 
-	
 
 						//setting the owner number of the ticket to the player number
 						blocks[POSITION]->owner_num = current_player->player_number;
 
 						//Adding the position to the position of tickets owned by the player
 						current_player->position_of_tickets_owned.push_back(POSITION);
+
+						//Appending the cost to the CSV file of the particular ticket
+						blocks[POSITION]->transaction(-blocks[POSITION]->ticket_cost);
+
+						//Appending the cost to the transactions vector
+						blocks[POSITION]->transactions.push_back(-blocks[POSITION]->ticket_cost);
 
 						//if the ticket bought is a colour one:
 						if(blocks[POSITION]->colour)
@@ -456,6 +468,12 @@ int main()
 						std::cout<<std::endl<<"House constructed in "<<TICKET_ITER->name;
 						TICKET_ITER->number_of_houses ++;
 						TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
+
+						//Appending the house cost to  the CSV file of the player
+						TICKET_ITER->transaction(-TICKET_ITER->house_cost);
+
+						//Appending the house cost to the transanctions vector
+						TICKET_ITER->transactions.push_back(-TICKET_ITER->house_cost);
 						}						
 				}
 				

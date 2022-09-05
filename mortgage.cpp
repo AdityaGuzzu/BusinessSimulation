@@ -53,6 +53,13 @@ void mortgage(player *current_player, block *blocks[], int &number_of_players)
             blocks[current_player->position_of_tickets_owned[ticket_position]]->owner_num = -1;
             current_player->position_of_tickets_sold.push_back(ticket_position);
             current_player->position_of_tickets_owned.erase(current_player->position_of_tickets_owned.begin() + ticket_position);
+
+            //Appending the mortgage value to the CSV file
+            blocks[current_player->position_of_tickets_owned[ticket_position]]->transaction(mort_val);
+
+            //Appending the mortgage value to the transactions vector
+            blocks[current_player->position_of_tickets_owned[ticket_position]]->transactions.push_back(mort_val);
+
             if(blocks[ticket_position]->colour)
             {
                 current_player->number_of_colour_tickets -= 1;
@@ -65,9 +72,6 @@ void mortgage(player *current_player, block *blocks[], int &number_of_players)
                 blocks[ticket_position]->current_rent = blocks[ticket_position]->basic_rent;
                 white_double_rent(blocks,current_player);
             }
-
-            // Will append the mortgage amount to the respective ticket's csv file
-            blocks[ticket_position]->transaction(blocks[ticket_position]->mortgage_value);
 
         }
         if((current_player->balance) < 0 )
