@@ -17,6 +17,7 @@
 #include "UNOseven.cpp"
 #include "white_double_rent.cpp"
 #include "randnum.cpp"
+#include "block_transactions.cpp"
 #include<cstdlib>
 #include<ctime>
 #define POSITION current_player->position
