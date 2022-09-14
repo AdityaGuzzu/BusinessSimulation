@@ -81,6 +81,7 @@ class block
 	//This is for white tickets. (Constructor overloading)
 	block(string name, int ticket_cost, int basic_rent, int mortgage_value, bool colour)
 	{
+		this->visits - 0;
 		this->name = name;
 		this->ticket_cost = ticket_cost;
 		this->basic_rent = basic_rent;
