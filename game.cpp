@@ -1,5 +1,5 @@
 /*The main file where actual simulation takes place */
-
+#include "transaction_ID.cpp"
 #include "class_definitions.h"
 #include "after_throw.cpp"
 #include "chance.cpp"
@@ -18,11 +18,14 @@
 #include "white_double_rent.cpp"
 #include "randnum.cpp"
 #include "block_transactions.cpp"
+#include "ticket_visits.cpp"
 #include<cstdlib>
+#include<fstream>
 #include<ctime>
 #define POSITION current_player->position
 #define OWNER_NUMBER blocks[current_player->position]->owner_num
 #define CURRENT_TICKET blocks[current_player->position]
+
 /*      The steps required are broadly categorised into:
 	1.) Get the number of players (maximum 8. Minimum 2)
 	2.) Create all the blocks.
@@ -35,8 +38,15 @@
 				ab) else, pay the rent
 			b.) If he isn't, do the required transaction.
 */
+
 int main()
 {
+	
+
+	//Lets open the output file
+	std::fstream out("output.txt",std::ios::out);
+
+
 	//Lets create the general blocks
 
 	start_class start;
@@ -294,8 +304,8 @@ int main()
 		{
 			//to make the program more readable
 			player *current_player = players[this_player];
-			std::cout<<"\n-------------------------------------------------------------------";
-			std::cout<<"\nPlayer number: "<<this_player+1;
+			out<<"\n-------------------------------------------------------------------";
+			out<<"\nPlayer number: "<<this_player+1;
 			
 
 			//If the player is bankrupt
@@ -310,9 +320,12 @@ int main()
 
 			//Update all throw related variables and vectors
 			after_throw(current_player);
-			std::cout<<std::endl<<"Throw: "<<current_player->throw_;
-			std::cout<<"\nPlayer is in :"<<blocks[current_player->position]->name;
-			std::cout<<"\nBlocks Covered = "<<current_player->blocks_covered;
+			out<<std::endl<<"Throw: "<<current_player->throw_;
+			out<<"\nPlayer is in :"<<blocks[current_player->position]->name;
+			out<<"\nBlocks Covered = "<<current_player->blocks_covered;
+
+			//Increment the visits of the block
+			blocks[current_player->position]->visits++;
 			
 			//Call the start function
 			start.transaction(current_player,blocks[0]);
@@ -399,7 +412,7 @@ int main()
 					//Appending the rent to the transactions vector
 					CURRENT_TICKET->transactions.push_back(CURRENT_TICKET->current_rent);
 
-					std::cout<<std::endl<<"Paid "<<CURRENT_TICKET->current_rent<<" to player number "<<OWNER_NUMBER+1;
+					out<<std::endl<<"Paid "<<CURRENT_TICKET->current_rent<<" to player number "<<OWNER_NUMBER+1;
 					TRANSACTION((-1)*CURRENT_TICKET->current_rent);
 					mortgage(current_player, blocks, num_of_players_ref);
 
@@ -415,7 +428,7 @@ int main()
 				
 					if(rand_bool(current_player->blocks_covered) && ((current_player->balance) > (blocks[POSITION]->ticket_cost)) && OWNER_NUMBER != current_player->player_number)
 					{
-						std::cout<<std::endl<<"Current player's position is "<<current_player->position;
+						out<<std::endl<<"Current player's position is "<<current_player->position;
 						//debit the ticket price from the player's balance
 						current_player->balance -= blocks[POSITION]->ticket_cost;
 
@@ -466,7 +479,7 @@ int main()
 						else
 						{
 						current_player->balance -= TICKET_ITER->house_cost;
-						std::cout<<std::endl<<"House constructed in "<<TICKET_ITER->name;
+						out<<std::endl<<"House constructed in "<<TICKET_ITER->name;
 						TICKET_ITER->number_of_houses ++;
 						TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
 
@@ -479,19 +492,25 @@ int main()
 				}
 				
 			}
-
-			
-			std::cout<<endl<<"Balance: "<<current_player->balance;
-			std::cout<<std::endl<<"Number of throws = "<<current_player->throws.size()<<std::endl;
-			std::cout<<endl<<"Tickets Owned:\n ";
+			if(current_player->bankrupt)
+			{
+				out<<std::endl<<"Player number "<<current_player->player_number + 1<<" is bankrupt";
+			}
+		
+			out<<endl<<"Balance: "<<current_player->balance;
+			out<<std::endl<<"Number of throws = "<<current_player->throws.size()<<std::endl;
+			out<<endl<<"Tickets Owned:\n ";
 			for(int k=0;k<current_player->position_of_tickets_owned.size(); k++)
 			{
-				std::cout<<"\t"<<blocks[current_player->position_of_tickets_owned[k]]->name;
+				out<<"\t"<<blocks[current_player->position_of_tickets_owned[k]]->name;
 			}	
+			out<<std::endl<<"Transaction Number: "<<transaction_ID;
 		}	
 	}
+
+	visits_func(blocks);
 	
-	std::cout<<"\n---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
+	out<<"\n---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
 	//deleting pointers
 	for(int i=0; i<36; i++)
 	{

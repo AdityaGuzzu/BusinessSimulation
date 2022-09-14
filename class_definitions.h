@@ -26,6 +26,7 @@ using namespace std;
 	--------------------------------------------------------------------------------
 	MEMBER FUNCTIONS:
 	--->(void) TRANSACTION	
+	--->(void) Visits
 */
 
 
@@ -51,7 +52,7 @@ class block
 
 	block()
 	{
-
+		this->visits = 0;
 		block_type = "general";
 		owner_num = -1;			//A geenral ticket is not owned by anyone.
 	}
@@ -60,6 +61,7 @@ class block
 
 	block(string name, int ticket_cost, int basic_rent, int mortgage_value, bool colour, int house_costs, int house_rents[])
 	{
+		this->visits = 0;
 		this->block_type = "ticket";
 		this->name = name;
 		this->ticket_cost = ticket_cost;

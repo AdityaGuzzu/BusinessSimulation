@@ -2,3 +2,4 @@
 *.json
 BusinessSimulation.code-workspace
 temp.cpp
+/data

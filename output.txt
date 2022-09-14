@@ -1,0 +1,4514 @@
+
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Resort
+Blocks Covered = 9
+Balance: 49800
+Number of throws = 1
+
+Tickets Owned:
+ 
+Transaction Number: 0
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :France
+Blocks Covered = 5
+Current player's position is 5
+House constructed in France
+House constructed in France
+House constructed in France
+House constructed in France
+Balance: 37700
+Number of throws = 1
+
+Tickets Owned:
+ 	France
+Transaction Number: 5
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Party House
+Blocks Covered = 18
+Balance: 50000
+Number of throws = 2
+
+Tickets Owned:
+ 
+Transaction Number: 5
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Switzerland
+Blocks Covered = 14
+Balance: 37500
+Number of throws = 2
+
+Tickets Owned:
+ 	France
+Transaction Number: 5
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Hong Kong
+Blocks Covered = 24
+Current player's position is 24
+Balance: 48000
+Number of throws = 3
+
+Tickets Owned:
+ 	Hong Kong
+Transaction Number: 6
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Party House
+Blocks Covered = 18
+Balance: 37700
+Number of throws = 3
+
+Tickets Owned:
+ 	France
+Transaction Number: 6
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :India
+Blocks Covered = 28
+Balance: 47800
+Number of throws = 4
+
+Tickets Owned:
+ 	Hong Kong
+Transaction Number: 6
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Hong Kong
+Blocks Covered = 24
+Paid 200 to player number 1
+Balance: 37500
+Number of throws = 4
+
+Tickets Owned:
+ 	France
+Transaction Number: 7
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Iraq
+Blocks Covered = 38
+Balance: 50000
+Number of throws = 5
+
+Tickets Owned:
+ 	Hong Kong
+Transaction Number: 7
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :Malaysia
+Blocks Covered = 34
+Balance: 37500
+Number of throws = 5
+
+Tickets Owned:
+ 	France
+Transaction Number: 7
+-------------------------------------------------------------------
+Player number: 1
+Throw: 3
+Player is in :France
+Blocks Covered = 41
+Paid 4900 to player number 2
+House constructed in Hong Kong
+House constructed in Hong Kong
+House constructed in Hong Kong
+Balance: 37600
+Number of throws = 6
+
+Tickets Owned:
+ 	Hong Kong
+Transaction Number: 11
+-------------------------------------------------------------------
+Player number: 2
+Throw: 3
+Player is in :England
+Blocks Covered = 37
+Balance: 44400
+Number of throws = 6
+
+Tickets Owned:
+ 	France
+Transaction Number: 11
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Germany
+Blocks Covered = 47
+Balance: 37600
+Number of throws = 7
+
+Tickets Owned:
+ 	Hong Kong
+Transaction Number: 11
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Satellite
+Blocks Covered = 43
+Balance: 44400
+Number of throws = 7
+
+Tickets Owned:
+ 	France
+Transaction Number: 11
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Italy
+Blocks Covered = 53
+Current player's position is 17
+House constructed in Hong Kong
+Balance: 31600
+Number of throws = 8
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 13
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Switzerland
+Blocks Covered = 50
+Balance: 44400
+Number of throws = 8
+
+Tickets Owned:
+ 	France
+Transaction Number: 13
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Hong Kong
+Blocks Covered = 60
+Balance: 31600
+Number of throws = 9
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 13
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Mexico
+Blocks Covered = 59
+Balance: 44400
+Number of throws = 9
+
+Tickets Owned:
+ 	France
+Transaction Number: 13
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Railways
+Blocks Covered = 69
+Balance: 31600
+Number of throws = 10
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 13
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Petroleum
+Blocks Covered = 67
+Balance: 44400
+Number of throws = 10
+
+Tickets Owned:
+ 	France
+Transaction Number: 13
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :France
+Blocks Covered = 77
+Paid 4900 to player number 2
+House constructed in Italy
+Balance: 26700
+Number of throws = 11
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 15
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Iraq
+Blocks Covered = 74
+Current player's position is 2
+Balance: 46300
+Number of throws = 11
+
+Tickets Owned:
+ 	France	Iraq
+Transaction Number: 16
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Customs Duty
+Blocks Covered = 85
+Balance: 26500
+Number of throws = 12
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 17
+-------------------------------------------------------------------
+Player number: 2
+Throw: 3
+Player is in :France
+Blocks Covered = 77
+Balance: 46300
+Number of throws = 12
+
+Tickets Owned:
+ 	France	Iraq
+Transaction Number: 17
+-------------------------------------------------------------------
+Player number: 1
+Throw: 3
+Player is in :Chance16
+Blocks Covered = 88
+Balance: 29000
+Number of throws = 13
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 18
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Airways
+Blocks Covered = 84
+Current player's position is 12
+Balance: 35800
+Number of throws = 13
+
+Tickets Owned:
+ 	France	Iraq	Airways
+Transaction Number: 19
+-------------------------------------------------------------------
+Player number: 1
+Throw: 12
+Player is in :India
+Blocks Covered = 100
+Balance: 29000
+Number of throws = 14
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 19
+-------------------------------------------------------------------
+Player number: 2
+Throw: 12
+Player is in :Hong Kong
+Blocks Covered = 96
+Paid 4600 to player number 1
+Balance: 31200
+Number of throws = 14
+
+Tickets Owned:
+ 	France	Iraq	Airways
+Transaction Number: 20
+-------------------------------------------------------------------
+Player number: 1
+Throw: 3
+Player is in :Petroleum
+Blocks Covered = 103
+Balance: 33600
+Number of throws = 15
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 20
+-------------------------------------------------------------------
+Player number: 2
+Throw: 3
+Player is in :Jail
+Blocks Covered = 99
+Balance: 30700
+Number of throws = 15
+
+Tickets Owned:
+ 	France	Iraq	Airways
+Transaction Number: 21
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Iraq
+Blocks Covered = 110
+Paid 500 to player number 2
+House constructed in Italy
+House constructed in Italy
+Balance: 31100
+Number of throws = 16
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 24
+-------------------------------------------------------------------
+Player number: 2
+Throw: 3
+Player is in :Saudi Arabia
+Blocks Covered = 102
+Balance: 31200
+Number of throws = 16
+
+Tickets Owned:
+ 	France	Iraq	Airways
+Transaction Number: 24
+-------------------------------------------------------------------
+Player number: 1
+Throw: 3
+Player is in :France
+Blocks Covered = 113
+Paid 4900 to player number 2
+Balance: 26200
+Number of throws = 17
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 25
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Start
+Blocks Covered = 108
+Balance: 38100
+Number of throws = 17
+
+Tickets Owned:
+ 	France	Iraq	Airways
+Transaction Number: 25
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Germany
+Blocks Covered = 119
+Balance: 26200
+Number of throws = 18
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 25
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :France
+Blocks Covered = 113
+Balance: 38100
+Number of throws = 18
+
+Tickets Owned:
+ 	France	Iraq	Airways
+Transaction Number: 25
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Chance16
+Blocks Covered = 124
+Balance: 27200
+Number of throws = 19
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 26
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Airways
+Blocks Covered = 120
+Balance: 38100
+Number of throws = 19
+
+Tickets Owned:
+ 	France	Iraq	Airways
+Transaction Number: 26
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Mexico
+Blocks Covered = 131
+Balance: 27200
+Number of throws = 20
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 26
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Japan
+Blocks Covered = 127
+Balance: 38100
+Number of throws = 20
+
+Tickets Owned:
+ 	France	Iraq	Airways
+Transaction Number: 26
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Saudi Arabia
+Blocks Covered = 138
+Balance: 27200
+Number of throws = 21
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 26
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Australia
+Blocks Covered = 134
+Balance: 38100
+Number of throws = 21
+
+Tickets Owned:
+ 	France	Iraq	Airways
+Transaction Number: 26
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :England
+Blocks Covered = 145
+Balance: 29200
+Number of throws = 22
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 26
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Railways
+Blocks Covered = 141
+Current player's position is 33
+House constructed in Iraq
+Balance: 23600
+Number of throws = 22
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 28
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Egypt
+Blocks Covered = 152
+Balance: 29200
+Number of throws = 23
+
+Tickets Owned:
+ 	Hong Kong	Italy
+Transaction Number: 28
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :UNO4
+Blocks Covered = 148
+Balance: 25600
+Number of throws = 23
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 28
+-------------------------------------------------------------------
+Player number: 1
+Throw: 11
+Player is in :Japan
+Blocks Covered = 163
+Current player's position is 19
+House constructed in Italy
+Balance: 24700
+Number of throws = 24
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan
+Transaction Number: 30
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Canada
+Blocks Covered = 154
+Balance: 25600
+Number of throws = 24
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 30
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :UNO25
+Blocks Covered = 169
+Balance: 26700
+Number of throws = 25
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan
+Transaction Number: 31
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Japan
+Blocks Covered = 163
+Paid 250 to player number 1
+Balance: 25350
+Number of throws = 25
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 32
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Malaysia
+Blocks Covered = 178
+House constructed in Japan
+House constructed in Japan
+Balance: 21950
+Number of throws = 26
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan
+Transaction Number: 34
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Jail
+Blocks Covered = 171
+Balance: 24850
+Number of throws = 26
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 35
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Iran
+Blocks Covered = 186
+Balance: 23950
+Number of throws = 27
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan
+Transaction Number: 35
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Railways
+Blocks Covered = 177
+Balance: 24850
+Number of throws = 27
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 35
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Airways
+Blocks Covered = 192
+Paid 1500 to player number 2
+Balance: 22450
+Number of throws = 28
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan
+Transaction Number: 36
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Iran
+Blocks Covered = 186
+Balance: 28350
+Number of throws = 28
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 36
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Travelling Duty
+Blocks Covered = 201
+Balance: 22300
+Number of throws = 29
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan
+Transaction Number: 37
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Switzerland
+Blocks Covered = 194
+Balance: 28350
+Number of throws = 29
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 37
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Chance29
+Blocks Covered = 209
+Balance: 19300
+Number of throws = 30
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan
+Transaction Number: 37
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Roadways
+Blocks Covered = 202
+Balance: 28350
+Number of throws = 30
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 37
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :England
+Blocks Covered = 217
+Balance: 21300
+Number of throws = 31
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan
+Transaction Number: 37
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Saudi Arabia
+Blocks Covered = 210
+Balance: 28350
+Number of throws = 31
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 37
+-------------------------------------------------------------------
+Player number: 1
+Throw: 2
+Player is in :Waterways
+Blocks Covered = 219
+Current player's position is 3
+House constructed in Japan
+House constructed in Japan
+Balance: 6800
+Number of throws = 32
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways
+Transaction Number: 40
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Start
+Blocks Covered = 216
+Balance: 30350
+Number of throws = 32
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 40
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Resort
+Blocks Covered = 225
+Balance: 6600
+Number of throws = 33
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways
+Transaction Number: 40
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Iran
+Blocks Covered = 222
+Balance: 30550
+Number of throws = 33
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 40
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Brazil
+Blocks Covered = 231
+Current player's position is 15
+Balance: 4100
+Number of throws = 34
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil
+Transaction Number: 41
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :Chance16
+Blocks Covered = 232
+Balance: 29550
+Number of throws = 34
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 43
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Travelling Duty
+Blocks Covered = 237
+Balance: 3900
+Number of throws = 35
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil
+Transaction Number: 44
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Singapore
+Blocks Covered = 251
+Balance: 29550
+Number of throws = 35
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 44
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Chance29
+Blocks Covered = 245
+Balance: 900
+Number of throws = 36
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil
+Transaction Number: 44
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Satellite
+Blocks Covered = 259
+Balance: 31550
+Number of throws = 36
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 44
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :England
+Blocks Covered = 253
+Balance: 2900
+Number of throws = 37
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil
+Transaction Number: 44
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Brazil
+Blocks Covered = 267
+Paid 300 to player number 1
+Balance: 31250
+Number of throws = 37
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 45
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Germany
+Blocks Covered = 263
+Balance: 3200
+Number of throws = 38
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil
+Transaction Number: 45
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :UNO25
+Blocks Covered = 277
+Balance: 32750
+Number of throws = 38
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 46
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :USA
+Blocks Covered = 272
+Balance: 3200
+Number of throws = 39
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil
+Transaction Number: 46
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :China
+Blocks Covered = 284
+Balance: 32750
+Number of throws = 39
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 46
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Jail
+Blocks Covered = 279
+Balance: 2700
+Number of throws = 40
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil
+Transaction Number: 47
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :UNO4
+Blocks Covered = 292
+Balance: 35350
+Number of throws = 40
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 47
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Singapore
+Blocks Covered = 287
+Balance: 2300
+Number of throws = 41
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil
+Transaction Number: 47
+-------------------------------------------------------------------
+Player number: 2
+Throw: 12
+Player is in :Saudi Arabia
+Blocks Covered = 318
+Balance: 35350
+Number of throws = 41
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 47
+-------------------------------------------------------------------
+Player number: 1
+Throw: 12
+Player is in :Germany
+Blocks Covered = 299
+Balance: 4300
+Number of throws = 42
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil
+Transaction Number: 47
+-------------------------------------------------------------------
+Player number: 2
+Throw: 12
+Player is in :Iran
+Blocks Covered = 330
+Balance: 37350
+Number of throws = 42
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 47
+-------------------------------------------------------------------
+Player number: 1
+Throw: 12
+Player is in :Mexico
+Blocks Covered = 311
+Balance: 4300
+Number of throws = 43
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil
+Transaction Number: 47
+-------------------------------------------------------------------
+Player number: 2
+Throw: 12
+Player is in :Party House
+Blocks Covered = 342
+Balance: 37550
+Number of throws = 43
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 47
+-------------------------------------------------------------------
+Player number: 1
+Throw: 12
+Player is in :Singapore
+Blocks Covered = 323
+Balance: 4100
+Number of throws = 44
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil
+Transaction Number: 47
+-------------------------------------------------------------------
+Player number: 2
+Throw: 12
+Player is in :Saudi Arabia
+Blocks Covered = 354
+Balance: 37550
+Number of throws = 44
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 47
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Egypt
+Blocks Covered = 332
+Current player's position is 8
+Balance: 2900
+Number of throws = 45
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 48
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Start
+Blocks Covered = 360
+Balance: 39550
+Number of throws = 45
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 48
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Switzerland
+Blocks Covered = 338
+Balance: 2900
+Number of throws = 46
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 48
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Iran
+Blocks Covered = 366
+Balance: 39550
+Number of throws = 46
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 48
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :USA
+Blocks Covered = 344
+Balance: 2900
+Number of throws = 47
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 48
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Airways
+Blocks Covered = 372
+Balance: 39550
+Number of throws = 47
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 48
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Australia
+Blocks Covered = 350
+Balance: 2900
+Number of throws = 48
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 48
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Party House
+Blocks Covered = 378
+Balance: 39750
+Number of throws = 48
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 48
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Singapore
+Blocks Covered = 359
+Balance: 2700
+Number of throws = 49
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 48
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Jail
+Blocks Covered = 387
+Balance: 39250
+Number of throws = 49
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 49
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Egypt
+Blocks Covered = 368
+Balance: 4700
+Number of throws = 50
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 49
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Railways
+Blocks Covered = 393
+Balance: 39250
+Number of throws = 50
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 49
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Switzerland
+Blocks Covered = 374
+Balance: 4700
+Number of throws = 51
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 49
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Waterways
+Blocks Covered = 399
+Paid 1400 to player number 1
+Balance: 39850
+Number of throws = 51
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 50
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :USA
+Blocks Covered = 380
+Balance: 6100
+Number of throws = 52
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 50
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Resort
+Blocks Covered = 405
+Balance: 39650
+Number of throws = 52
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 50
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Australia
+Blocks Covered = 386
+Balance: 6300
+Number of throws = 53
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 50
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Brazil
+Blocks Covered = 411
+Paid 300 to player number 1
+Balance: 39350
+Number of throws = 53
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 51
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Start
+Blocks Covered = 396
+Balance: 8600
+Number of throws = 54
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 51
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :UNO25
+Blocks Covered = 421
+Balance: 40850
+Number of throws = 54
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 52
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Resort
+Blocks Covered = 405
+Balance: 8400
+Number of throws = 55
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 52
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Malaysia
+Blocks Covered = 430
+Balance: 41050
+Number of throws = 55
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 52
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Party House
+Blocks Covered = 414
+Balance: 8600
+Number of throws = 56
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 52
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Satellite
+Blocks Covered = 439
+Balance: 42850
+Number of throws = 56
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 52
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Jail
+Blocks Covered = 423
+Balance: 8100
+Number of throws = 57
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 53
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Customs Duty
+Blocks Covered = 445
+Balance: 42650
+Number of throws = 57
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 54
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Malaysia
+Blocks Covered = 430
+Balance: 8100
+Number of throws = 58
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 54
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :USA
+Blocks Covered = 452
+Balance: 42650
+Number of throws = 58
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 54
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :France
+Blocks Covered = 437
+Paid 4900 to player number 2
+Balance: 5200
+Number of throws = 59
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 55
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Hong Kong
+Blocks Covered = 456
+Paid 4600 to player number 1
+Balance: 42950
+Number of throws = 59
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 56
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Germany
+Blocks Covered = 443
+Balance: 9800
+Number of throws = 60
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 56
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Saudi Arabia
+Blocks Covered = 462
+Balance: 42950
+Number of throws = 60
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 56
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Italy
+Blocks Covered = 449
+Balance: 9800
+Number of throws = 61
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 56
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Start
+Blocks Covered = 468
+Balance: 44950
+Number of throws = 61
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 56
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Jail
+Blocks Covered = 459
+Balance: 9300
+Number of throws = 62
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 57
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Iran
+Blocks Covered = 474
+Balance: 44950
+Number of throws = 62
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 57
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Railways
+Blocks Covered = 465
+Paid 1500 to player number 2
+Balance: 7800
+Number of throws = 63
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 58
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Brazil
+Blocks Covered = 483
+Paid 300 to player number 1
+House constructed in Iraq
+Balance: 41150
+Number of throws = 63
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 60
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Iraq
+Blocks Covered = 470
+Paid 3000 to player number 2
+Balance: 7100
+Number of throws = 64
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 61
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :USA
+Blocks Covered = 488
+Balance: 44150
+Number of throws = 64
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 61
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Satellite
+Blocks Covered = 475
+Balance: 7100
+Number of throws = 65
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 61
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Hong Kong
+Blocks Covered = 492
+Paid 4600 to player number 1
+Balance: 39550
+Number of throws = 65
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways
+Transaction Number: 62
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :Germany
+Blocks Covered = 479
+Balance: 11700
+Number of throws = 66
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 62
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :India
+Blocks Covered = 496
+Current player's position is 28
+House constructed in Iraq
+House constructed in Iraq
+House constructed in India
+House constructed in India
+House constructed in India
+Balance: 8550
+Number of throws = 66
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways	India
+Transaction Number: 68
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :USA
+Blocks Covered = 488
+Balance: 11700
+Number of throws = 67
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 68
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :England
+Blocks Covered = 505
+Balance: 10550
+Number of throws = 67
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways	India
+Transaction Number: 68
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Chance29
+Blocks Covered = 497
+Balance: 13700
+Number of throws = 68
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 68
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Egypt
+Blocks Covered = 512
+Paid 300 to player number 1
+House constructed in India
+Balance: 4750
+Number of throws = 68
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways	India
+Transaction Number: 70
+-------------------------------------------------------------------
+Player number: 1
+Throw: 3
+Player is in :China
+Blocks Covered = 500
+Balance: 14000
+Number of throws = 69
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 70
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Switzerland
+Blocks Covered = 518
+Balance: 4750
+Number of throws = 69
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways	India
+Transaction Number: 70
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Iraq
+Blocks Covered = 506
+Paid 5500 to player number 2
+Balance: 10500
+Number of throws = 70
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 71
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :USA
+Blocks Covered = 524
+Current player's position is 20
+Balance: 1750
+Number of throws = 70
+
+Tickets Owned:
+ 	France	Iraq	Airways	Railways	India	USA
+Transaction Number: 72
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Satellite
+Blocks Covered = 511
+Balance: 10500
+Number of throws = 71
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 72
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :UNO25
+Blocks Covered = 529
+Balance: 1750
+Number of throws = 71
+
+Tickets Owned:
+ 	France	Airways	Railways	India	USA
+Transaction Number: 74
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Italy
+Blocks Covered = 521
+Balance: 10500
+Number of throws = 72
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 74
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Railways
+Blocks Covered = 537
+Balance: 1750
+Number of throws = 72
+
+Tickets Owned:
+ 	France	Airways	Railways	India	USA
+Transaction Number: 74
+-------------------------------------------------------------------
+Player number: 1
+Throw: 12
+Player is in :Chance29
+Blocks Covered = 533
+Balance: 10300
+Number of throws = 73
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 75
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Waterways
+Blocks Covered = 543
+Paid 1400 to player number 1
+Balance: 2350
+Number of throws = 73
+
+Tickets Owned:
+ 	France	Airways	Railways	India	USA
+Transaction Number: 76
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :England
+Blocks Covered = 541
+Balance: 13700
+Number of throws = 74
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 76
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Germany
+Blocks Covered = 551
+Balance: 2350
+Number of throws = 74
+
+Tickets Owned:
+ 	France	Airways	Railways	India	USA
+Transaction Number: 76
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Resort
+Blocks Covered = 549
+Balance: 13500
+Number of throws = 75
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 76
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Japan
+Blocks Covered = 559
+Paid 4750 to player number 1
+Balance: 1800
+Number of throws = 75
+
+Tickets Owned:
+ 	Airways	Railways	USA
+Transaction Number: 79
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Brazil
+Blocks Covered = 555
+Balance: 18250
+Number of throws = 76
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 79
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :UNO25
+Blocks Covered = 565
+Balance: 3800
+Number of throws = 76
+
+Tickets Owned:
+ 	Airways	Railways	USA
+Transaction Number: 80
+-------------------------------------------------------------------
+Player number: 1
+Throw: 11
+Player is in :Australia
+Blocks Covered = 566
+Balance: 18250
+Number of throws = 77
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 80
+-------------------------------------------------------------------
+Player number: 2
+Throw: 11
+Player is in :Start
+Blocks Covered = 576
+Balance: 5800
+Number of throws = 77
+
+Tickets Owned:
+ 	Airways	Railways	USA
+Transaction Number: 80
+-------------------------------------------------------------------
+Player number: 1
+Throw: 11
+Player is in :England
+Blocks Covered = 577
+Balance: 20250
+Number of throws = 78
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 80
+-------------------------------------------------------------------
+Player number: 2
+Throw: 11
+Player is in :Germany
+Blocks Covered = 587
+Balance: 5800
+Number of throws = 78
+
+Tickets Owned:
+ 	Airways	Railways	USA
+Transaction Number: 80
+-------------------------------------------------------------------
+Player number: 1
+Throw: 11
+Player is in :Airways
+Blocks Covered = 588
+Paid 1500 to player number 2
+Balance: 18750
+Number of throws = 79
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 81
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :Chance16
+Blocks Covered = 592
+Balance: 8300
+Number of throws = 79
+
+Tickets Owned:
+ 	Airways	Railways	USA
+Transaction Number: 82
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Italy
+Blocks Covered = 593
+Balance: 18750
+Number of throws = 80
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 82
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Mexico
+Blocks Covered = 599
+Current player's position is 23
+Balance: 4300
+Number of throws = 80
+
+Tickets Owned:
+ 	Airways	Railways	USA	Mexico
+Transaction Number: 83
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Mexico
+Blocks Covered = 599
+Paid 900 to player number 2
+Balance: 17850
+Number of throws = 81
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 84
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Saudi Arabia
+Blocks Covered = 606
+Balance: 5200
+Number of throws = 81
+
+Tickets Owned:
+ 	Airways	Railways	USA	Mexico
+Transaction Number: 84
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :India
+Blocks Covered = 604
+Balance: 17850
+Number of throws = 82
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 84
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :Singapore
+Blocks Covered = 611
+Balance: 5200
+Number of throws = 82
+
+Tickets Owned:
+ 	Airways	Railways	USA	Mexico
+Transaction Number: 84
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Railways
+Blocks Covered = 609
+Paid 1500 to player number 2
+Balance: 16350
+Number of throws = 83
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 85
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :Resort
+Blocks Covered = 621
+Balance: 8500
+Number of throws = 83
+
+Tickets Owned:
+ 	Airways	Railways	USA	Mexico
+Transaction Number: 85
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Satellite
+Blocks Covered = 619
+Balance: 18550
+Number of throws = 84
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 85
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :Japan
+Blocks Covered = 631
+Paid 4750 to player number 1
+Balance: 3750
+Number of throws = 84
+
+Tickets Owned:
+ 	Airways	Railways	USA	Mexico
+Transaction Number: 86
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Brazil
+Blocks Covered = 627
+Balance: 23300
+Number of throws = 85
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt
+Transaction Number: 86
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Jail
+Blocks Covered = 639
+Balance: 3250
+Number of throws = 85
+
+Tickets Owned:
+ 	Airways	Railways	USA	Mexico
+Transaction Number: 87
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Roadways
+Blocks Covered = 634
+Current player's position is 22
+House constructed in Brazil
+Balance: 17300
+Number of throws = 86
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 89
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Petroleum
+Blocks Covered = 643
+Balance: 3250
+Number of throws = 86
+
+Tickets Owned:
+ 	Airways	Railways	USA	Mexico
+Transaction Number: 89
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :Australia
+Blocks Covered = 638
+Balance: 17300
+Number of throws = 87
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 89
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :England
+Blocks Covered = 649
+Current player's position is 1
+Balance: 2750
+Number of throws = 87
+
+Tickets Owned:
+ 	Airways	Railways	USA	Mexico	England
+Transaction Number: 90
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Singapore
+Blocks Covered = 647
+Balance: 17300
+Number of throws = 88
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 90
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Canada
+Blocks Covered = 658
+Balance: 2750
+Number of throws = 88
+
+Tickets Owned:
+ 	Airways	Railways	USA	Mexico	England
+Transaction Number: 90
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Egypt
+Blocks Covered = 656
+Balance: 19300
+Number of throws = 89
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 90
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Japan
+Blocks Covered = 667
+Paid 4750 to player number 1
+Balance: 3000
+Number of throws = 89
+
+Tickets Owned:
+ 	Airways	USA	Mexico	England
+Transaction Number: 92
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Customs Duty
+Blocks Covered = 661
+Balance: 23550
+Number of throws = 90
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 93
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Australia
+Blocks Covered = 674
+Balance: 3000
+Number of throws = 90
+
+Tickets Owned:
+ 	Airways	USA	Mexico	England
+Transaction Number: 93
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :USA
+Blocks Covered = 668
+Paid 1000 to player number 2
+Balance: 22550
+Number of throws = 91
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 94
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :Start
+Blocks Covered = 684
+Balance: 6000
+Number of throws = 91
+
+Tickets Owned:
+ 	Airways	USA	Mexico	England
+Transaction Number: 94
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Saudi Arabia
+Blocks Covered = 678
+Balance: 22550
+Number of throws = 92
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 94
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :Canada
+Blocks Covered = 694
+Balance: 6000
+Number of throws = 92
+
+Tickets Owned:
+ 	Airways	USA	Mexico	England
+Transaction Number: 94
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :UNO4
+Blocks Covered = 688
+Balance: 26050
+Number of throws = 93
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 95
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :USA
+Blocks Covered = 704
+House constructed in Mexico
+Balance: 2000
+Number of throws = 93
+
+Tickets Owned:
+ 	Airways	USA	Mexico	England
+Transaction Number: 96
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Canada
+Blocks Covered = 694
+Balance: 26050
+Number of throws = 94
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 96
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Australia
+Blocks Covered = 710
+Balance: 2000
+Number of throws = 94
+
+Tickets Owned:
+ 	Airways	USA	Mexico	England
+Transaction Number: 96
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Chance16
+Blocks Covered = 700
+Balance: 24550
+Number of throws = 95
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 97
+-------------------------------------------------------------------
+Player number: 2
+Throw: 3
+Player is in :Chance29
+Blocks Covered = 713
+Balance: 4500
+Number of throws = 95
+
+Tickets Owned:
+ 	Airways	USA	Mexico	England
+Transaction Number: 98
+-------------------------------------------------------------------
+Player number: 1
+Throw: 3
+Player is in :Japan
+Blocks Covered = 703
+Balance: 24550
+Number of throws = 96
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 98
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :England
+Blocks Covered = 721
+Balance: 6500
+Number of throws = 96
+
+Tickets Owned:
+ 	Airways	USA	Mexico	England
+Transaction Number: 98
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Jail
+Blocks Covered = 711
+Balance: 24050
+Number of throws = 97
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 99
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Egypt
+Blocks Covered = 728
+Paid 300 to player number 1
+House constructed in Mexico
+Balance: 2200
+Number of throws = 97
+
+Tickets Owned:
+ 	Airways	USA	Mexico	England
+Transaction Number: 101
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :China
+Blocks Covered = 716
+Balance: 24350
+Number of throws = 98
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 101
+-------------------------------------------------------------------
+Player number: 2
+Throw: 3
+Player is in :Germany
+Blocks Covered = 731
+Balance: 2200
+Number of throws = 98
+
+Tickets Owned:
+ 	Airways	USA	Mexico	England
+Transaction Number: 101
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :UNO4
+Blocks Covered = 724
+Balance: 26950
+Number of throws = 99
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 101
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Japan
+Blocks Covered = 739
+Paid 4750 to player number 1
+Balance: 2550
+Number of throws = 99
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 103
+-------------------------------------------------------------------
+Player number: 1
+Throw: 11
+Player is in :Chance29
+Blocks Covered = 749
+Balance: 33200
+Number of throws = 100
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways
+Transaction Number: 104
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :UNO25
+Blocks Covered = 745
+Balance: 4550
+Number of throws = 100
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 105
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :Railways
+Blocks Covered = 753
+Current player's position is 33
+House constructed in Brazil
+House constructed in Brazil
+Balance: 18700
+Number of throws = 101
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 108
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :China
+Blocks Covered = 752
+Balance: 4550
+Number of throws = 101
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 108
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :UNO4
+Blocks Covered = 760
+Balance: 20700
+Number of throws = 102
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 108
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Waterways
+Blocks Covered = 759
+Paid 1400 to player number 1
+Balance: 5150
+Number of throws = 102
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 109
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Airways
+Blocks Covered = 768
+Balance: 22100
+Number of throws = 103
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 109
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Germany
+Blocks Covered = 767
+Balance: 5150
+Number of throws = 103
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 109
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :USA
+Blocks Covered = 776
+Paid 1000 to player number 2
+Balance: 21100
+Number of throws = 104
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 110
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Brazil
+Blocks Covered = 771
+Paid 3900 to player number 1
+Balance: 2250
+Number of throws = 104
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 111
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Jail
+Blocks Covered = 783
+Balance: 24500
+Number of throws = 105
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 112
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Roadways
+Blocks Covered = 778
+Paid 1500 to player number 1
+Balance: 750
+Number of throws = 105
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 113
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Start
+Blocks Covered = 792
+Balance: 28000
+Number of throws = 106
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 113
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Petroleum
+Blocks Covered = 787
+Balance: 750
+Number of throws = 106
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 113
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Resort
+Blocks Covered = 801
+Balance: 27800
+Number of throws = 107
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 113
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :UNO4
+Blocks Covered = 796
+Balance: 2850
+Number of throws = 107
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 113
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Party House
+Blocks Covered = 810
+Balance: 28000
+Number of throws = 108
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 113
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Customs Duty
+Blocks Covered = 805
+Balance: 2550
+Number of throws = 108
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 114
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :Roadways
+Blocks Covered = 814
+House constructed in Brazil
+Balance: 25500
+Number of throws = 109
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 115
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :Party House
+Blocks Covered = 810
+Balance: 2750
+Number of throws = 109
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 115
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Jail
+Blocks Covered = 819
+Balance: 24800
+Number of throws = 110
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 116
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Roadways
+Blocks Covered = 814
+Paid 1500 to player number 1
+Balance: 1250
+Number of throws = 110
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 117
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Malaysia
+Blocks Covered = 826
+Balance: 26300
+Number of throws = 111
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 117
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Chance29
+Blocks Covered = 821
+Balance: 1450
+Number of throws = 111
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 117
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :France
+Blocks Covered = 833
+Balance: 28200
+Number of throws = 112
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 117
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Start
+Blocks Covered = 828
+Balance: 3450
+Number of throws = 112
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 117
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Airways
+Blocks Covered = 840
+Balance: 28200
+Number of throws = 113
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 117
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Satellite
+Blocks Covered = 835
+Balance: 3450
+Number of throws = 113
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 117
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Japan
+Blocks Covered = 847
+Balance: 28200
+Number of throws = 114
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 117
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :Airways
+Blocks Covered = 840
+Balance: 3450
+Number of throws = 114
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 117
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :Mexico
+Blocks Covered = 851
+Paid 3600 to player number 2
+Balance: 24600
+Number of throws = 115
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 118
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Japan
+Blocks Covered = 847
+Paid 4750 to player number 1
+Balance: 2300
+Number of throws = 115
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 119
+-------------------------------------------------------------------
+Player number: 1
+Throw: 11
+Player is in :Malaysia
+Blocks Covered = 862
+Balance: 29350
+Number of throws = 116
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 119
+-------------------------------------------------------------------
+Player number: 2
+Throw: 11
+Player is in :Saudi Arabia
+Blocks Covered = 858
+Balance: 2300
+Number of throws = 116
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 119
+-------------------------------------------------------------------
+Player number: 1
+Throw: 11
+Player is in :Resort
+Blocks Covered = 873
+Balance: 31150
+Number of throws = 117
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 119
+-------------------------------------------------------------------
+Player number: 2
+Throw: 11
+Player is in :France
+Blocks Covered = 869
+Balance: 4500
+Number of throws = 117
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 119
+-------------------------------------------------------------------
+Player number: 1
+Throw: 11
+Player is in :USA
+Blocks Covered = 884
+Paid 1000 to player number 2
+Balance: 30150
+Number of throws = 118
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 120
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :Canada
+Blocks Covered = 874
+Balance: 5500
+Number of throws = 118
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 120
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :UNO25
+Blocks Covered = 889
+Balance: 27650
+Number of throws = 119
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 121
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :USA
+Blocks Covered = 884
+Balance: 5500
+Number of throws = 119
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 121
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Singapore
+Blocks Covered = 899
+Balance: 27650
+Number of throws = 120
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 121
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :Saudi Arabia
+Blocks Covered = 894
+Balance: 5500
+Number of throws = 120
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 121
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Resort
+Blocks Covered = 909
+Balance: 29450
+Number of throws = 121
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 121
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :UNO4
+Blocks Covered = 904
+Balance: 9200
+Number of throws = 121
+
+Tickets Owned:
+ 	USA	Mexico	England
+Transaction Number: 122
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Chance16
+Blocks Covered = 916
+Balance: 30450
+Number of throws = 122
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 122
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Germany
+Blocks Covered = 911
+Current player's position is 11
+Balance: 5200
+Number of throws = 122
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 123
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Roadways
+Blocks Covered = 922
+Balance: 30450
+Number of throws = 123
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 123
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Italy
+Blocks Covered = 917
+Paid 4600 to player number 1
+Balance: 600
+Number of throws = 123
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 124
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :Australia
+Blocks Covered = 926
+Balance: 35050
+Number of throws = 124
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways
+Transaction Number: 124
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Travelling Duty
+Blocks Covered = 921
+Balance: 500
+Number of throws = 124
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 125
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Petroleum
+Blocks Covered = 931
+Current player's position is 31
+Balance: 29550
+Number of throws = 125
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 126
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :Petroleum
+Blocks Covered = 931
+Paid 500 to player number 1
+Balance: 0
+Number of throws = 125
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 127
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Iraq
+Blocks Covered = 938
+Balance: 32050
+Number of throws = 126
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 127
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Iraq
+Blocks Covered = 938
+Balance: 2000
+Number of throws = 126
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 127
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Egypt
+Blocks Covered = 944
+Balance: 32050
+Number of throws = 127
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 127
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Resort
+Blocks Covered = 945
+Balance: 1800
+Number of throws = 127
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 127
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Brazil
+Blocks Covered = 951
+Balance: 32250
+Number of throws = 128
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 127
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Chance16
+Blocks Covered = 952
+Balance: 2200
+Number of throws = 128
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 127
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Roadways
+Blocks Covered = 958
+Balance: 32050
+Number of throws = 129
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 127
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Mexico
+Blocks Covered = 959
+Balance: 2200
+Number of throws = 129
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 127
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Chance29
+Blocks Covered = 965
+Balance: 33050
+Number of throws = 130
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 127
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Jail
+Blocks Covered = 963
+Balance: 1200
+Number of throws = 130
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 128
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :Railways
+Blocks Covered = 969
+Balance: 33050
+Number of throws = 131
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 128
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Malaysia
+Blocks Covered = 970
+Balance: 1200
+Number of throws = 131
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 128
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :UNO4
+Blocks Covered = 976
+Balance: 35050
+Number of throws = 132
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 128
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :France
+Blocks Covered = 977
+Balance: 3200
+Number of throws = 132
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 128
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Germany
+Blocks Covered = 983
+Paid 400 to player number 2
+Balance: 34650
+Number of throws = 133
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 129
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :Canada
+Blocks Covered = 982
+Balance: 3600
+Number of throws = 133
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 129
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Italy
+Blocks Covered = 989
+Balance: 34650
+Number of throws = 134
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 129
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Party House
+Blocks Covered = 990
+Balance: 3800
+Number of throws = 134
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 129
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :UNO25
+Blocks Covered = 997
+Balance: 36850
+Number of throws = 135
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 129
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Australia
+Blocks Covered = 998
+Balance: 3600
+Number of throws = 135
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 129
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Australia
+Blocks Covered = 1034
+Balance: 36850
+Number of throws = 136
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 129
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Malaysia
+Blocks Covered = 1006
+Balance: 3600
+Number of throws = 136
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 129
+-------------------------------------------------------------------
+Player number: 1
+Throw: 11
+Player is in :England
+Blocks Covered = 1045
+Paid 700 to player number 2
+Balance: 38150
+Number of throws = 137
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 130
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :France
+Blocks Covered = 1013
+Balance: 6300
+Number of throws = 137
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 130
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Egypt
+Blocks Covered = 1052
+Balance: 38150
+Number of throws = 138
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 130
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Airways
+Blocks Covered = 1020
+Balance: 6300
+Number of throws = 138
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 130
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Brazil
+Blocks Covered = 1059
+Balance: 38150
+Number of throws = 139
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 130
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Japan
+Blocks Covered = 1027
+Paid 4750 to player number 1
+Balance: 1550
+Number of throws = 139
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 131
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Mexico
+Blocks Covered = 1067
+Paid 3600 to player number 2
+Balance: 39300
+Number of throws = 140
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 132
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Jail
+Blocks Covered = 1035
+Balance: 4650
+Number of throws = 140
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 133
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :China
+Blocks Covered = 1076
+Balance: 39300
+Number of throws = 141
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 133
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Start
+Blocks Covered = 1044
+Balance: 6650
+Number of throws = 141
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 133
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Waterways
+Blocks Covered = 1083
+Balance: 41300
+Number of throws = 142
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 133
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Iran
+Blocks Covered = 1050
+Balance: 6650
+Number of throws = 142
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 133
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Resort
+Blocks Covered = 1089
+Balance: 41100
+Number of throws = 143
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 133
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Airways
+Blocks Covered = 1056
+Balance: 6850
+Number of throws = 143
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 133
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Brazil
+Blocks Covered = 1095
+Balance: 41100
+Number of throws = 144
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 133
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Party House
+Blocks Covered = 1062
+Balance: 7050
+Number of throws = 144
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 133
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Travelling Duty
+Blocks Covered = 1101
+Balance: 40650
+Number of throws = 145
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 134
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Hong Kong
+Blocks Covered = 1068
+Paid 4600 to player number 1
+Balance: 2450
+Number of throws = 145
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 135
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Chance29
+Blocks Covered = 1109
+Balance: 42250
+Number of throws = 146
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 135
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :China
+Blocks Covered = 1076
+Balance: 2450
+Number of throws = 146
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 135
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :England
+Blocks Covered = 1117
+Paid 700 to player number 2
+Balance: 43550
+Number of throws = 147
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 136
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :England
+Blocks Covered = 1081
+Balance: 5150
+Number of throws = 147
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 136
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Iran
+Blocks Covered = 1122
+Balance: 43550
+Number of throws = 148
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 136
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :Iran
+Blocks Covered = 1086
+Balance: 5150
+Number of throws = 148
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 136
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Germany
+Blocks Covered = 1127
+Paid 400 to player number 2
+Balance: 43150
+Number of throws = 149
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 137
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Switzerland
+Blocks Covered = 1094
+Balance: 5550
+Number of throws = 149
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 137
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Japan
+Blocks Covered = 1135
+Balance: 43150
+Number of throws = 150
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 137
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Roadways
+Blocks Covered = 1102
+Paid 1500 to player number 1
+Balance: 4050
+Number of throws = 150
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 138
+-------------------------------------------------------------------
+Player number: 1
+Throw: 12
+Player is in :Petroleum
+Blocks Covered = 1147
+Balance: 44650
+Number of throws = 151
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 138
+-------------------------------------------------------------------
+Player number: 2
+Throw: 12
+Player is in :Malaysia
+Blocks Covered = 1114
+Balance: 4050
+Number of throws = 151
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 138
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :England
+Blocks Covered = 1153
+Paid 700 to player number 2
+Balance: 45950
+Number of throws = 152
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum
+Transaction Number: 139
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :UNO4
+Blocks Covered = 1120
+Balance: 8750
+Number of throws = 152
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 140
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :France
+Blocks Covered = 1157
+Current player's position is 5
+Balance: 43450
+Number of throws = 153
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 141
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Airways
+Blocks Covered = 1128
+Balance: 8750
+Number of throws = 153
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 141
+-------------------------------------------------------------------
+Player number: 1
+Throw: 3
+Player is in :Egypt
+Blocks Covered = 1160
+Balance: 43450
+Number of throws = 154
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 141
+-------------------------------------------------------------------
+Player number: 2
+Throw: 3
+Player is in :Brazil
+Blocks Covered = 1131
+Paid 4900 to player number 1
+Balance: 3850
+Number of throws = 154
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 142
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Chance16
+Blocks Covered = 1168
+Balance: 45350
+Number of throws = 155
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 142
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Mexico
+Blocks Covered = 1139
+Balance: 3850
+Number of throws = 155
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 142
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Hong Kong
+Blocks Covered = 1176
+Balance: 45350
+Number of throws = 156
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 142
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Petroleum
+Blocks Covered = 1147
+Paid 500 to player number 1
+Balance: 3350
+Number of throws = 156
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 143
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :India
+Blocks Covered = 1180
+Balance: 45850
+Number of throws = 157
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 143
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Singapore
+Blocks Covered = 1151
+Balance: 3350
+Number of throws = 157
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 143
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :China
+Blocks Covered = 1184
+Balance: 45850
+Number of throws = 158
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 143
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Waterways
+Blocks Covered = 1155
+Paid 1400 to player number 1
+Balance: 3950
+Number of throws = 158
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 144
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Waterways
+Blocks Covered = 1191
+Balance: 49250
+Number of throws = 159
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 144
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Canada
+Blocks Covered = 1162
+Balance: 3950
+Number of throws = 159
+
+Tickets Owned:
+ 	USA	Mexico	England	Germany
+Transaction Number: 144
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Canada
+Blocks Covered = 1198
+Balance: 49250
+Number of throws = 160
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 144
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Italy
+Blocks Covered = 1169
+Paid 4600 to player number 1
+House constructed in Germany
+Balance: 850
+Number of throws = 160
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 147
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :Switzerland
+Blocks Covered = 1202
+Balance: 53850
+Number of throws = 161
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 147
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Travelling Duty
+Blocks Covered = 1173
+Balance: 800
+Number of throws = 161
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 148
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Hong Kong
+Blocks Covered = 1212
+Balance: 53850
+Number of throws = 162
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 148
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :Petroleum
+Blocks Covered = 1183
+Paid 500 to player number 1
+Balance: 300
+Number of throws = 162
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 149
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Petroleum
+Blocks Covered = 1219
+Balance: 54350
+Number of throws = 163
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 149
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Iraq
+Blocks Covered = 1190
+Balance: 2300
+Number of throws = 163
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 149
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Iraq
+Blocks Covered = 1226
+Balance: 56350
+Number of throws = 164
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 149
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Resort
+Blocks Covered = 1197
+Balance: 2100
+Number of throws = 164
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 149
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Resort
+Blocks Covered = 1233
+Balance: 56350
+Number of throws = 165
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 149
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Chance16
+Blocks Covered = 1204
+Balance: 2500
+Number of throws = 165
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 149
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Chance16
+Blocks Covered = 1240
+Balance: 57450
+Number of throws = 166
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 149
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Mexico
+Blocks Covered = 1211
+Balance: 1900
+Number of throws = 166
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 149
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Mexico
+Blocks Covered = 1247
+Paid 3600 to player number 2
+Balance: 53850
+Number of throws = 167
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 150
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Petroleum
+Blocks Covered = 1219
+Paid 500 to player number 1
+Balance: 5000
+Number of throws = 167
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 151
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :China
+Blocks Covered = 1256
+Balance: 54350
+Number of throws = 168
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 151
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :UNO4
+Blocks Covered = 1228
+Balance: 6850
+Number of throws = 168
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 151
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :France
+Blocks Covered = 1265
+Balance: 56350
+Number of throws = 169
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 151
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Customs Duty
+Blocks Covered = 1237
+Balance: 6750
+Number of throws = 169
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 152
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :Resort
+Blocks Covered = 1269
+Balance: 56150
+Number of throws = 170
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 152
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Italy
+Blocks Covered = 1241
+Paid 4600 to player number 1
+Balance: 2350
+Number of throws = 170
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 1
+Throw: 3
+Player is in :Airways
+Blocks Covered = 1272
+Balance: 60750
+Number of throws = 171
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 2
+Throw: 3
+Player is in :USA
+Blocks Covered = 1244
+Balance: 2350
+Number of throws = 171
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 1
+Throw: 3
+Player is in :Brazil
+Blocks Covered = 1275
+Balance: 60750
+Number of throws = 172
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 2
+Throw: 3
+Player is in :Mexico
+Blocks Covered = 1247
+Balance: 2350
+Number of throws = 172
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 1
+Throw: 3
+Player is in :Party House
+Blocks Covered = 1278
+Balance: 60950
+Number of throws = 173
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 2
+Throw: 3
+Player is in :Australia
+Blocks Covered = 1250
+Balance: 2150
+Number of throws = 173
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Australia
+Blocks Covered = 1286
+Balance: 60950
+Number of throws = 174
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Malaysia
+Blocks Covered = 1258
+Balance: 2150
+Number of throws = 174
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Malaysia
+Blocks Covered = 1294
+Balance: 60950
+Number of throws = 175
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Iran
+Blocks Covered = 1266
+Balance: 4150
+Number of throws = 175
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Iran
+Blocks Covered = 1302
+Balance: 62950
+Number of throws = 176
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Switzerland
+Blocks Covered = 1274
+Balance: 4150
+Number of throws = 176
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Switzerland
+Blocks Covered = 1310
+Balance: 62950
+Number of throws = 177
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France
+Transaction Number: 153
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Roadways
+Blocks Covered = 1282
+Paid 1500 to player number 1
+Balance: 2650
+Number of throws = 177
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 154
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :USA
+Blocks Covered = 1316
+Current player's position is 20
+Balance: 55950
+Number of throws = 178
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA
+Transaction Number: 155
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Chance29
+Blocks Covered = 1289
+Balance: 2850
+Number of throws = 178
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 155
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Jail
+Blocks Covered = 1323
+Balance: 55350
+Number of throws = 179
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA
+Transaction Number: 156
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Start
+Blocks Covered = 1296
+Balance: 4850
+Number of throws = 179
+
+Tickets Owned:
+ 	Mexico	England	Germany
+Transaction Number: 156
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :China
+Blocks Covered = 1328
+Balance: 55350
+Number of throws = 180
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA
+Transaction Number: 156
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :France
+Blocks Covered = 1301
+Paid 4900 to player number 1
+Balance: 1950
+Number of throws = 180
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 158
+-------------------------------------------------------------------
+Player number: 1
+Throw: 3
+Player is in :Singapore
+Blocks Covered = 1331
+Balance: 60250
+Number of throws = 181
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA
+Transaction Number: 158
+-------------------------------------------------------------------
+Player number: 2
+Throw: 3
+Player is in :Egypt
+Blocks Covered = 1304
+Paid 300 to player number 1
+Balance: 1650
+Number of throws = 181
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 159
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Resort
+Blocks Covered = 1341
+Balance: 62350
+Number of throws = 182
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA
+Transaction Number: 159
+-------------------------------------------------------------------
+Player number: 2
+Throw: 10
+Player is in :Party House
+Blocks Covered = 1314
+Balance: 2050
+Number of throws = 182
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 159
+-------------------------------------------------------------------
+Player number: 1
+Throw: 10
+Player is in :Japan
+Blocks Covered = 1351
+House constructed in Egypt
+Balance: 58950
+Number of throws = 183
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA
+Transaction Number: 160
+-------------------------------------------------------------------
+Player number: 2
+Throw: 11
+Player is in :Chance29
+Blocks Covered = 1325
+Balance: 3550
+Number of throws = 183
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 161
+-------------------------------------------------------------------
+Player number: 1
+Throw: 8
+Player is in :Jail
+Blocks Covered = 1359
+Balance: 58450
+Number of throws = 184
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA
+Transaction Number: 162
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Start
+Blocks Covered = 1332
+Balance: 5550
+Number of throws = 184
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 162
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Malaysia
+Blocks Covered = 1366
+Current player's position is 34
+Balance: 56950
+Number of throws = 185
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia
+Transaction Number: 163
+-------------------------------------------------------------------
+Player number: 2
+Throw: 7
+Player is in :Satellite
+Blocks Covered = 1339
+Balance: 5550
+Number of throws = 185
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 163
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :France
+Blocks Covered = 1373
+Balance: 58950
+Number of throws = 186
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia
+Transaction Number: 163
+-------------------------------------------------------------------
+Player number: 2
+Throw: 2
+Player is in :Resort
+Blocks Covered = 1341
+Balance: 5350
+Number of throws = 186
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 163
+-------------------------------------------------------------------
+Player number: 1
+Throw: 2
+Player is in :Satellite
+Blocks Covered = 1375
+Current player's position is 7
+House constructed in Egypt
+House constructed in Egypt
+House constructed in USA
+House constructed in Egypt
+House constructed in France
+House constructed in France
+House constructed in Malaysia
+House constructed in Malaysia
+House constructed in Malaysia
+Balance: 29550
+Number of throws = 187
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 173
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Customs Duty
+Blocks Covered = 1345
+Balance: 5350
+Number of throws = 187
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 174
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Chance16
+Blocks Covered = 1384
+Balance: 31550
+Number of throws = 188
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 174
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Roadways
+Blocks Covered = 1354
+Paid 1500 to player number 1
+Balance: 3850
+Number of throws = 188
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 175
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :USA
+Blocks Covered = 1388
+House constructed in Malaysia
+Balance: 31550
+Number of throws = 189
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 176
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :Jail
+Blocks Covered = 1359
+Balance: 3350
+Number of throws = 189
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 177
+-------------------------------------------------------------------
+Player number: 1
+Throw: 2
+Player is in :Roadways
+Blocks Covered = 1390
+Balance: 31550
+Number of throws = 190
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 177
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Start
+Blocks Covered = 1368
+Balance: 5350
+Number of throws = 190
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 177
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Petroleum
+Blocks Covered = 1399
+Balance: 31550
+Number of throws = 191
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 177
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Resort
+Blocks Covered = 1377
+Balance: 5150
+Number of throws = 191
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 177
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :UNO4
+Blocks Covered = 1408
+Balance: 32100
+Number of throws = 192
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 177
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Party House
+Blocks Covered = 1386
+Balance: 5350
+Number of throws = 192
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 177
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Customs Duty
+Blocks Covered = 1417
+Balance: 31100
+Number of throws = 193
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 178
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :Mexico
+Blocks Covered = 1391
+Balance: 5350
+Number of throws = 193
+
+Tickets Owned:
+ 	England	Germany
+Transaction Number: 178
+-------------------------------------------------------------------
+Player number: 1
+Throw: 5
+Player is in :Party House
+Blocks Covered = 1422
+Balance: 31300
+Number of throws = 194
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 178
+-------------------------------------------------------------------
+Player number: 2
+Throw: 5
+Player is in :India
+Blocks Covered = 1396
+Current player's position is 28
+Balance: 650
+Number of throws = 194
+
+Tickets Owned:
+ 	England	Germany	India
+Transaction Number: 179
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Hong Kong
+Blocks Covered = 1428
+Balance: 31300
+Number of throws = 195
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 179
+-------------------------------------------------------------------
+Player number: 2
+Throw: 6
+Player is in :Malaysia
+Blocks Covered = 1402
+Paid 4800 to player number 1
+Balance: 1100
+Number of throws = 195
+
+Tickets Owned:
+ 	India
+Transaction Number: 182
+-------------------------------------------------------------------
+Player number: 1
+Throw: 9
+Player is in :Railways
+Blocks Covered = 1437
+Balance: 36100
+Number of throws = 196
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 182
+-------------------------------------------------------------------
+Player number: 2
+Throw: 9
+Player is in :Satellite
+Blocks Covered = 1411
+Paid 1000 to player number 1
+Balance: 2100
+Number of throws = 196
+
+Tickets Owned:
+ 	India
+Transaction Number: 183
+-------------------------------------------------------------------
+Player number: 1
+Throw: 6
+Player is in :Waterways
+Blocks Covered = 1443
+House constructed in USA
+Balance: 30600
+Number of throws = 197
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 184
+-------------------------------------------------------------------
+Player number: 2
+Throw: 12
+Player is in :Japan
+Blocks Covered = 1423
+Paid 4750 to player number 1
+Balance: 100
+Number of throws = 197
+
+Tickets Owned:
+ 
+Transaction Number: 186
+-------------------------------------------------------------------
+Player number: 1
+Throw: 7
+Player is in :Canada
+Blocks Covered = 1450
+Balance: 35350
+Number of throws = 198
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite
+Transaction Number: 186
+-------------------------------------------------------------------
+Player number: 2
+Throw: 4
+Player is in :Mexico
+Blocks Covered = 1427
+Balance: 100
+Number of throws = 198
+
+Tickets Owned:
+ 
+Transaction Number: 186
+-------------------------------------------------------------------
+Player number: 1
+Throw: 4
+Player is in :Switzerland
+Blocks Covered = 1454
+Current player's position is 14
+House constructed in USA
+House constructed in USA
+Balance: 14850
+Number of throws = 199
+
+Tickets Owned:
+ 	Hong Kong	Italy	Japan	Waterways	Brazil	Egypt	Roadways	Railways	Petroleum	France	USA	Malaysia	Satellite	Switzerland
+Transaction Number: 189
+-------------------------------------------------------------------
+Player number: 2
+Throw: 8
+Player is in :Petroleum
+Blocks Covered = 1435
+Paid 500 to player number 1
+Player number 2 is bankrupt
+Balance: -400
+Number of throws = 199
+
+Tickets Owned:
+ 
+Transaction Number: 190
+---------------------------------------------------------------------------
