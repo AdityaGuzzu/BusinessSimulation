@@ -19,6 +19,8 @@
 #include "randnum.cpp"
 #include "block_transactions.cpp"
 #include "ticket_visits.cpp"
+#include "net_transaction.cpp"
+#include "net_transaction_into_CSV.cpp"
 #include<cstdlib>
 #include<fstream>
 #include<ctime>
@@ -397,7 +399,7 @@ int main()
 				}
 			}
 
-			//for tickets
+			//for buying tickets/paying rents
 			else
 			{
 				//check if the ticket is bought by someone else
@@ -483,7 +485,7 @@ int main()
 						TICKET_ITER->number_of_houses ++;
 						TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
 
-						//Appending the house cost to  the CSV file of the player
+						//Appending the house cost to  the CSV file of the ticket
 						TICKET_ITER->transaction(-TICKET_ITER->house_cost);
 
 						//Appending the house cost to the transanctions vector
@@ -508,7 +510,11 @@ int main()
 		}	
 	}
 
+	//Appending the number of visits of each blocks to the CSV file
 	visits_func(blocks);
+
+	//Appending the net transaction values to the CSV file
+	net_trans_into_CSV(blocks);
 	
 	out<<"\n---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
 	//deleting pointers

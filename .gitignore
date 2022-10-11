@@ -2,5 +2,5 @@
 *.json
 BusinessSimulation.code-workspace
 temp.cpp
-data/
-.vscode/
+/data
+/.vscode
