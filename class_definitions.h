@@ -27,6 +27,7 @@ using namespace std;
 	MEMBER FUNCTIONS:
 	--->(void) TRANSACTION	
 	--->(void) Visits
+	--->(void) net transaction value
 */
 
 
@@ -36,6 +37,7 @@ class block
 	string name;
 	int visits;
 	string block_type;
+	
 	//tickets attributes:
 	int ticket_cost;
 	int basic_rent;
@@ -46,6 +48,7 @@ class block
 	int number_of_houses;
 	int house_rents[4];
 	int house_cost;
+	int net_trans_val;
 	std::vector<int> transactions;
 
 	//Default constructor for general blocks
@@ -81,7 +84,7 @@ class block
 	//This is for white tickets. (Constructor overloading)
 	block(string name, int ticket_cost, int basic_rent, int mortgage_value, bool colour)
 	{
-		this->visits - 0;
+		this->visits=0;
 		this->name = name;
 		this->ticket_cost = ticket_cost;
 		this->basic_rent = basic_rent;
@@ -92,7 +95,7 @@ class block
 	}
 
 		/*
-		 This function will append the amount to the respective csv file of the block
+		 This function appends the amount to the respective csv file of the block
 		 ----------------------------------------------------------------------------
 		 ---> PARAMETERS:
 		 	---> amount of money								(int)
@@ -101,6 +104,17 @@ class block
 			--->NONE
 		*/
 		void transaction(int);
+
+		/*
+			This function calculates the net transaction value of each block
+			----------------------------------------------------------------------------
+			PARAMETERS:
+			---> NONE
+			----------------------------------------------------------------------------
+			RETURN VALUE:
+			---> NONE 
+		*/
+		void net_transaction();
 };
 
    /*	PLAYER CLASS ATTRIBUTES
