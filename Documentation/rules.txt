@@ -1,0 +1,48 @@
+This file contains details about the game and the rules of it.
+
+GETTING STARTED:
+---> Each player is given a certain amount of money (usually $25000)
+
+TO START THE game
+---> Each player must throw a dice one after other.
+
+BUYING AND SELLING
+---> When your pawn reaches a country by throwing dice, player can Buy the site by paying
+    the value of the country to the bank. 
+---> If you are out of money, you can sell the ticket at the price of its mortgage value 
+
+CHANCE and UNO
+---> Chance and UNO deal with profits and losses. 
+---> If you enter UNO by throwing a even number, you earn money. Else, you lose them.
+---> If you enter CHANCE by throwing a odd number, you earn money. Else, you lose them.
+---> The exact functioning of chance and UNO blocks are given in their respective files. 
+
+CUSTOM DUTY
+---> You should pay to the bank $100 for each country you own whenever you reach the 
+    Customs Duty block.
+
+TRAVELLING DUTY
+---> You should pay $50 for each country you own whenever you reach the Travelling Duty
+    block.
+
+JAIL
+---> A player reaches either by the throw of dice or by the Instruction of UNO or CHANCE
+---> In any case, player can only be out of the jail by paying $500 to the bank 
+
+PASSPORT
+---> Every player who has a passport recieves rent.
+---> You'll lose your passport when you enter into UNO by throwing 7.
+---> You can regain it by paying $5000 or after five rounds
+
+PARTY HOUSE
+---> When a player lands in PARTY HOUSE, he/she is entitled to recieve $200 from all other players
+
+RESORT
+---> When a player lands in RESORT, he/she is entitled to pay all other players $200
+
+BANKRUPTCY
+---> If a player owes more than he owns, he is bankrupt 
+
+WINNER
+---> The last player standing wins
+

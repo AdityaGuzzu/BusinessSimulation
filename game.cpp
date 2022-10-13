@@ -515,6 +515,9 @@ int main()
 
 	//Appending the net transaction values to the CSV file
 	net_trans_into_CSV(blocks);
+
+	//updating the global transaction data by calling the python program
+	system("python update_global_block_data.py");
 	
 	out<<"\n---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
 	//deleting pointers
