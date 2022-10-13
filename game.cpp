@@ -21,6 +21,7 @@
 #include "ticket_visits.cpp"
 #include "net_transaction.cpp"
 #include "net_transaction_into_CSV.cpp"
+#include "erase_local_data.cpp"
 #include<cstdlib>
 #include<fstream>
 #include<ctime>
@@ -518,6 +519,9 @@ int main()
 
 	//updating the global transaction data by calling the python program
 	system("python update_global_block_data.py");
+
+	//deleting the local data to save space
+	erase_local_data(blocks);
 	
 	out<<"\n---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
 	//deleting pointers

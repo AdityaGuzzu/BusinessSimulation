@@ -10,7 +10,7 @@
 void net_trans_into_CSV(block *blocks[])
 {
     //opening the CSV file
-    std::fstream out("data/one_game_net_trans.csv",std::ios::out);
+    std::fstream out("local_data/one_game_net_trans.csv",std::ios::out);
     out<<"Block Name"<<','<<"Net Transaction Value"<<std::endl;
     for(int i=0; i<36; i++)
     {

@@ -16,5 +16,6 @@ void start_class::transaction(player *current_player, block *start)
 	{
 		current_player->balance += 2000;
 		TRANSACTION(2000);
+		start->net_trans_val -= 2000;
 	}
 }
