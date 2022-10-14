@@ -22,6 +22,7 @@
 #include "net_transaction.cpp"
 #include "net_transaction_into_CSV.cpp"
 #include "erase_local_data.cpp"
+#include "house_and_level_wise_trans.cpp"
 #include<cstdlib>
 #include<fstream>
 #include<ctime>
@@ -415,6 +416,24 @@ int main()
 					//Appending the rent to the transactions vector
 					CURRENT_TICKET->transactions.push_back(CURRENT_TICKET->current_rent);
 
+					//Adding the amount to the ticket wise net trans based on wheather the ticket is white or colour
+					if(CURRENT_TICKET->colour)
+					{
+						CURRENT_TICKET->house_wise_trans[CURRENT_TICKET->number_of_houses] += CURRENT_TICKET->current_rent;
+					} 
+
+					else
+					{
+						if(CURRENT_TICKET->current_rent == CURRENT_TICKET->basic_rent)
+						{
+							CURRENT_TICKET->house_wise_trans[0] += CURRENT_TICKET->basic_rent;
+						}
+						else
+						{
+							CURRENT_TICKET->house_wise_trans[1] += CURRENT_TICKET->current_rent;
+						}
+					}
+
 					out<<std::endl<<"Paid "<<CURRENT_TICKET->current_rent<<" to player number "<<OWNER_NUMBER+1;
 					TRANSACTION((-1)*CURRENT_TICKET->current_rent);
 					mortgage(current_player, blocks, num_of_players_ref);
@@ -447,6 +466,9 @@ int main()
 
 						//Appending the cost to the transactions vector
 						blocks[POSITION]->transactions.push_back(-blocks[POSITION]->ticket_cost);
+
+						//Appending the cost to house wise net transaction array
+						blocks[POSITION]->house_wise_trans[0] -= blocks[POSITION]->ticket_cost;
 
 						//if the ticket bought is a colour one:
 						if(blocks[POSITION]->colour)
@@ -491,6 +513,9 @@ int main()
 
 						//Appending the house cost to the transanctions vector
 						TICKET_ITER->transactions.push_back(-TICKET_ITER->house_cost);
+
+						//Appending the house cost to the ticket wise net transaction array
+						TICKET_ITER->house_wise_trans[TICKET_ITER->number_of_houses] -= TICKET_ITER->house_cost;
 						}						
 				}
 				
@@ -513,13 +538,20 @@ int main()
 
 	//Appending the number of visits of each blocks to the CSV file
 	visits_func(blocks);
+	
 
 	//Appending the net transaction values to the CSV file
 	net_trans_into_CSV(blocks);
 
+
+	//Appending the net house and level wise transactions
+	house_and_level__wise_trans(blocks);
+
+
 	//updating the global transaction data by calling the python program
 	system("python update_global_block_data.py");
 
+	
 	//deleting the local data to save space
 	erase_local_data(blocks);
 	

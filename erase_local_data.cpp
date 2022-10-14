@@ -11,4 +11,8 @@ void erase_local_data(block *blocks[])
         std::fstream ClearFile(file_name,std::ios::out);
         ClearFile.close();
     }
+
+    //clearing the visits.csv file from local data
+    std::ofstream visits("local_data/visits.csv");
+    visits.close();
 }

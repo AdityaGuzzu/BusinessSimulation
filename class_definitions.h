@@ -23,6 +23,7 @@ using namespace std;
 	---> array of house rents											(int)
 	---> house cost														(int)
 	---> A vector of transactions										(std::vector<int>)
+	---> A vector to keep track of house wise transactions				(std::vector<int>)
 	--------------------------------------------------------------------------------
 	MEMBER FUNCTIONS:
 	--->(void) TRANSACTION	
@@ -50,6 +51,7 @@ class block
 	int house_cost;
 	int net_trans_val;
 	std::vector<int> transactions;
+	std::vector<int> house_wise_trans;
 
 	//Default constructor for general blocks
 
@@ -75,6 +77,13 @@ class block
 		this->colour = true;
 		this->house_cost = house_costs;
 		this->number_of_houses = 0;
+
+		//An array to keep the record of house wise transaction
+		for(int num=0;num<6;num++)
+		{
+			this->house_wise_trans.push_back(0);
+		}
+
 		for(int i=0; i<4; i++)
 		{
 			this->house_rents[i] = house_rents[i];
@@ -85,6 +94,7 @@ class block
 	block(string name, int ticket_cost, int basic_rent, int mortgage_value, bool colour)
 	{
 		this->visits=0;
+		this->block_type = "ticket";
 		this->name = name;
 		this->ticket_cost = ticket_cost;
 		this->basic_rent = basic_rent;
@@ -92,6 +102,11 @@ class block
 		this->colour = false;
 		this->owner_num = -1;		//when a ticket is created, its not owned by anyone.
 		this->current_rent = basic_rent;
+
+		for(int num=0;num<2;num++)
+		{
+			this->house_wise_trans.push_back(0);
+		}
 	}
 
 		/*
