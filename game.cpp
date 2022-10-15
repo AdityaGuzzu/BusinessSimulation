@@ -549,7 +549,10 @@ int main()
 
 
 	//updating the global transaction data by calling the python program
-	system("python update_global_block_data.py");
+	system("python global_data_ops/update_global_block_data.py");
+
+	//updating the global house wise transaction data by calling the python program
+	system("python global_data_ops/update_global_house_wise_data.py");
 
 	
 	//deleting the local data to save space

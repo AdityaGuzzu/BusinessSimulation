@@ -27,10 +27,10 @@ void house_and_level__wise_trans(block *blocks[])
                 //check for clour ticket
                 if(blocks[iter]->colour)
                 {
-                    Colour_Out_File<<blocks[iter]->name<<",";
+                    Colour_Out_File<<blocks[iter]->name;
                     for(int house_net_trans:blocks[iter]->house_wise_trans)
                     {
-                        Colour_Out_File<<house_net_trans<<",";
+                        Colour_Out_File<<','<<house_net_trans;
                     }
                     Colour_Out_File<<std::endl;
                 }
@@ -38,10 +38,10 @@ void house_and_level__wise_trans(block *blocks[])
                 //else its white
                 else
                 {
-                    White_Out_File<<blocks[iter]->name<<",";
+                    White_Out_File<<blocks[iter]->name;
                     for(int house_net_trans:blocks[iter]->house_wise_trans)
                     {
-                        White_Out_File<<house_net_trans<<",";
+                        White_Out_File<<','<<house_net_trans;
                     }
                     White_Out_File<<std::endl;
                 }

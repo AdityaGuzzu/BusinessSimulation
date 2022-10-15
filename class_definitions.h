@@ -79,7 +79,7 @@ class block
 		this->number_of_houses = 0;
 
 		//An array to keep the record of house wise transaction
-		for(int num=0;num<6;num++)
+		for(int num=0;num<5;num++)
 		{
 			this->house_wise_trans.push_back(0);
 		}

@@ -5,39 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18c60845-581a-4c8a-ab01-2d3257e13902" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/data/Airways.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Airways.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Australia.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Australia.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Brazil.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Brazil.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Chance16.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Chance16.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Chance29.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Chance29.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/China.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/China.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Customs Duty.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Customs Duty.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Egypt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Egypt.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/England.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/England.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/France.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/France.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Germany.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Germany.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Hong Kong.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hong Kong.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/India.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/India.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Iran.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Iran.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Iraq.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Iraq.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Italy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Italy.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Jail.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Jail.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Japan.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Japan.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Malaysia.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Malaysia.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Mexico.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Mexico.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Petroleum.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Petroleum.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Roadways.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Roadways.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Satellite.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Satellite.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Saudi Arabia.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Saudi Arabia.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Singapore.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Singapore.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Switzerland.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Switzerland.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Travelling Duty.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Travelling Duty.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/UNO25.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/UNO25.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/UNO4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/UNO4.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/USA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/USA.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Waterways.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Waterways.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global_data/global_block_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global_data_ops/reset_global_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_definitions.h" beforeDir="false" afterPath="$PROJECT_DIR$/class_definitions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global_block_data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/house_and_level_wise_trans.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/house_and_level_wise_trans.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/one_game_net_trans.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/one_game_net_trans.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/start.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reset_global_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/update_global_block_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_data_ops/update_global_block_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +42,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.visualisation">
-    <configuration name="intro" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ravi G\Desktop\Aditya\BusinessSimulation\global_data_ops" />
+      <recent name="C:\Users\Ravi G\Desktop\Aditya\BusinessSimulation\global_data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.update_global_house_wise_data">
+    <configuration name="reset_global_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BusinessSimulation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,11 +57,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="E:/python/CSV" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/global_data_ops" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="E:/python/CSV/intro.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/global_data_ops/reset_global_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="update_global_block_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BusinessSimulation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/global_data_ops" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/global_data_ops/update_global_block_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="update_global_house_wise_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BusinessSimulation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/global_data_ops" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/global_data_ops/update_global_house_wise_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,9 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.update_global_house_wise_data" />
+        <item itemvalue="Python.update_global_block_data" />
+        <item itemvalue="Python.reset_global_data" />
         <item itemvalue="Python.visualisation" />
         <item itemvalue="Shell Script.run.sh" />
-        <item itemvalue="Python.intro" />
       </list>
     </recent_temporary>
   </component>
