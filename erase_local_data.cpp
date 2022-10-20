@@ -13,6 +13,10 @@ void erase_local_data(block *blocks[])
     }
 
     //clearing the visits.csv file from local data
-    std::ofstream visits("local_data/visits.csv");
+    std::fstream visits("local_data/visits.csv",std::ios::out);
     visits.close();
+
+    // //clearing the local IR_ratio.csv file
+    // std::fstream IR_ratio("local_data/IR_ratio.csv",std::ios::out);
+    // IR_ratio.close();
 }

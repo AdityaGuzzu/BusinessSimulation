@@ -14,7 +14,7 @@ void house_and_level__wise_trans(block *blocks[])
 {
     std::ofstream Colour_Out_File("local_data/colour_house_wise_data.csv");
     std::ofstream White_Out_File("local_data/white_level_wise_trans.csv");
-    {
+    
         //Printing the Column names of both the files
         Colour_Out_File<<"Ticket Name"<<","<<"0 houses"<<","<<"1 house"<<","<<"2 houses"<<","<<"3 houses"<<","<<"hotel"<<std::endl;
         White_Out_File<<"Ticket Name"<<","<<"No Double Rent"<<","<<"Double Rent"<<std::endl;
@@ -47,5 +47,7 @@ void house_and_level__wise_trans(block *blocks[])
                 }
             }
         }
-    }
+        Colour_Out_File.close();
+        White_Out_File.close();
+    
 }

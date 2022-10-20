@@ -1,8 +1,12 @@
 *.exe
 *.json
 BusinessSimulation.code-workspace
-/.idea
+.idea/
 temp.cpp
-/local_data
-/global_data/.vscode
-/venv
+local_data/
+.vscode/
+venv/
+global_data/
+visits.txt
+transactions.txt
+output.txt
