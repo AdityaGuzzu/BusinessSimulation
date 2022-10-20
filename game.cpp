@@ -23,6 +23,8 @@
 #include "net_transaction_into_CSV.cpp"
 #include "erase_local_data.cpp"
 #include "house_and_level_wise_trans.cpp"
+#include "update_local_IR_ratio.cpp"
+#include "game_runs.cpp"
 #include<cstdlib>
 #include<fstream>
 #include<ctime>
@@ -536,6 +538,9 @@ int main()
 		}	
 	}
 
+	//Incrementing the number of times game was run
+	increment_runs();
+
 	//Appending the number of visits of each blocks to the CSV file
 	visits_func(blocks);
 	
@@ -547,16 +552,27 @@ int main()
 	//Appending the net house and level wise transactions
 	house_and_level__wise_trans(blocks);
 
+	//Updating the local IR ratio
+	update_local_IR_ratio(blocks);
 
-	//updating the global transaction data by calling the python program
-	system("python global_data_ops/update_global_block_data.py");
 
-	//updating the global house wise transaction data by calling the python program
-	system("python global_data_ops/update_global_house_wise_data.py");
-
+	//updating the global data
+	system("python global_data_ops/update_global_data.py");
 	
 	//deleting the local data to save space
 	erase_local_data(blocks);
+
+	//Lets check the transaction vector of all tickets 
+	for(int i=0; i,36;i++)
+	{
+		std::fstream OutFile("transactions.txt",std::ios::app);
+		int sum=0;
+		for(int trans:blocks[i]->transactions)
+		{
+			sum+=trans;
+		}
+		OutFile<<blocks[i]->name<<','<<sum<<std::endl;
+	}
 	
 	out<<"\n---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
 	//deleting pointers
@@ -570,4 +586,5 @@ int main()
 		delete players[i];
 	}
 	
-}
+	return 0;
+} 

@@ -5,3 +5,4 @@ BusinessSimulation.code-workspace
 temp.cpp
 /local_data
 /global_data/.vscode
+/venv
