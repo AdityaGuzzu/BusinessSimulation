@@ -217,7 +217,7 @@ class UNO_class: public block
 	------------------------------------------------------------------------------------------
 	PARAMETERS:
 	---> Pointer array of type players							(player *[])
-	---> A pointer to current player							(playerr *)				
+	---> A pointer to current player							(player *)				
 	---> A reference to Number of players 						(&int)
 	---> An array of blocks										(block *[])
 	------------------------------------------------------------------------------------------
@@ -306,12 +306,12 @@ class start_class: public block
 	void transaction(player *current_player, block *start);
 };
 
-/*  The customs duty class contains a member function which deducts 100*(number of colour
+/*  The customs duty class contains a method which deducts 100*(number of colour
 	tickets owned by the player).
 	--------------------------------------------------------------------------------------
 	PARAMETERS:
-	---> A pointer to the current player
-	---> A reference to the customs duty object
+	---> A pointer to the current player			(player *)
+	---> A reference to the customs duty object		(&block)
 	--------------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -388,8 +388,8 @@ void mortgage(player *current_player, block *blocks[], int &number_of_players);
 /* The after_throw function updates the player position, rounds etc 
 	---------------------------------------------------------------------------
 	PARAMETERS:
-	---> A pointer of type player*						(player)
-	---> A pointer array of type blocks					(blocks)
+	---> A pointer of type player*						(player *)
+	---> A pointer array of type blocks					(blocks *[])
 	---> A reference to the number of players			(int)
 	---------------------------------------------------------------------------
 	RETURN VALUE:
@@ -401,8 +401,8 @@ void after_throw(player *current_player);
 /* 	The colour double rent function to set the double rents of the colour tickets:
 	--------------------------------------------------------------------------------
 	PARAMETERS:
-	---> A pointer to the current player
-	---> A pointer array of type blocks.
+	---> A pointer to the current player	(player *)
+	---> A pointer array of type blocks.	(block *[])
 	--------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -428,7 +428,7 @@ bool rand_bool();
 	UNO and throwing 7
 	--------------------------------------------------------------------------------------------
 	PARAMETERS:
-	---> A pointer to the current player
+	---> A pointer to the current player	(player *)
 	--------------------------------------------------------------------------------------------
 	RETURN VALUE:
 	---> NONE
@@ -464,11 +464,26 @@ int rand_throw();
 
 int randnum(int upp_lim);
 
+/*
+	This function returns the sum of all players' money
+	---------------------------------------------------
+	PARAMETERS:
+	---> A vector containing pointers to players 
+*/
+int total_players_money(std::vector<player *>);
 
+
+/*
+	A function which returns a pointer to the player who has the
+	highest assets
+	------------------------------------------------------------
+	PARAMETERS:
+	---> A vector of pointers to players		(vector<player>)
+	---> An array of pointers to tickets		(block*)
+	------------------------------------------------------------
+	RETURN VALUE:
+	---> A pointer to the player containing highest assets
+*/
+player* highest_assets(std::vector<player*>, block*);
 
 	
-
-
-
-
-
