@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 #now, create a file object and read all the data into a buffer with each row as a dict
-game_data_df = pd.read_csv(r'../local_data/one_game_net_trans.csv')
+game_data_df = pd.read_csv(r'C:/Users/Ravi G/Desktop/Aditya/BusinessSimulation/local_data/one_game_net_trans.csv')
 
 
 #plotting the line graph
