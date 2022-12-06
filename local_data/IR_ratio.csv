@@ -1,37 +1,37 @@
 Block Name,IR ratio value
 Start,0
-England,0.6
-Iraq,0.3
-Waterways,0.294737
-UNO4,0
-France,2.352
+England,0.70303
+Iraq,2.42
+Waterways,1.15789
+UNO4,5.16667
+France,0
 Iran,0
-Satellite,0
-Egypt,0
+Satellite,5.5
+Egypt,3.85625
 Resort,0
-Canada,1.3125
-Germany,0.697143
-Airways,0
+Canada,0
+Germany,2.32
+Airways,1.38095
 Customs Duty,0
-Switzerland,0
+Switzerland,0.81
 Brazil,0
-Chance16,3.5
-Italy,0
+Chance16,0.191304
+Italy,3.28696
 Party House,0
-Japan,0.48
-USA,0
-Travelling Duty,0
-Roadways,0
-Mexico,1.05
-Hong Kong,1.61667
-UNO25,0
-Australia,0.626263
+Japan,0.3
+USA,0.352941
+Travelling Duty,48
+Roadways,2.11429
+Mexico,0.675
+Hong Kong,3.45714
+UNO25,1.3913
+Australia,0.606061
 Jail,0
-India,0
-Chance29,0.971429
-Saudi Arabia,0.210909
-Petroleum,0
-China,0
-Railways,0.842105
-Malaysia,0.746667
-Singapore,0.1
+India,0.412903
+Chance29,0.522222
+Saudi Arabia,1.46182
+Petroleum,1.09091
+China,0.691111
+Railways,1.31579
+Malaysia,8.8
+Singapore,2.1

@@ -25,12 +25,15 @@
 #include "house_and_level_wise_trans.cpp"
 #include "update_local_IR_ratio.cpp"
 #include "game_runs.cpp"
+#include "total_players_money.cpp"
+#include "highest_assets.cpp"
 #include<cstdlib>
 #include<fstream>
 #include<ctime>
 #define POSITION current_player->position
 #define OWNER_NUMBER blocks[current_player->position]->owner_num
 #define CURRENT_TICKET blocks[current_player->position]
+const int total_bank_money = 166500;
 
 /*      The steps required are broadly categorised into:
 	1.) Get the number of players (maximum 8. Minimum 2)
@@ -55,16 +58,16 @@ int main()
 
 	//Lets create the general blocks
 
-	start_class start;
-	UNO_class uno_4;
-	resort_class resort;
-	customs_duty_class customs_duty;
-	chance_class chance_16;
-	party_house_class party_house;
-	travelling_duty_class travelling_duty;
-	UNO_class uno_25;
-	jail_class jail;
-	chance_class chance_29;
+	start_class *start = new start_class;
+	UNO_class *uno_4 = new UNO_class;
+	resort_class *resort = new resort_class;
+	customs_duty_class *customs_duty = new customs_duty_class;
+	chance_class *chance_16 = new chance_class;
+	party_house_class *party_house =  new party_house_class;
+	travelling_duty_class *travelling_duty =  new travelling_duty_class;
+	UNO_class *uno_25 = new UNO_class;
+	jail_class *jail = new jail_class;
+	chance_class *chance_29 = new chance_class;
 
 	//Now lets create a pointer array of type blocks 			
 	block *blocks[36];
@@ -83,8 +86,8 @@ int main()
 	
 
 	//Passing the address of start object as the first element
-	blocks[0] = &start;
-	start.name = "Start";
+	blocks[0] = start;
+	start->name = "Start";
 
 	//ENGLAND
 	{
@@ -103,8 +106,8 @@ int main()
 	blocks[3] = new block("Waterways", 9500, 1400, 2000, false);
 
 	//UNO_4
-	blocks[4] = &uno_4;
-	uno_4.name = "UNO4";
+	blocks[4] = uno_4;
+	uno_4->name = "UNO4";
 
 	//FRANCE
 	{
@@ -128,8 +131,8 @@ int main()
 	}
 
 	//RESORT
-	blocks[9] = &resort;
-	resort.name = "Resort";
+	blocks[9] = resort;
+	resort->name = "Resort";
 
 	//CANADA
 	{
@@ -147,8 +150,8 @@ int main()
 	blocks[12] = new block("Airways", 10500, 1500, 5500, false);
 
 	//CUSTOMS DUTY
-	blocks[13] = &customs_duty;
-	customs_duty.name = "Customs Duty";
+	blocks[13] = customs_duty;
+	customs_duty->name = "Customs Duty";
 
 	//SWITZERLAND
 	{
@@ -163,8 +166,8 @@ int main()
 	}
 
 	//CHANCE
-	blocks[16] = &chance_16;
-	chance_16.name = "Chance16";
+	blocks[16] = chance_16;
+	chance_16->name = "Chance16";
 
 	//ITALY
 	{
@@ -173,8 +176,8 @@ int main()
 	}
 
 	//PARTY HOUSE
-	blocks[18] = &party_house;
-	party_house.name = "Party House";
+	blocks[18] = party_house;
+	party_house->name = "Party House";
 
 	//JAPAN
 	{
@@ -189,8 +192,8 @@ int main()
 	}
 
 	//TRAVELLING DUTY
-	blocks[21] = &travelling_duty;
-	travelling_duty.name = "Travelling Duty";
+	blocks[21] = travelling_duty;
+	travelling_duty->name = "Travelling Duty";
 
 	//ROADWAYS
 	blocks[22] = new block("Roadways", 3500, 800, 1800, false);
@@ -208,8 +211,8 @@ int main()
 	}
 
 	//UNO
-	blocks[25] = &uno_25;
-	uno_25.name = "UNO25";
+	blocks[25] = uno_25;
+	uno_25->name = "UNO25";
 
 	//AUSTRALIA
 	{
@@ -218,8 +221,8 @@ int main()
 	}
 
 	//JAIL
-	blocks[27] = &jail;
-	jail.name = "Jail";
+	blocks[27] = jail;
+	jail->name = "Jail";
 
 	//INDIA
 	{
@@ -228,8 +231,8 @@ int main()
 	}
 
 	//CHANCE
-	blocks[29] = &chance_29;
-	chance_29.name = "Chance29";
+	blocks[29] = chance_29;
+	chance_29->name = "Chance29";
 
 	//SAUDI ARABIA
 	{
@@ -267,7 +270,7 @@ int main()
 	//original number of players
 	int org_num_of_players;
 
-	//lets create a reference to number of players 
+	//a reference to number of players 
 	int &num_of_players_ref = num_of_players;
 
 	//Get the number of players
@@ -301,10 +304,12 @@ int main()
 
 	//space enhancement
 	players.shrink_to_fit();
+
+	//Total Money of all the players. Shouldn't exceed the total amount the bank has
 	
 	//Simulation starts.
 	//int j=0;
-	while(num_of_players > 1)
+	while(num_of_players > 1  && total_players_money(players) < total_bank_money)
 	{
 		for(int this_player =0; this_player<org_num_of_players && num_of_players > 1; this_player++)
 		{
@@ -334,7 +339,7 @@ int main()
 			blocks[current_player->position]->visits++;
 			
 			//Call the start function
-			start.transaction(current_player,blocks[0]);
+			start->transaction(current_player,blocks[0]);
 
 			//if player is not eligible for rent
 			if(!current_player->rent_elig)
@@ -351,55 +356,55 @@ int main()
 				//if position is UNO_4
 				if(POSITION == 4)
 				{
-					uno_4.UNO(players,current_player,blocks,org_num_of_players,num_of_players_ref);
+					uno_4->UNO(players,current_player,blocks,org_num_of_players,num_of_players_ref);
 				}
 
 				//If position is resort
 				if(POSITION == 9)
 				{
-					resort.transaction(players, current_player, org_num_of_players,num_of_players_ref, blocks);
+					resort->transaction(players, current_player, org_num_of_players,num_of_players_ref, blocks);
 				}
 
 				//If position is customs duty
 				if(POSITION == 13)
 				{
-					customs_duty.transaction(current_player,num_of_players_ref, blocks);
+					customs_duty->transaction(current_player,num_of_players_ref, blocks);
 				}
 
 				//If position is chance
 				if(POSITION == 16)
 				{
-					chance_16.transaction(players,current_player,org_num_of_players,num_of_players_ref,blocks);
+					chance_16->transaction(players,current_player,org_num_of_players,num_of_players_ref,blocks);
 				}
 
 				//If position is party house
 				if(POSITION == 18)
 				{
-					party_house.transaction(players,current_player,org_num_of_players,num_of_players_ref,blocks);
+					party_house->transaction(players,current_player,org_num_of_players,num_of_players_ref,blocks);
 				}
 
 				//If position is Travelling Duty
 				if(POSITION == 21)
 				{
-					travelling_duty.transaction(current_player,num_of_players_ref,blocks);
+					travelling_duty->transaction(current_player,num_of_players_ref,blocks);
 				}
 
 				//if position is UNO25
 				if(POSITION == 25)
 				{
-					uno_25.UNO(players,current_player, blocks,org_num_of_players,num_of_players_ref);
+					uno_25->UNO(players,current_player, blocks,org_num_of_players,num_of_players_ref);
 				}
 
 				//If position is JAIL
 				if(POSITION == 27)
 				{
-					jail.transaction(current_player,blocks,num_of_players_ref);
+					jail->transaction(current_player,blocks,num_of_players_ref);
 				}
 
 				//If positon is Chance29
 				if(POSITION == 29)
 				{
-					chance_29.transaction(players,current_player,org_num_of_players,num_of_players_ref,blocks);
+					chance_29->transaction(players,current_player,org_num_of_players,num_of_players_ref,blocks);
 				}
 			}
 
@@ -538,32 +543,37 @@ int main()
 		}	
 	}
 
+	/*We need to calculate the total assets of the players to declare 
+	 the winner when the total money among the players exceeds the set limit
+	*/
+	out<<"\n---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
+	out<<std::endl<<highest_assets(players,blocks)->player_number +1<<" is the winner";
+
+
 	//Incrementing the number of times game was run
 	increment_runs();
 
+	
 	//Appending the number of visits of each blocks to the CSV file
 	visits_func(blocks);
 	
-
+	
 	//Appending the net transaction values to the CSV file
 	net_trans_into_CSV(blocks);
 
 
 	//Appending the net house and level wise transactions
 	house_and_level__wise_trans(blocks);
-
+	
 	//Updating the local IR ratio
 	update_local_IR_ratio(blocks);
-
+	
 
 	//updating the global data
 	system("python global_data_ops/update_global_data.py");
 	
-	//deleting the local data to save space
-	erase_local_data(blocks);
-
 	//Lets check the transaction vector of all tickets 
-	for(int i=0; i,36;i++)
+	for(int i=0; i<36;i++)
 	{
 		std::fstream OutFile("transactions.txt",std::ios::app);
 		int sum=0;
@@ -573,18 +583,17 @@ int main()
 		}
 		OutFile<<blocks[i]->name<<','<<sum<<std::endl;
 	}
-	
-	out<<"\n---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
+
+	//deleting the local data to save space
+	erase_local_data(blocks);
+
 	//deleting pointers
 	for(int i=0; i<36; i++)
 	{
 		delete blocks[i];
 	}
 
-	for(int i=0; i<players.size(); i++)
-	{
-		delete players[i];
-	}
-	
+	players.erase(players.begin(),players.end());
+
 	return 0;
 } 
