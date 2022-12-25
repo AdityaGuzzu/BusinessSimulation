@@ -32,6 +32,13 @@ global_df = pd.read_csv(parent_folder+'/global_data/global_white_level_wise_tran
 global_df[["No Double Rent","Double Rent"]] += local_df[["No Double Rent","Double Rent"]]
 global_df.to_csv(parent_folder+'/global_data/global_white_level_wise_trans.csv',index=False,index_label=False)
 
+'''
+Updating global house wise data
+'''
+local_df = pd.read_csv(parent_folder+'/local_data/colour_house_wise_data.csv')
+global_df = pd.read_csv(parent_folder+'/global_data/global_colour_house_wise_data.csv')
+global_df[["0 houses","1 house","2 houses","3 houses","hotel"]] += local_df[["0 houses","1 house","2 houses","3 houses","hotel"]]
+global_df.to_csv(parent_folder+'/global_data/global_colour_house_wise_data.csv',index=False,index_label=False)
 
 '''
 Updating the global IR ratio 

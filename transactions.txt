@@ -1,576 +1,1548 @@
 Start,0
-England,5900
+England,17300
 Iraq,-3000
-Waterways,-5300
-UNO4,-1500
-France,3850
-Iran,57600
-Satellite,250
-Egypt,500
+Waterways,0
+UNO4,-6500
+France,-6200
+Iran,6400
+Satellite,4500
+Egypt,0
 Resort,0
-Canada,52800
-Germany,8400
-Airways,0
-Customs Duty,6400
-Switzerland,11100
-Brazil,7650
-Chance16,-8800
+Canada,0
+Germany,55700
+Airways,-2500
+Customs Duty,5000
+Switzerland,0
+Brazil,8300
+Chance16,-2000
 Italy,0
 Party House,0
-Japan,74250
+Japan,0
 USA,0
-Travelling Duty,4700
-Roadways,3600
-Mexico,-7800
-Hong Kong,900
-UNO25,-1500
-Australia,6200
-Jail,11000
-India,-1200
-Chance29,-4800
-Saudi Arabia,-6300
-Petroleum,-2500
-China,0
-Railways,-4500
-Malaysia,78900
-Singapore,-4900
-Start,0
-England,-9800
-Iraq,0
-Waterways,0
-UNO4,-12500
-France,0
-Iran,0
-Satellite,-750
-Egypt,-4100
-Resort,0
-Canada,2400
-Germany,-6600
-Airways,-10500
-Customs Duty,2100
-Switzerland,-7200
-Brazil,0
-Chance16,3000
-Italy,-8200
-Party House,0
-Japan,-10000
-USA,-17500
-Travelling Duty,800
-Roadways,3900
+Travelling Duty,2350
+Roadways,0
 Mexico,0
-Hong Kong,-1600
-UNO25,-14000
-Australia,0
-Jail,6000
-India,-22650
-Chance29,-5600
-Saudi Arabia,-3000
-Petroleum,-7700
-China,-4500
-Railways,-4500
-Malaysia,33300
-Singapore,-500
+Hong Kong,0
+UNO25,-16000
+Australia,-1300
+Jail,11000
+India,-26500
+Chance29,10500
+Saudi Arabia,-20500
+Petroleum,6500
+China,0
+Railways,0
+Malaysia,0
+Singapore,-4200
 Start,0
-England,-9500
-Iraq,-2500
-Waterways,-1900
-UNO4,2000
-France,-6250
-Iran,-10900
-Satellite,-750
-Egypt,16300
+England,0
+Iraq,0
+Waterways,300
+UNO4,4500
+France,16900
+Iran,0
+Satellite,1000
+Egypt,0
 Resort,0
 Canada,-4400
-Germany,10150
+Germany,8500
 Airways,0
-Customs Duty,3400
-Switzerland,-5300
-Brazil,12900
-Chance16,1700
-Italy,-2500
+Customs Duty,4300
+Switzerland,0
+Brazil,14600
+Chance16,-2000
+Italy,0
 Party House,0
-Japan,22750
-USA,-1500
-Travelling Duty,1200
-Roadways,500
-Mexico,-4400
-Hong Kong,0
-UNO25,-2000
-Australia,200
-Jail,5500
-India,-4500
-Chance29,3200
-Saudi Arabia,0
-Petroleum,0
-China,-450
-Railways,0
-Malaysia,8800
-Singapore,1200
-Start,0
-England,53000
-Iraq,1000
-Waterways,-6100
-UNO4,-20000
-France,0
-Iran,0
-Satellite,4750
-Egypt,76300
-Resort,0
-Canada,-6200
-Germany,50100
-Airways,10500
-Customs Duty,9000
-Switzerland,-17900
-Brazil,-7150
-Chance16,-3800
-Italy,-200
-Party House,0
-Japan,-10250
-USA,-20500
-Travelling Duty,5600
-Roadways,3700
-Mexico,-15900
-Hong Kong,57000
-UNO25,-21000
-Australia,6000
-Jail,12500
+Japan,1250
+USA,0
+Travelling Duty,1900
+Roadways,-2700
+Mexico,0
+Hong Kong,69800
+UNO25,-2500
+Australia,0
+Jail,9000
 India,0
-Chance29,-3500
-Saudi Arabia,18300
-Petroleum,-5200
-China,6650
-Railways,1500
-Malaysia,6900
-Singapore,-300
+Chance29,-4000
+Saudi Arabia,-10800
+Petroleum,-3000
+China,-7450
+Railways,0
+Malaysia,16500
+Singapore,18600
 Start,0
-England,-9500
-Iraq,1500
-Waterways,-8000
-UNO4,4000
-France,150
-Iran,8350
-Satellite,9250
-Egypt,23200
+England,9500
+Iraq,0
+Waterways,0
+UNO4,-4500
+France,0
+Iran,-2700
+Satellite,-2000
+Egypt,-2600
 Resort,0
-Canada,400
-Germany,-1500
+Canada,-2800
+Germany,0
 Airways,0
-Customs Duty,3000
-Switzerland,5400
-Brazil,21800
-Chance16,-3500
-Italy,3300
-Party House,0
-Japan,38750
-USA,-28500
-Travelling Duty,2200
-Roadways,0
-Mexico,1600
-Hong Kong,0
-UNO25,-5000
-Australia,-3200
-Jail,8000
-India,8350
-Chance29,6000
-Saudi Arabia,-18200
-Petroleum,0
-China,0
-Railways,-8000
-Malaysia,10100
-Singapore,-12000
-Start,0
-England,-7200
-Iraq,-37500
-Waterways,18000
-UNO4,-3500
-France,36800
-Iran,99200
-Satellite,17000
-Egypt,31400
-Resort,0
-Canada,18800
-Germany,76250
-Airways,-500
-Customs Duty,17000
-Switzerland,-19700
-Brazil,36150
-Chance16,-15600
-Italy,10400
-Party House,0
-Japan,40000
-USA,24500
-Travelling Duty,8550
-Roadways,8400
-Mexico,15600
-Hong Kong,102000
-UNO25,-18500
-Australia,27000
-Jail,18500
-India,-16000
-Chance29,-7800
-Saudi Arabia,-18100
-Petroleum,-1700
-China,-4500
-Railways,26500
-Malaysia,23100
-Singapore,77800
-Start,0
-England,-47600
-Iraq,-12500
-Waterways,5000
-UNO4,3500
-France,9550
-Iran,-4950
-Satellite,10750
-Egypt,19100
-Resort,0
-Canada,2600
-Germany,-10300
-Airways,500
-Customs Duty,5300
-Switzerland,-16400
-Brazil,8350
-Chance16,2000
-Italy,-1500
+Customs Duty,2300
+Switzerland,-3500
+Brazil,0
+Chance16,6500
+Italy,0
 Party House,0
 Japan,0
-USA,-15000
-Travelling Duty,2650
-Roadways,0
-Mexico,-20200
-Hong Kong,-3500
-UNO25,-13500
-Australia,63100
-Jail,10500
+USA,-7500
+Travelling Duty,2850
+Roadways,4500
+Mexico,-8000
+Hong Kong,-10800
+UNO25,-10000
+Australia,0
+Jail,1500
 India,0
-Chance29,8400
-Saudi Arabia,64300
-Petroleum,-5700
-China,-2250
-Railways,-500
+Chance29,2000
+Saudi Arabia,0
+Petroleum,0
+China,-7650
+Railways,0
 Malaysia,0
-Singapore,41800
+Singapore,0
 Start,0
-England,5900
+England,1000
+Iraq,9500
+Waterways,21300
+UNO4,-4500
+France,0
+Iran,0
+Satellite,6500
+Egypt,0
+Resort,0
+Canada,0
+Germany,0
+Airways,0
+Customs Duty,4400
+Switzerland,36600
+Brazil,23700
+Chance16,2000
+Italy,-5600
+Party House,0
+Japan,28000
+USA,0
+Travelling Duty,5600
+Roadways,-1700
+Mexico,0
+Hong Kong,7400
+UNO25,-8000
+Australia,-900
+Jail,18000
+India,0
+Chance29,3700
+Saudi Arabia,10100
+Petroleum,-200
+China,-12200
+Railways,-5000
+Malaysia,31900
+Singapore,11600
+Start,0
+England,0
 Iraq,0
 Waterways,0
 UNO4,-2500
-France,-2500
-Iran,-11250
-Satellite,2750
-Egypt,40300
-Resort,0
-Canada,27600
-Germany,17900
-Airways,7000
-Customs Duty,1200
-Switzerland,-7400
-Brazil,-500
-Chance16,2000
-Italy,25700
-Party House,0
-Japan,0
-USA,-1000
-Travelling Duty,850
-Roadways,0
-Mexico,-5000
-Hong Kong,-8500
-UNO25,-2000
-Australia,-8800
-Jail,6500
-India,0
-Chance29,-3100
-Saudi Arabia,900
-Petroleum,0
-China,0
-Railways,-4500
-Malaysia,35700
-Singapore,-13500
-Start,0
-England,1000
-Iraq,-13500
-Waterways,0
-UNO4,-3000
-France,12900
-Iran,-5650
-Satellite,750
+France,0
+Iran,0
+Satellite,0
 Egypt,0
 Resort,0
-Canada,-22000
-Germany,-11550
-Airways,9000
-Customs Duty,1900
-Switzerland,-15000
+Canada,0
+Germany,0
+Airways,-10500
+Customs Duty,2600
+Switzerland,0
 Brazil,0
-Chance16,-1000
-Italy,9200
-Party House,0
-Japan,-12250
-USA,-6000
-Travelling Duty,850
-Roadways,-2700
-Mexico,57200
-Hong Kong,0
-UNO25,-500
-Australia,0
-Jail,7500
-India,0
-Chance29,-100
-Saudi Arabia,-900
-Petroleum,0
-China,0
-Railways,0
-Malaysia,-1200
-Singapore,0
-Start,0
-England,-4300
-Iraq,-2000
-Waterways,300
-UNO4,-21500
-France,64950
-Iran,-2200
-Satellite,3500
-Egypt,77400
-Resort,0
-Canada,-1600
-Germany,100900
-Airways,13500
-Customs Duty,9300
-Switzerland,14900
-Brazil,106350
-Chance16,-11800
+Chance16,200
 Italy,0
 Party House,0
-Japan,32500
-USA,-21500
-Travelling Duty,7300
-Roadways,1000
-Mexico,66600
-Hong Kong,-8500
-UNO25,16500
-Australia,66700
-Jail,19500
-India,8150
-Chance29,-2300
-Saudi Arabia,-3100
-Petroleum,-2400
-China,25550
-Railways,2500
-Malaysia,26100
-Singapore,0
+Japan,0
+USA,0
+Travelling Duty,500
+Roadways,0
+Mexico,21100
+Hong Kong,-12000
+UNO25,-29000
+Australia,0
+Jail,3500
+India,0
+Chance29,-500
+Saudi Arabia,-27500
+Petroleum,0
+China,0
+Railways,-9500
+Malaysia,0
+Singapore,4600
 Start,0
 England,0
 Iraq,0
-Waterways,-8600
-UNO4,2500
-France,-950
-Iran,-13150
-Satellite,-750
-Egypt,-21400
+Waterways,0
+UNO4,10000
+France,-9900
+Iran,0
+Satellite,0
+Egypt,0
 Resort,0
-Canada,-8000
-Germany,52650
-Airways,6500
-Customs Duty,2700
-Switzerland,-11600
-Brazil,-2500
-Chance16,-3500
-Italy,0
+Canada,-2400
+Germany,0
+Airways,0
+Customs Duty,1200
+Switzerland,-11200
+Brazil,-3700
+Chance16,-5500
+Italy,-6900
 Party House,0
-Japan,20750
-USA,-34500
-Travelling Duty,1900
+Japan,0
+USA,-8500
+Travelling Duty,2300
 Roadways,0
-Mexico,-4400
-Hong Kong,37000
-UNO25,4000
-Australia,0
-Jail,10500
-India,-24150
-Chance29,2500
+Mexico,-6200
+Hong Kong,8700
+UNO25,6000
+Australia,-4600
+Jail,10000
+India,0
+Chance29,-4000
 Saudi Arabia,0
-Petroleum,-5500
-China,19350
+Petroleum,-5000
+China,0
 Railways,0
 Malaysia,0
 Singapore,0
 Start,0
-England,200
-Iraq,50000
-Waterways,5100
-UNO4,-18000
-France,-6950
-Iran,-3750
-Satellite,-1250
-Egypt,81400
-Resort,0
-Canada,-7800
-Germany,-550
-Airways,8500
-Customs Duty,6400
-Switzerland,3800
-Brazil,7650
-Chance16,3700
-Italy,24900
-Party House,0
-Japan,20750
-USA,7500
-Travelling Duty,2700
-Roadways,13200
-Mexico,12000
-Hong Kong,72000
-UNO25,10000
-Australia,32900
-Jail,14000
-India,0
-Chance29,-300
-Saudi Arabia,-25200
-Petroleum,3000
-China,-3150
-Railways,500
-Malaysia,-500
-Singapore,-18800
-Start,0
 England,0
-Iraq,-2500
-Waterways,-7500
-UNO4,-6500
-France,2800
-Iran,-17500
-Satellite,0
-Egypt,-4900
+Iraq,0
+Waterways,0
+UNO4,1500
+France,-1600
+Iran,5500
+Satellite,-500
+Egypt,-11100
 Resort,0
-Canada,6400
-Germany,-5650
-Airways,-5000
-Customs Duty,1000
-Switzerland,-28100
-Brazil,0
-Chance16,-1000
-Italy,-9200
+Canada,-6800
+Germany,0
+Airways,1500
+Customs Duty,3500
+Switzerland,0
+Brazil,500
+Chance16,1000
+Italy,0
 Party House,0
-Japan,-3750
+Japan,0
 USA,0
-Travelling Duty,2400
-Roadways,700
-Mexico,-400
-Hong Kong,10000
-UNO25,-2000
-Australia,-1300
-Jail,5000
-India,-24950
-Chance29,500
-Saudi Arabia,-4400
+Travelling Duty,2300
+Roadways,-300
+Mexico,-800
+Hong Kong,0
+UNO25,-36500
+Australia,0
+Jail,9500
+India,0
+Chance29,200
+Saudi Arabia,-26600
+Petroleum,0
+China,-1100
+Railways,0
+Malaysia,0
+Singapore,25500
+Start,0
+England,-2300
+Iraq,-2500
+Waterways,0
+UNO4,4000
+France,-12200
+Iran,-2300
+Satellite,0
+Egypt,0
+Resort,0
+Canada,0
+Germany,0
+Airways,-4500
+Customs Duty,400
+Switzerland,0
+Brazil,-1000
+Chance16,-2000
+Italy,5300
+Party House,0
+Japan,3750
+USA,0
+Travelling Duty,600
+Roadways,2100
+Mexico,2400
+Hong Kong,0
+UNO25,-3000
+Australia,0
+Jail,8500
+India,0
+Chance29,-1500
+Saudi Arabia,400
 Petroleum,-4200
 China,0
-Railways,-9500
-Malaysia,38100
-Singapore,-13500
+Railways,0
+Malaysia,-900
+Singapore,-1500
 Start,0
 England,0
 Iraq,0
-Waterways,-21700
-UNO4,5000
-France,-4000
-Iran,36500
-Satellite,250
-Egypt,29300
-Resort,0
-Canada,-15200
-Germany,-24250
-Airways,-12500
-Customs Duty,1500
-Switzerland,-6700
-Brazil,-13750
-Chance16,2700
-Italy,-2500
-Party House,0
-Japan,26750
-USA,-31500
-Travelling Duty,2750
-Roadways,3700
-Mexico,36800
-Hong Kong,-600
-UNO25,-4500
-Australia,-15700
-Jail,14000
-India,-2800
-Chance29,-3800
-Saudi Arabia,-7700
-Petroleum,-700
-China,41700
-Railways,1500
-Malaysia,28700
-Singapore,9600
-Start,0
-England,20400
-Iraq,19000
-Waterways,-1100
-UNO4,-28500
-France,900
-Iran,4150
-Satellite,1000
-Egypt,90500
-Resort,0
-Canada,-11000
-Germany,-6700
-Airways,13000
-Customs Duty,4300
-Switzerland,-900
-Brazil,16750
-Chance16,-2100
-Italy,43700
-Party House,0
-Japan,9250
-USA,0
-Travelling Duty,2400
-Roadways,5200
-Mexico,1600
-Hong Kong,0
-UNO25,-4500
-Australia,92700
-Jail,9500
-India,-100
-Chance29,-6300
-Saudi Arabia,-29900
-Petroleum,0
-China,7050
-Railways,0
-Malaysia,47600
-Singapore,15900
-Start,0
-England,-4900
-Iraq,35500
-Waterways,1500
-UNO4,12500
-France,0
+Waterways,8700
+UNO4,-7000
+France,38600
 Iran,0
-Satellite,9000
-Egypt,45700
+Satellite,0
+Egypt,3200
+Resort,0
+Canada,800
+Germany,28700
+Airways,0
+Customs Duty,3300
+Switzerland,0
+Brazil,17600
+Chance16,6500
+Italy,0
+Party House,0
+Japan,0
+USA,-17500
+Travelling Duty,4050
+Roadways,0
+Mexico,-800
+Hong Kong,4000
+UNO25,-7000
+Australia,1300
+Jail,15000
+India,6200
+Chance29,6500
+Saudi Arabia,0
+Petroleum,-3500
+China,0
+Railways,-4500
+Malaysia,0
+Singapore,600
+Start,0
+England,6100
+Iraq,0
+Waterways,0
+UNO4,6000
+France,0
+Iran,26400
+Satellite,0
+Egypt,-1700
 Resort,0
 Canada,0
-Germany,23100
-Airways,4000
-Customs Duty,3300
-Switzerland,-1900
+Germany,15900
+Airways,0
+Customs Duty,1600
+Switzerland,2100
 Brazil,0
-Chance16,-9300
-Italy,26300
+Chance16,1000
+Italy,0
 Party House,0
-Japan,-3500
-USA,-16500
-Travelling Duty,2350
-Roadways,3900
-Mexico,-5200
-Hong Kong,17200
-UNO25,4500
-Australia,-1300
-Jail,12000
-India,-9100
-Chance29,-4300
-Saudi Arabia,12700
-Petroleum,500
-China,-6950
+Japan,16000
+USA,0
+Travelling Duty,800
+Roadways,0
+Mexico,8200
+Hong Kong,0
+UNO25,7500
+Australia,0
+Jail,8500
+India,0
+Chance29,500
+Saudi Arabia,0
+Petroleum,-3000
+China,0
+Railways,0
+Malaysia,26300
+Singapore,0
+Start,0
+England,0
+Iraq,0
+Waterways,-1100
+UNO4,7000
+France,0
+Iran,200
+Satellite,0
+Egypt,0
+Resort,0
+Canada,19600
+Germany,-1100
+Airways,0
+Customs Duty,2600
+Switzerland,37600
+Brazil,0
+Chance16,-4500
+Italy,0
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,2050
+Roadways,13100
+Mexico,-4400
+Hong Kong,12800
+UNO25,-2500
+Australia,9500
+Jail,8000
+India,0
+Chance29,-2000
+Saudi Arabia,0
+Petroleum,-3000
+China,0
+Railways,10500
+Malaysia,0
+Singapore,11000
+Start,0
+England,-7400
+Iraq,-5000
+Waterways,0
+UNO4,-5000
+France,65900
+Iran,44600
+Satellite,1750
+Egypt,0
+Resort,0
+Canada,-4400
+Germany,5050
+Airways,0
+Customs Duty,2900
+Switzerland,6800
+Brazil,-6200
+Chance16,-500
+Italy,-3300
+Party House,0
+Japan,-9750
+USA,0
+Travelling Duty,3200
+Roadways,500
+Mexico,0
+Hong Kong,0
+UNO25,-9000
+Australia,57700
+Jail,11000
+India,-16400
+Chance29,-8500
+Saudi Arabia,0
+Petroleum,-3500
+China,0
+Railways,0
+Malaysia,9300
+Singapore,0
+Start,0
+England,0
+Iraq,4500
+Waterways,0
+UNO4,0
+France,0
+Iran,0
+Satellite,1000
+Egypt,3900
+Resort,0
+Canada,0
+Germany,24500
+Airways,0
+Customs Duty,900
+Switzerland,0
+Brazil,40400
+Chance16,2500
+Italy,0
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,1200
+Roadways,6300
+Mexico,-4400
+Hong Kong,0
+UNO25,-10500
+Australia,-1700
+Jail,5000
+India,0
+Chance29,3000
+Saudi Arabia,0
+Petroleum,0
+China,0
+Railways,-2000
+Malaysia,0
+Singapore,0
+Start,0
+England,0
+Iraq,0
+Waterways,0
+UNO4,-9000
+France,-1900
+Iran,88100
+Satellite,2250
+Egypt,25700
+Resort,0
+Canada,0
+Germany,900
+Airways,0
+Customs Duty,4500
+Switzerland,0
+Brazil,-3800
+Chance16,-100
+Italy,-2200
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,3000
+Roadways,0
+Mexico,9200
+Hong Kong,-1200
+UNO25,-2500
+Australia,16900
+Jail,13000
+India,-14550
+Chance29,-2000
+Saudi Arabia,-5500
+Petroleum,0
+China,-12600
+Railways,7000
+Malaysia,0
+Singapore,2300
+Start,0
+England,0
+Iraq,0
+Waterways,1500
+UNO4,-3000
+France,0
+Iran,0
+Satellite,5000
+Egypt,0
+Resort,0
+Canada,0
+Germany,0
+Airways,0
+Customs Duty,600
+Switzerland,-1000
+Brazil,0
+Chance16,2700
+Italy,0
+Party House,0
+Japan,5000
+USA,-10000
+Travelling Duty,1200
+Roadways,5300
+Mexico,0
+Hong Kong,24800
+UNO25,-11000
+Australia,0
+Jail,9500
+India,-2850
+Chance29,3000
+Saudi Arabia,5000
+Petroleum,-1500
+China,0
+Railways,7000
+Malaysia,-6700
+Singapore,-4200
+Start,0
+England,6600
+Iraq,-10000
+Waterways,-3900
+UNO4,22500
+France,0
+Iran,12300
+Satellite,0
+Egypt,0
+Resort,0
+Canada,0
+Germany,-9100
+Airways,0
+Customs Duty,13300
+Switzerland,7800
+Brazil,-2200
+Chance16,-8500
+Italy,54100
+Party House,0
+Japan,43750
+USA,-17500
+Travelling Duty,10950
+Roadways,6100
+Mexico,78000
+Hong Kong,0
+UNO25,-13500
+Australia,0
+Jail,9500
+India,-6800
+Chance29,5200
+Saudi Arabia,10800
+Petroleum,5300
+China,-2100
+Railways,18000
+Malaysia,35700
+Singapore,5600
+Start,0
+England,0
+Iraq,0
+Waterways,11500
+UNO4,-500
+France,5100
+Iran,2200
+Satellite,0
+Egypt,-1300
+Resort,0
+Canada,-4000
+Germany,0
+Airways,-10500
+Customs Duty,1500
+Switzerland,0
+Brazil,15900
+Chance16,1000
+Italy,0
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,900
+Roadways,3700
+Mexico,0
+Hong Kong,-400
+UNO25,-3000
+Australia,0
+Jail,15000
+India,0
+Chance29,-2100
+Saudi Arabia,0
+Petroleum,0
+China,0
+Railways,-6500
+Malaysia,0
+Singapore,11000
+Start,0
+England,-15100
+Iraq,-25000
+Waterways,0
+UNO4,9000
+France,1500
+Iran,9700
+Satellite,-1500
+Egypt,-7200
+Resort,0
+Canada,0
+Germany,-8050
+Airways,-5000
+Customs Duty,1900
+Switzerland,0
+Brazil,7100
+Chance16,500
+Italy,-1700
+Party House,0
+Japan,-500
+USA,-20500
+Travelling Duty,1750
+Roadways,0
+Mexico,0
+Hong Kong,-7000
+UNO25,-4500
+Australia,-5600
+Jail,7000
+India,-1750
+Chance29,2200
+Saudi Arabia,0
+Petroleum,0
+China,-9000
+Railways,-6500
+Malaysia,0
+Singapore,0
+Start,0
+England,5200
+Iraq,-1000
+Waterways,0
+UNO4,-4000
+France,21800
+Iran,0
+Satellite,500
+Egypt,-1400
+Resort,0
+Canada,0
+Germany,0
+Airways,0
+Customs Duty,5500
+Switzerland,0
+Brazil,0
+Chance16,500
+Italy,-2100
+Party House,0
+Japan,-1250
+USA,-15000
+Travelling Duty,2300
+Roadways,7000
+Mexico,0
+Hong Kong,0
+UNO25,-31000
+Australia,0
+Jail,5500
+India,-10150
+Chance29,-5300
+Saudi Arabia,0
+Petroleum,-2000
+China,-900
+Railways,-4500
+Malaysia,23900
+Singapore,13400
+Start,0
+England,0
+Iraq,-12000
+Waterways,0
+UNO4,-10000
+France,-4100
+Iran,-3750
+Satellite,0
+Egypt,-15100
+Resort,0
+Canada,0
+Germany,0
+Airways,-2000
+Customs Duty,3100
+Switzerland,0
+Brazil,36500
+Chance16,-1500
+Italy,0
+Party House,0
+Japan,0
+USA,-30500
+Travelling Duty,2050
+Roadways,-1700
+Mexico,0
+Hong Kong,-7400
+UNO25,-8000
+Australia,0
+Jail,9000
+India,-22300
+Chance29,-1000
+Saudi Arabia,65300
+Petroleum,0
+China,0
+Railways,16000
+Malaysia,0
+Singapore,19300
+Start,0
+England,0
+Iraq,0
+Waterways,10100
+UNO4,-25000
+France,500
+Iran,0
+Satellite,3500
+Egypt,0
+Resort,0
+Canada,40000
+Germany,0
+Airways,3000
+Customs Duty,4400
+Switzerland,0
+Brazil,6000
+Chance16,12800
+Italy,0
+Party House,0
+Japan,0
+USA,21500
+Travelling Duty,1200
+Roadways,-3500
+Mexico,21400
+Hong Kong,0
+UNO25,-4000
+Australia,-900
+Jail,11500
+India,0
+Chance29,-1500
+Saudi Arabia,0
+Petroleum,-5500
+China,0
+Railways,0
+Malaysia,0
+Singapore,15700
+Start,0
+England,0
+Iraq,0
+Waterways,0
+UNO4,-5500
+France,2200
+Iran,0
+Satellite,0
+Egypt,0
+Resort,0
+Canada,0
+Germany,0
+Airways,0
+Customs Duty,1100
+Switzerland,0
+Brazil,7100
+Chance16,-1500
+Italy,-4500
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,1150
+Roadways,0
+Mexico,0
+Hong Kong,13600
+UNO25,-1500
+Australia,5100
+Jail,11000
+India,0
+Chance29,500
+Saudi Arabia,-7800
+Petroleum,0
+China,-2700
+Railways,0
+Malaysia,0
+Singapore,15300
+Start,0
+England,0
+Iraq,0
+Waterways,0
+UNO4,-3000
+France,0
+Iran,0
+Satellite,500
+Egypt,0
+Resort,0
+Canada,0
+Germany,0
+Airways,-4500
+Customs Duty,1100
+Switzerland,0
+Brazil,21800
+Chance16,1500
+Italy,0
+Party House,0
+Japan,2500
+USA,-26000
+Travelling Duty,1250
+Roadways,0
+Mexico,0
+Hong Kong,19800
+UNO25,-9000
+Australia,12300
+Jail,4000
+India,0
+Chance29,5000
+Saudi Arabia,0
+Petroleum,0
+China,-3200
+Railways,0
+Malaysia,0
+Singapore,0
+Start,0
+England,-900
+Iraq,-22000
+Waterways,0
+UNO4,-14000
+France,0
+Iran,0
+Satellite,0
+Egypt,0
+Resort,0
+Canada,13200
+Germany,-7100
+Airways,-11000
+Customs Duty,4900
+Switzerland,0
+Brazil,4000
+Chance16,500
+Italy,0
+Party House,0
+Japan,111000
+USA,-10000
+Travelling Duty,3500
+Roadways,1500
+Mexico,24800
+Hong Kong,-7200
+UNO25,-10500
+Australia,-4300
+Jail,11500
+India,0
+Chance29,4500
+Saudi Arabia,-13100
+Petroleum,0
+China,3050
+Railways,-500
+Malaysia,0
+Singapore,-3900
+Start,0
+England,400
+Iraq,0
+Waterways,3100
+UNO4,-16500
+France,0
+Iran,0
+Satellite,0
+Egypt,0
+Resort,0
+Canada,20400
+Germany,0
+Airways,-7500
+Customs Duty,2300
+Switzerland,-9700
+Brazil,0
+Chance16,9500
+Italy,6900
+Party House,0
+Japan,-1500
+USA,0
+Travelling Duty,1050
+Roadways,10000
+Mexico,-3600
+Hong Kong,0
+UNO25,-10000
+Australia,0
+Jail,9000
+India,-1150
+Chance29,-500
+Saudi Arabia,4600
+Petroleum,0
+China,0
 Railways,3000
-Malaysia,58500
-Singapore,16500
+Malaysia,0
+Singapore,0
+Start,0
+England,-1100
+Iraq,6500
+Waterways,-8100
+UNO4,0
+France,8700
+Iran,46300
+Satellite,1000
+Egypt,0
+Resort,0
+Canada,0
+Germany,-9100
+Airways,-1500
+Customs Duty,1000
+Switzerland,0
+Brazil,5500
+Chance16,-2500
+Italy,2700
+Party House,0
+Japan,0
+USA,-6500
+Travelling Duty,450
+Roadways,0
+Mexico,0
+Hong Kong,0
+UNO25,1000
+Australia,0
+Jail,5000
+India,0
+Chance29,0
+Saudi Arabia,-100
+Petroleum,-4200
+China,0
+Railways,0
+Malaysia,0
+Singapore,-1200
+Start,0
+England,0
+Iraq,-9000
+Waterways,0
+UNO4,4500
+France,0
+Iran,18200
+Satellite,0
+Egypt,-1100
+Resort,0
+Canada,0
+Germany,-15750
+Airways,0
+Customs Duty,4100
+Switzerland,0
+Brazil,-1150
+Chance16,500
+Italy,0
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,1600
+Roadways,0
+Mexico,0
+Hong Kong,0
+UNO25,1500
+Australia,-6600
+Jail,2000
+India,-1750
+Chance29,7000
+Saudi Arabia,-4100
+Petroleum,-3500
+China,-14450
+Railways,-1500
+Malaysia,3900
+Singapore,4600
+Start,0
+England,0
+Iraq,-10000
+Waterways,0
+UNO4,-7500
+France,0
+Iran,56100
+Satellite,1500
+Egypt,10000
+Resort,0
+Canada,0
+Germany,0
+Airways,-10000
+Customs Duty,3700
+Switzerland,0
+Brazil,61000
+Chance16,2000
+Italy,12100
+Party House,0
+Japan,0
+USA,-2000
+Travelling Duty,3150
+Roadways,5500
+Mexico,0
+Hong Kong,16200
+UNO25,-17500
+Australia,0
+Jail,11000
+India,6400
+Chance29,4200
+Saudi Arabia,0
+Petroleum,4000
+China,0
+Railways,7500
+Malaysia,24900
+Singapore,-1200
+Start,0
+England,-4700
+Iraq,-16500
+Waterways,16700
+UNO4,10000
+France,800
+Iran,9500
+Satellite,14250
+Egypt,98000
+Resort,0
+Canada,-4600
+Germany,0
+Airways,-500
+Customs Duty,6600
+Switzerland,0
+Brazil,34200
+Chance16,-6000
+Italy,-3500
+Party House,0
+Japan,42000
+USA,0
+Travelling Duty,3850
+Roadways,-2700
+Mexico,0
+Hong Kong,27400
+UNO25,-2500
+Australia,-4600
+Jail,13000
+India,-3950
+Chance29,-5000
+Saudi Arabia,0
+Petroleum,2800
+China,11050
+Railways,1500
+Malaysia,0
+Singapore,-1800
+Start,0
+England,0
+Iraq,-1000
+Waterways,-7500
+UNO4,2000
+France,0
+Iran,0
+Satellite,250
+Egypt,0
+Resort,0
+Canada,11200
+Germany,0
+Airways,0
+Customs Duty,1100
+Switzerland,53900
+Brazil,0
+Chance16,-3000
+Italy,-4300
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,100
+Roadways,0
+Mexico,0
+Hong Kong,0
+UNO25,-500
+Australia,0
+Jail,4500
+India,0
+Chance29,-500
+Saudi Arabia,0
+Petroleum,-2500
+China,0
+Railways,0
+Malaysia,0
+Singapore,-1500
+Start,0
+England,0
+Iraq,0
+Waterways,0
+UNO4,-8500
+France,-100
+Iran,36800
+Satellite,0
+Egypt,-6800
+Resort,0
+Canada,0
+Germany,0
+Airways,0
+Customs Duty,900
+Switzerland,-5000
+Brazil,-1250
+Chance16,-5400
+Italy,0
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,550
+Roadways,-1100
+Mexico,0
+Hong Kong,0
+UNO25,5000
+Australia,16200
+Jail,10500
+India,-650
+Chance29,6400
+Saudi Arabia,0
+Petroleum,0
+China,9700
+Railways,0
+Malaysia,-300
+Singapore,0
+Start,0
+England,0
+Iraq,0
+Waterways,0
+UNO4,-9500
+France,0
+Iran,-2700
+Satellite,500
+Egypt,0
+Resort,0
+Canada,0
+Germany,-12300
+Airways,-3500
+Customs Duty,0
+Switzerland,0
+Brazil,21800
+Chance16,1400
+Italy,5900
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,150
+Roadways,3700
+Mexico,0
+Hong Kong,0
+UNO25,8000
+Australia,3200
+Jail,7500
+India,0
+Chance29,1400
+Saudi Arabia,0
+Petroleum,0
+China,0
+Railways,0
+Malaysia,0
+Singapore,0
+Start,0
+England,-4600
+Iraq,-3000
+Waterways,5900
+UNO4,500
+France,0
+Iran,0
+Satellite,-500
+Egypt,9700
+Resort,0
+Canada,2400
+Germany,-3800
+Airways,0
+Customs Duty,1800
+Switzerland,0
+Brazil,0
+Chance16,-7000
+Italy,0
+Party House,0
+Japan,2500
+USA,3500
+Travelling Duty,850
+Roadways,7700
+Mexico,0
+Hong Kong,7500
+UNO25,15500
+Australia,0
+Jail,8000
+India,0
+Chance29,-3000
+Saudi Arabia,0
+Petroleum,0
+China,-11800
+Railways,-3500
+Malaysia,0
+Singapore,0
+Start,0
+England,-6000
+Iraq,54500
+Waterways,0
+UNO4,6000
+France,-50
+Iran,25900
+Satellite,1750
+Egypt,0
+Resort,0
+Canada,1800
+Germany,-9200
+Airways,-11000
+Customs Duty,3000
+Switzerland,0
+Brazil,42900
+Chance16,-3500
+Italy,65700
+Party House,0
+Japan,0
+USA,-2500
+Travelling Duty,2450
+Roadways,2300
+Mexico,91400
+Hong Kong,47800
+UNO25,5000
+Australia,300
+Jail,14000
+India,-11150
+Chance29,0
+Saudi Arabia,17400
+Petroleum,-1000
+China,-7450
+Railways,8500
+Malaysia,17000
+Singapore,42300
+Start,0
+England,-1200
+Iraq,23000
+Waterways,-2400
+UNO4,2500
+France,0
+Iran,81400
+Satellite,1250
+Egypt,-6600
+Resort,0
+Canada,43600
+Germany,-6700
+Airways,-5000
+Customs Duty,4800
+Switzerland,24100
+Brazil,27950
+Chance16,5600
+Italy,-1900
+Party House,0
+Japan,31750
+USA,0
+Travelling Duty,2150
+Roadways,700
+Mexico,-5900
+Hong Kong,-1000
+UNO25,-3000
+Australia,42700
+Jail,13000
+India,-5150
+Chance29,-2000
+Saudi Arabia,-11400
+Petroleum,-4200
+China,24900
+Railways,0
+Malaysia,75100
+Singapore,-1200
+Start,0
+England,0
+Iraq,11500
+Waterways,0
+UNO4,-9000
+France,0
+Iran,-12550
+Satellite,7000
+Egypt,-500
+Resort,0
+Canada,42400
+Germany,0
+Airways,0
+Customs Duty,900
+Switzerland,0
+Brazil,-11250
+Chance16,6500
+Italy,5900
+Party House,0
+Japan,0
+USA,-6500
+Travelling Duty,700
+Roadways,-3500
+Mexico,-4600
+Hong Kong,-1000
+UNO25,-12000
+Australia,-2900
+Jail,7000
+India,0
+Chance29,-13000
+Saudi Arabia,0
+Petroleum,0
+China,41600
+Railways,0
+Malaysia,0
+Singapore,38900
+Start,0
+England,0
+Iraq,0
+Waterways,0
+UNO4,-4500
+France,0
+Iran,0
+Satellite,-2000
+Egypt,0
+Resort,0
+Canada,-4400
+Germany,0
+Airways,0
+Customs Duty,1200
+Switzerland,0
+Brazil,0
+Chance16,7500
+Italy,-6100
+Party House,0
+Japan,-2500
+USA,0
+Travelling Duty,1000
+Roadways,3700
+Mexico,9100
+Hong Kong,0
+UNO25,2000
+Australia,0
+Jail,8000
+India,-11550
+Chance29,3500
+Saudi Arabia,-5500
+Petroleum,-500
+China,0
+Railways,0
+Malaysia,-7300
+Singapore,0
+Start,0
+England,0
+Iraq,-8500
+Waterways,0
+UNO4,5000
+France,0
+Iran,0
+Satellite,-2000
+Egypt,0
+Resort,0
+Canada,800
+Germany,0
+Airways,-9000
+Customs Duty,500
+Switzerland,0
+Brazil,0
+Chance16,1500
+Italy,0
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,350
+Roadways,0
+Mexico,0
+Hong Kong,0
+UNO25,4500
+Australia,0
+Jail,2500
+India,0
+Chance29,-2500
+Saudi Arabia,0
+Petroleum,0
+China,0
+Railways,0
+Malaysia,-700
+Singapore,-15000
+Start,0
+England,0
+Iraq,0
+Waterways,0
+UNO4,-3000
+France,41400
+Iran,0
+Satellite,2250
+Egypt,-10400
+Resort,0
+Canada,0
+Germany,0
+Airways,0
+Customs Duty,300
+Switzerland,-12300
+Brazil,21100
+Chance16,0
+Italy,11500
+Party House,0
+Japan,0
+USA,-2500
+Travelling Duty,200
+Roadways,0
+Mexico,0
+Hong Kong,0
+UNO25,0
+Australia,0
+Jail,7000
+India,0
+Chance29,1700
+Saudi Arabia,0
+Petroleum,-3000
+China,0
+Railways,-8000
+Malaysia,0
+Singapore,0
+Start,0
+England,2000
+Iraq,0
+Waterways,0
+UNO4,-2500
+France,-4850
+Iran,0
+Satellite,0
+Egypt,13400
+Resort,0
+Canada,0
+Germany,55300
+Airways,0
+Customs Duty,1000
+Switzerland,0
+Brazil,0
+Chance16,2500
+Italy,6900
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,1050
+Roadways,0
+Mexico,26600
+Hong Kong,0
+UNO25,9500
+Australia,0
+Jail,8500
+India,0
+Chance29,-1000
+Saudi Arabia,46700
+Petroleum,-3500
+China,0
+Railways,0
+Malaysia,45300
+Singapore,0
+Start,0
+England,-1000
+Iraq,-14500
+Waterways,-3300
+UNO4,-2000
+France,-14400
+Iran,-4600
+Satellite,250
+Egypt,-9700
+Resort,0
+Canada,-11200
+Germany,9050
+Airways,-10500
+Customs Duty,3000
+Switzerland,-2800
+Brazil,23700
+Chance16,-100
+Italy,-6500
+Party House,0
+Japan,-10000
+USA,-8000
+Travelling Duty,3250
+Roadways,3900
+Mexico,-200
+Hong Kong,-1000
+UNO25,4000
+Australia,56300
+Jail,7500
+India,-10000
+Chance29,-2300
+Saudi Arabia,-4300
+Petroleum,300
+China,-9650
+Railways,-3500
+Malaysia,-1000
+Singapore,-600
+Start,0
+England,-8000
+Iraq,-9000
+Waterways,13500
+UNO4,5000
+France,-50
+Iran,-9400
+Satellite,3000
+Egypt,-3300
+Resort,0
+Canada,-1200
+Germany,-3100
+Airways,7000
+Customs Duty,9100
+Switzerland,1200
+Brazil,-9350
+Chance16,-1500
+Italy,5500
+Party House,0
+Japan,59000
+USA,-8500
+Travelling Duty,3000
+Roadways,1500
+Mexico,24800
+Hong Kong,47000
+UNO25,8000
+Australia,-11400
+Jail,15500
+India,-11550
+Chance29,-4300
+Saudi Arabia,-1500
+Petroleum,3300
+China,-1350
+Railways,0
+Malaysia,12400
+Singapore,-4600
+Start,0
+England,-24400
+Iraq,-500
+Waterways,-9500
+UNO4,-4000
+France,-6050
+Iran,-4650
+Satellite,-750
+Egypt,22400
+Resort,0
+Canada,-7800
+Germany,-4550
+Airways,-5000
+Customs Duty,3400
+Switzerland,-10000
+Brazil,-2400
+Chance16,-4500
+Italy,2300
+Party House,0
+Japan,0
+USA,0
+Travelling Duty,3050
+Roadways,2300
+Mexico,3400
+Hong Kong,-200
+UNO25,-5000
+Australia,27900
+Jail,12500
+India,0
+Chance29,1500
+Saudi Arabia,-9600
+Petroleum,0
+China,-11400
+Railways,-2000
+Malaysia,-3000
+Singapore,-1200

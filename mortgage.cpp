@@ -4,7 +4,7 @@
     PARAMETERS:
     ---> A reference to current player
     ---> An integer representing the deficit
-    ---> A poionter array of type blocks 
+    ---> A pointer array of type blocks 
     -------------------------------------------------------------------------------
     RETURN TYPE:
     ---> NONE
@@ -79,12 +79,13 @@ void mortgage(player *current_player, block *blocks[], int &number_of_players)
         }
         if((current_player->balance) < 0 )
         {
-            //The player is bankrupt now. Number of players must be decremeneted
+            
             current_player->bankrupt = true;
+            //The player is bankrupt now. Number of players must be decremeneted
             number_of_players -= 1;
+            std::cout<<'\n'<<current_player->player_number<<"  is bankrupt";
+            std::cout<<'\n'<<transaction_ID;
         }
     }
 }
-
-
 

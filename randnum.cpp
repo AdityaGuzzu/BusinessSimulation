@@ -16,6 +16,15 @@ int randnum(int upp_lim)
     //We are using Merienne Twister engine mt19937 engine
     std::mt19937 generator (seed);
 
+    //If the upp_lim is 0, we will return 0 as dividing by 0 causes error.
+    if(upp_lim == 0)
+    {
+        return 0;
+    }
+
     //We wont be adding 1 because we use the random number to access array elements which range from [0,upp_lim)
-    return generator() % upp_lim;       
+    else
+    {
+        return generator() % upp_lim;    
+    }    
 }

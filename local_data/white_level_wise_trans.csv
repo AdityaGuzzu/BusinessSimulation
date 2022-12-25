@@ -1,7 +1,7 @@
 Ticket Name,No Double Rent,Double Rent
-Waterways,-9500,11000
-Satellite,3000,6000
-Airways,-6000,10000
-Roadways,2100,0
-Petroleum,-5500,6000
-Railways,-2000,0
+Waterways,-9500,0
+Satellite,-2000,0
+Airways,-10500,0
+Roadways,500,0
+Petroleum,0,0
+Railways,-9500,2500

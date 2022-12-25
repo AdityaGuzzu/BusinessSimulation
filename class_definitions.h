@@ -23,12 +23,15 @@ using namespace std;
 	---> array of house rents											(int)
 	---> house cost														(int)
 	---> A vector of transactions										(std::vector<int>)
-	---> A vector to keep track of house wise transactions				(std::vector<int>)
+	---> A vector containing net house wise transactions				(std::vector<int>)
+	---> A vector containing house wise transactions					(std::vector<int>)
+	---> A vector containing house wise IR ratio						(std::vector<float>)
 	--------------------------------------------------------------------------------
 	MEMBER FUNCTIONS:
-	--->(void) TRANSACTION	
+	--->(void) TRANSACTION
 	--->(void) Visits
 	--->(void) net transaction value
+	--->(void) calculate the local house wise IR ratio
 */
 
 
@@ -51,7 +54,10 @@ class block
 	int house_cost;
 	int net_trans_val;
 	std::vector<int> transactions;
-	std::vector<int> house_wise_trans;
+	std::vector<int> house_wise_net_trans;
+	std::vector<int> house_wise_investment;
+	std::vector<int> house_wise_return;
+	std::vector<float> house_wise_IR_ratio;
 
 	//Default constructor for general blocks
 
@@ -59,7 +65,9 @@ class block
 	{
 		this->visits = 0;
 		block_type = "general";
-		owner_num = -1;			//A geenral ticket is not owned by anyone.
+		owner_num = -1;			//A general ticket is not owned by anyone.
+		this->colour = false;
+		
 	}
 
 	//This is for colour tickets.
@@ -78,10 +86,13 @@ class block
 		this->house_cost = house_costs;
 		this->number_of_houses = 0;
 
-		//An array to keep the record of house wise transaction
+		//An array to keep the record of net house wise transaction
 		for(int num=0;num<5;num++)
 		{
-			this->house_wise_trans.push_back(0);
+			this->house_wise_net_trans.push_back(0);
+			this->house_wise_investment.push_back(0);
+			this->house_wise_return.push_back(0);
+			this->house_wise_IR_ratio.push_back(0);
 		}
 
 		for(int i=0; i<4; i++)
@@ -105,7 +116,10 @@ class block
 
 		for(int num=0;num<2;num++)
 		{
-			this->house_wise_trans.push_back(0);
+			this->house_wise_net_trans.push_back(0);
+			this->house_wise_investment.push_back(0);
+			this->house_wise_return.push_back(0);
+			this->house_wise_IR_ratio.push_back(0);
 		}
 	}
 
@@ -121,7 +135,7 @@ class block
 		void transaction(int);
 
 		/*
-			This function calculates the net transaction value of each block
+			A fucntion to calculate the net transaction value of each block
 			----------------------------------------------------------------------------
 			PARAMETERS:
 			---> NONE
@@ -130,6 +144,8 @@ class block
 			---> NONE 
 		*/
 		void net_transaction();
+
+		
 };
 
    /*	PLAYER CLASS ATTRIBUTES

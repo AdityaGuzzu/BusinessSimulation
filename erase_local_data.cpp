@@ -1,10 +1,23 @@
 /*
-This file cleans the local game data's CSV file to reduce the consumption of space.    
+    To minimize the space consumption, delete all the local files.
+    This function is executed after all the global data is updated
+    -----------------------------------------------------------------------
+    PARAMETERS:
+    ---> An array of pointers to blocks     (block *blocks[])
+    -----------------------------------------------------------------------
+    RETURN VALUES:
+    ---> NONE
+    ------------------------------------------------------------------------
+    ALGORITHM:
+    ---> Create a file pointer
+    ---> Point to to all the required files usign the read mode one by one.
+    ---> close all of them.
 */
+
 #include "class_definitions.h"
 void erase_local_data(block *blocks[])
 {
-    //opening the CSV file with write mode to erase the existing data
+    //open the CSV file with write mode to erase the existing data
     for(int iter=0; iter<36; iter++)
     {
         std::string file_name = "local_data/"+blocks[iter]->name+".csv"; 
@@ -12,11 +25,20 @@ void erase_local_data(block *blocks[])
         ClearFile.close();
     }
 
-    //clearing the visits.csv file from local data
+    //clear the visits.csv file from local data
     std::fstream visits("local_data/visits.csv",std::ios::out);
     visits.close();
 
-    // //clearing the local IR_ratio.csv file
-    // std::fstream IR_ratio("local_data/IR_ratio.csv",std::ios::out);
-    // IR_ratio.close();
+    //clear the local IR_ratio.csv file
+    std::fstream IR_ratio("local_data/IR_ratio.csv",std::ios::out);
+    IR_ratio.close();
+
+    //clear the transactions.txt file
+    std::fstream transactions_file("transactions.txt",std::ios::out);
+    transactions_file.close();
+
+    //clear the colour_house_wise_IR csv file
+    std::fstream chwIR("local_data/house_wise_IR.csv");
+    chwIR.close();
 }
+

@@ -27,6 +27,7 @@
 #include "game_runs.cpp"
 #include "total_players_money.cpp"
 #include "highest_assets.cpp"
+#include "update_local_house_wise_IR.cpp"
 #include<cstdlib>
 #include<fstream>
 #include<ctime>
@@ -47,9 +48,9 @@ const int total_bank_money = 166500;
 				ab) else, pay the rent
 			b.) If he isn't, do the required transaction.
 */
-
 int main()
 {
+	
 	
 
 	//Lets open the output file
@@ -274,7 +275,7 @@ int main()
 	int &num_of_players_ref = num_of_players;
 
 	//Get the number of players
-	std::cout<<"Enter the number of players";
+	cout<<"Enter the number of players";
 
 	get_players:
 	try
@@ -315,8 +316,8 @@ int main()
 		{
 			//to make the program more readable
 			player *current_player = players[this_player];
-			out<<"\n-------------------------------------------------------------------";
-			out<<"\nPlayer number: "<<this_player+1;
+			out<<'\n'<<"-------------------------------------------------------------------";
+			out<<'\n'<<"Player number: "<<this_player+1;
 			
 
 			//If the player is bankrupt
@@ -331,9 +332,11 @@ int main()
 
 			//Update all throw related variables and vectors
 			after_throw(current_player);
-			out<<std::endl<<"Throw: "<<current_player->throw_;
-			out<<"\nPlayer is in :"<<blocks[current_player->position]->name;
-			out<<"\nBlocks Covered = "<<current_player->blocks_covered;
+			out<<'\n'<<"Throw: "<<current_player->throw_;
+			out<<'\n'<<"Player is in : "<<blocks[current_player->position]->name;
+			out<<'\n'<<"Blocks Covered = "<<current_player->blocks_covered;
+			cout.flush();
+			
 
 			//Increment the visits of the block
 			blocks[current_player->position]->visits++;
@@ -346,11 +349,12 @@ int main()
 			{
 				UNO_seven(current_player);
 			}
-
+			
 		
 			//For general blocks
 			if(blocks[current_player->position]->block_type == "general")
 			{
+				
 				//We don't need to call the start transcation function as its called immediately after the throw of dice.
 
 				//if position is UNO_4
@@ -408,46 +412,57 @@ int main()
 				}
 			}
 
+			
 			//for buying tickets/paying rents
 			else
 			{
 				//check if the ticket is bought by someone else
 				if(OWNER_NUMBER != -1 && OWNER_NUMBER != current_player->player_number)
 				{
+					
 					//debit the money from current player
 					current_player->balance -= CURRENT_TICKET->current_rent;
-
+					
+					out<<std::endl<<"Paid "<<CURRENT_TICKET->current_rent<<" to player number "<<OWNER_NUMBER+1<<std::endl;
+					
 					//appending the rent to the CSV file of the respective ticket
 					CURRENT_TICKET->transaction(CURRENT_TICKET->current_rent);
 
 					//Appending the rent to the transactions vector
 					CURRENT_TICKET->transactions.push_back(CURRENT_TICKET->current_rent);
 
+					//append the transaction to the house wise trans 
+					//CURRENT_TICKET->house_wise_return[CURRENT_TICKET->number_of_houses] += CURRENT_TICKET->current_rent;
+
 					//Adding the amount to the ticket wise net trans based on wheather the ticket is white or colour
 					if(CURRENT_TICKET->colour)
 					{
-						CURRENT_TICKET->house_wise_trans[CURRENT_TICKET->number_of_houses] += CURRENT_TICKET->current_rent;
+						CURRENT_TICKET->house_wise_net_trans[CURRENT_TICKET->number_of_houses] += CURRENT_TICKET->current_rent;
 					} 
 
 					else
 					{
+
 						if(CURRENT_TICKET->current_rent == CURRENT_TICKET->basic_rent)
 						{
-							CURRENT_TICKET->house_wise_trans[0] += CURRENT_TICKET->basic_rent;
+							CURRENT_TICKET->house_wise_net_trans[0] += CURRENT_TICKET->current_rent;
 						}
+						
 						else
 						{
-							CURRENT_TICKET->house_wise_trans[1] += CURRENT_TICKET->current_rent;
+							CURRENT_TICKET->house_wise_net_trans[1] += CURRENT_TICKET->current_rent;
 						}
 					}
 
-					out<<std::endl<<"Paid "<<CURRENT_TICKET->current_rent<<" to player number "<<OWNER_NUMBER+1;
+					
 					TRANSACTION((-1)*CURRENT_TICKET->current_rent);
 					mortgage(current_player, blocks, num_of_players_ref);
-
+					
+			
 					//credit the money to the respective player
 					players[CURRENT_TICKET->owner_num]->balance += CURRENT_TICKET->current_rent;
 					players[CURRENT_TICKET->owner_num]->transactions.push_back(CURRENT_TICKET->current_rent);
+					
 				}
 
 				//If no one owns the ticket, the player can buy it
@@ -457,34 +472,39 @@ int main()
 				
 					if(rand_bool(current_player->blocks_covered) && ((current_player->balance) > (blocks[POSITION]->ticket_cost)) && OWNER_NUMBER != current_player->player_number)
 					{
-						out<<std::endl<<"Current player's position is "<<current_player->position;
+						out<<std::endl<<"CHECK----"<<std::endl;
+						
 						//debit the ticket price from the player's balance
 						current_player->balance -= blocks[POSITION]->ticket_cost;
 
 
 						//setting the owner number of the ticket to the player number
-						blocks[POSITION]->owner_num = current_player->player_number;
+						CURRENT_TICKET->owner_num = current_player->player_number;
 
 						//Adding the position to the position of tickets owned by the player
 						current_player->position_of_tickets_owned.push_back(POSITION);
 
 						//Appending the cost to the CSV file of the particular ticket
-						blocks[POSITION]->transaction(-blocks[POSITION]->ticket_cost);
+						CURRENT_TICKET->transaction(-CURRENT_TICKET->ticket_cost);
 
 						//Appending the cost to the transactions vector
-						blocks[POSITION]->transactions.push_back(-blocks[POSITION]->ticket_cost);
+						CURRENT_TICKET->transactions.push_back(-CURRENT_TICKET->ticket_cost);
+
+						//Appending the cost to the house wise transactions vector
+						CURRENT_TICKET->house_wise_investment[CURRENT_TICKET->number_of_houses] -= blocks[POSITION]->ticket_cost;
 
 						//Appending the cost to house wise net transaction array
-						blocks[POSITION]->house_wise_trans[0] -= blocks[POSITION]->ticket_cost;
+						CURRENT_TICKET->house_wise_net_trans[0] -= CURRENT_TICKET->ticket_cost;
 
 						//if the ticket bought is a colour one:
-						if(blocks[POSITION]->colour)
+						if(CURRENT_TICKET->colour)
 						{
+							
 							colour_double_rent(current_player,blocks);
 							current_player->number_of_colour_tickets ++;
 						}
 
-						//else, the ticket is white
+						//else,if the ticket is white
 						else
 						{
 							white_double_rent(blocks, current_player);
@@ -494,14 +514,14 @@ int main()
 				}
 
 				//Time to construct houses:
-				#define TICKET_ITER blocks[current_player->position_of_tickets_owned[j]]
+				#define TICKET_ITER blocks[current_player->position_of_tickets_owned[randpos]]
 
 				//rand bool has an integer as an argument so we just pass a random integer like blocks covered which has no relevance to the program
-				while(rand_bool(current_player->blocks_covered) && (current_player->number_of_colour_tickets > 0))
+				while(rand_bool(current_player->blocks_covered) && (current_player->number_of_colour_tickets > 0) && !current_player->bankrupt)
 				{
 						
 						//We will generate a random number between [0,number of tickets owned by the player)
-						int j = randnum(current_player->position_of_tickets_owned.size());
+						int randpos = randnum(current_player->position_of_tickets_owned.size());
 
 						if(!(TICKET_ITER->colour) || TICKET_ITER->number_of_houses == 4 || current_player->balance < TICKET_ITER->house_cost)
 						{
@@ -512,7 +532,20 @@ int main()
 						{
 						current_player->balance -= TICKET_ITER->house_cost;
 						out<<std::endl<<"House constructed in "<<TICKET_ITER->name;
+
+						/*
+							House constructed,update the house_wise_IR ratio 
+						*/
+
+						TICKET_ITER->house_wise_IR_ratio[TICKET_ITER->number_of_houses] = (float)(TICKET_ITER->house_wise_return[TICKET_ITER->number_of_houses]/TICKET_ITER->house_wise_investment[TICKET_ITER->number_of_houses]);
+
+						//Updating the number of houses
 						TICKET_ITER->number_of_houses ++;
+
+						//Updating it in the house wise investment vector
+						TICKET_ITER->house_wise_investment[TICKET_ITER->number_of_houses] -= TICKET_ITER->house_cost;
+
+						//Updating the current rent
 						TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
 
 						//Appending the house cost to  the CSV file of the ticket
@@ -522,19 +555,20 @@ int main()
 						TICKET_ITER->transactions.push_back(-TICKET_ITER->house_cost);
 
 						//Appending the house cost to the ticket wise net transaction array
-						TICKET_ITER->house_wise_trans[TICKET_ITER->number_of_houses] -= TICKET_ITER->house_cost;
+						TICKET_ITER->house_wise_net_trans[TICKET_ITER->number_of_houses] -= TICKET_ITER->house_cost;
+						
 						}						
-				}
-				
+				}	
 			}
+
 			if(current_player->bankrupt)
 			{
-				out<<std::endl<<"Player number "<<current_player->player_number + 1<<" is bankrupt";
+				out<<"\nPlayer number "<<current_player->player_number + 1<<" is bankrupt";
 			}
-		
-			out<<endl<<"Balance: "<<current_player->balance;
+			
+			out<<std::endl<<"Balance: "<<current_player->balance;
 			out<<std::endl<<"Number of throws = "<<current_player->throws.size()<<std::endl;
-			out<<endl<<"Tickets Owned:\n ";
+			out<<std::endl<<"Tickets Owned:\n ";
 			for(int k=0;k<current_player->position_of_tickets_owned.size(); k++)
 			{
 				out<<"\t"<<blocks[current_player->position_of_tickets_owned[k]]->name;
@@ -546,8 +580,8 @@ int main()
 	/*We need to calculate the total assets of the players to declare 
 	 the winner when the total money among the players exceeds the set limit
 	*/
-	out<<"\n---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
-	out<<std::endl<<highest_assets(players,blocks)->player_number +1<<" is the winner";
+	out<<'\n'<<"---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
+	out<<'\n'<<highest_assets(players,blocks)->player_number +1<<" is the winner";
 
 
 	//Incrementing the number of times game was run
@@ -565,11 +599,11 @@ int main()
 	//Appending the net house and level wise transactions
 	house_and_level__wise_trans(blocks);
 	
-	//Updating the local IR ratio
+	//Update the local IR ratio
 	update_local_IR_ratio(blocks);
 	
 
-	//updating the global data
+	//Update the global data
 	system("python global_data_ops/update_global_data.py");
 	
 	//Lets check the transaction vector of all tickets 
@@ -581,19 +615,20 @@ int main()
 		{
 			sum+=trans;
 		}
-		OutFile<<blocks[i]->name<<','<<sum<<std::endl;
+		OutFile<<blocks[i]->name<<','<<sum<<'\n';
 	}
 
 	//deleting the local data to save space
-	erase_local_data(blocks);
+	//erase_local_data(blocks);
 
-	//deleting pointers
+	/* //deleting pointers
 	for(int i=0; i<36; i++)
 	{
 		delete blocks[i];
-	}
+	} 
+	*/
 
-	players.erase(players.begin(),players.end());
+	//players.erase(players.begin(),players.end());
 
 	return 0;
 } 
