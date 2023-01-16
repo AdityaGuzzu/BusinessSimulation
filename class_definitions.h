@@ -3,6 +3,8 @@
 #pragma once
 #define TRANSACTION current_player->transactions.push_back
 #include<iostream>
+#include<algorithm>
+#include<numeric>
 #include<fstream>
 #include<vector>
 using namespace std;
@@ -501,5 +503,31 @@ int total_players_money(std::vector<player *>);
 	---> A pointer to the player containing highest assets
 */
 player* highest_assets(std::vector<player*>, block*);
+
+/*
+	A function which updates the house wise investment and house wise
+	return to the local files
+	------------------------------------------------------------------
+	RETURN VALUE:
+	---> NONE
+	------------------------------------------------------------------
+	PARAMETERS:
+	---> An array containing pointers of blocks			(block *blocks[])
+*/
+void update_house_wise_investment_and_return(block *);
+
+/*
+	A function to update the total investment and return locally.
+	This will be used to determine IR ratio globally by adding the
+	local investments and returns to the global ones.
+	-------------------------------------------------------------------
+	RETURN VALUE:
+	---> NONE
+	-------------------------------------------------------------------
+	PARAMETERS:
+	---> An array of pointers to blocks						(block *)
+*/
+
+void update_total_investment_and_return(block *);
 
 	

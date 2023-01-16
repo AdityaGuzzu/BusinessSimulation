@@ -15,7 +15,7 @@
 
 void update_local_colour_wise_IR(block *blocks[])
 {
-
+    
     std::fstream OutFile("local_data/house_wise_IR.csv",std::ios::out);
     OutFile<<"Ticket Name, "<<"0 Houses, "<<"1 House, "<<"2 Houses, "<<"3 Houses, "<<"Hotel"<<std::endl;
     for(int i=0;i<36;i++)

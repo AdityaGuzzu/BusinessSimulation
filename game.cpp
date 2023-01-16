@@ -28,6 +28,8 @@
 #include "total_players_money.cpp"
 #include "highest_assets.cpp"
 #include "update_local_house_wise_IR.cpp"
+#include "update_house_wise_inv_ret.cpp"
+#include "update_local_I_and_R.cpp"
 #include<cstdlib>
 #include<fstream>
 #include<ctime>
@@ -432,7 +434,7 @@ int main()
 					CURRENT_TICKET->transactions.push_back(CURRENT_TICKET->current_rent);
 
 					//append the transaction to the house wise trans 
-					//CURRENT_TICKET->house_wise_return[CURRENT_TICKET->number_of_houses] += CURRENT_TICKET->current_rent;
+					CURRENT_TICKET->house_wise_return[CURRENT_TICKET->number_of_houses] += CURRENT_TICKET->current_rent;
 
 					//Adding the amount to the ticket wise net trans based on wheather the ticket is white or colour
 					if(CURRENT_TICKET->colour)
@@ -491,7 +493,7 @@ int main()
 						CURRENT_TICKET->transactions.push_back(-CURRENT_TICKET->ticket_cost);
 
 						//Appending the cost to the house wise transactions vector
-						CURRENT_TICKET->house_wise_investment[CURRENT_TICKET->number_of_houses] -= blocks[POSITION]->ticket_cost;
+						CURRENT_TICKET->house_wise_investment[CURRENT_TICKET->number_of_houses] += blocks[POSITION]->ticket_cost;
 
 						//Appending the cost to house wise net transaction array
 						CURRENT_TICKET->house_wise_net_trans[0] -= CURRENT_TICKET->ticket_cost;
@@ -537,13 +539,13 @@ int main()
 							House constructed,update the house_wise_IR ratio 
 						*/
 
-						TICKET_ITER->house_wise_IR_ratio[TICKET_ITER->number_of_houses] = (float)(TICKET_ITER->house_wise_return[TICKET_ITER->number_of_houses]/TICKET_ITER->house_wise_investment[TICKET_ITER->number_of_houses]);
+						TICKET_ITER->house_wise_IR_ratio[TICKET_ITER->number_of_houses] = (float)(TICKET_ITER->house_wise_return[TICKET_ITER->number_of_houses]-TICKET_ITER->house_wise_investment[TICKET_ITER->number_of_houses])/TICKET_ITER->house_wise_investment[TICKET_ITER->number_of_houses];
 
 						//Updating the number of houses
 						TICKET_ITER->number_of_houses ++;
 
 						//Updating it in the house wise investment vector
-						TICKET_ITER->house_wise_investment[TICKET_ITER->number_of_houses] -= TICKET_ITER->house_cost;
+						TICKET_ITER->house_wise_investment[TICKET_ITER->number_of_houses] += TICKET_ITER->house_cost;
 
 						//Updating the current rent
 						TICKET_ITER->current_rent =TICKET_ITER->house_rents[TICKET_ITER->number_of_houses - 1];
@@ -583,6 +585,19 @@ int main()
 	out<<'\n'<<"---------------------------------------------------------------------------"<<std::endl<<"GAME ENDED";
 	out<<'\n'<<highest_assets(players,blocks)->player_number +1<<" is the winner";
 
+	/* 	The IR ratios of ticets are updated only after bankurupcy and 
+		constructing a house. So we need to update them now.
+	*/
+	for(int iter = 0; iter<36; iter++)
+	{
+		block *current_block = blocks[iter];
+		int number_of_houses = blocks[iter]->number_of_houses;
+		if(current_block->colour)
+		{
+			current_block->house_wise_IR_ratio[number_of_houses] = (float)(current_block->house_wise_return[number_of_houses]-current_block->house_wise_investment[number_of_houses])/current_block->house_wise_investment[number_of_houses];
+		}
+	}
+
 
 	//Incrementing the number of times game was run
 	increment_runs();
@@ -602,6 +617,14 @@ int main()
 	//Update the local IR ratio
 	update_local_IR_ratio(blocks);
 	
+	//update Local House Wise IR
+	update_local_colour_wise_IR(blocks);
+
+	//update Local house_wise_investment and house_wise_return ratio
+	update_house_wise_investment_and_return(blocks);
+
+	//update the total local investment and returns
+	update_total_investment_and_return(blocks);
 
 	//Update the global data
 	system("python global_data_ops/update_global_data.py");
@@ -619,16 +642,17 @@ int main()
 	}
 
 	//deleting the local data to save space
-	//erase_local_data(blocks);
+	erase_local_data(blocks);
 
-	/* //deleting pointers
+	 //deleting pointers
 	for(int i=0; i<36; i++)
 	{
 		delete blocks[i];
 	} 
-	*/
+	
 
-	//players.erase(players.begin(),players.end());
+	players.erase(players.begin(),players.end());
 
 	return 0;
 } 
+

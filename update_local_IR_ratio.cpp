@@ -1,6 +1,12 @@
 /*
-    This file contains a function which creates the game wise Investment-Returns ratio
-    of every block.
+    The function inputs the IR ratio of every block into the local_data/
+    IR_ratio.csv file.
+    ----------------------------------------------------------------------
+    RETURN VALUES:
+    ---> NONE
+    ----------------------------------------------------------------------
+    PARAMETERS:
+    ---> NONE
 */
 
 #include "class_definitions.h"
@@ -26,7 +32,7 @@ void update_local_IR_ratio(block *blocks[])
         }
         if(investment != 0)
         {
-            IR_ratio = (double)returns/investment;
+            IR_ratio = (double)(returns-investment)/investment;
         }
 
         OutFile<<blocks[elem]->name<<','<<IR_ratio<<std::endl;

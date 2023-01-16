@@ -44,28 +44,49 @@ void mortgage(player *current_player, block *blocks[], int &number_of_players)
         {
             int ticket_position;
             int mort_val;
+            
+            
             //choosing the ticket to be sold randomly
             ticket_position = randnum(current_player->position_of_tickets_owned.size()); 
+            block *current_ticket = blocks[current_player->position_of_tickets_owned[ticket_position]];
+            int number_of_houses = current_ticket->number_of_houses;
 
             mort_val = blocks[current_player->position_of_tickets_owned[ticket_position]]->mortgage_value;
             TRANSACTION(mort_val);
             current_player->balance += mort_val;
-            blocks[current_player->position_of_tickets_owned[ticket_position]]->owner_num = -1;
+
+            //changing the owner number of the ticket to -1 which means its unowned.
+            current_ticket->owner_num = -1;
+
+            //appending to a vector which keeps track of sold tickets
             current_player->position_of_tickets_sold.push_back(ticket_position);
 
-             //Appending the mortgage value to the CSV file
-            blocks[current_player->position_of_tickets_owned[ticket_position]]->transaction(mort_val);
+            //Appending the mortgage value to the CSV file
+            current_ticket->transaction(mort_val);
 
             //Appending the mortgage value to the transactions vector
-            blocks[current_player->position_of_tickets_owned[ticket_position]]->transactions.push_back(mort_val);
+            current_ticket->transactions.push_back(mort_val);
 
-        
-            if(blocks[ticket_position]->colour)
+
+            //Perform some operations unique to colour tickets
+            if(current_ticket->colour)
             {
+                //deduct 1 from the number of colour tickets owned
                 current_player->number_of_colour_tickets -= 1;
+
+                //update the IR ratio of the particular house
+                current_ticket->house_wise_IR_ratio[number_of_houses] = (float)current_ticket->house_wise_return[number_of_houses]/current_ticket->house_wise_investment[number_of_houses];
+
+                //change the number of houses to 0
                 blocks[current_player->position_of_tickets_owned[ticket_position]]->number_of_houses = 0;
+
+                //change the current rent to basic rent
                 blocks[current_player->position_of_tickets_owned[ticket_position]]->current_rent = blocks[current_player->position_of_tickets_owned[ticket_position]]->basic_rent;
+
+                //check for the double rent after the ticket was sold
                 colour_double_rent(current_player,blocks);
+
+                
             }
             else
             {

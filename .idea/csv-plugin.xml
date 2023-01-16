@@ -31,13 +31,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\local_data\IR_ratio..csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\local_data\IR_ratio.csv">
           <value>
             <Attribute>

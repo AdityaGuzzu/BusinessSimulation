@@ -5,17 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18c60845-581a-4c8a-ab01-2d3257e13902" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erase_local_data.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/erase_local_data.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global_data/global_IR_ratio.csv" beforeDir="false" afterPath="$PROJECT_DIR$/global_data/global_IR_ratio.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global_data/global_block_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/global_data/global_block_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global_data/global_colour_house_wise_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/global_data/global_colour_house_wise_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global_data/global_white_level_wise_trans.csv" beforeDir="false" afterPath="$PROJECT_DIR$/global_data/global_white_level_wise_trans.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global_data_ops/reset_global_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_data_ops/reset_global_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global_data_ops/reset_global_house_wise_trans.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_data_ops/reset_global_house_wise_trans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global_data_ops/reset_global_block_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_data_ops/reset_global_block_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Airways.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Airways.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Australia.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Australia.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Brazil.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Brazil.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Canada.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Canada.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Chance16.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Chance16.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Chance29.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Chance29.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/China.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/China.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Customs Duty.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Customs Duty.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Egypt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Egypt.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/England.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/England.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/France.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/France.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Germany.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Germany.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Hong Kong.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Hong Kong.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/IR_ratio.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/IR_ratio.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/India.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/India.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Iran.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Iran.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Iraq.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Iraq.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Italy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Italy.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Jail.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Jail.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Japan.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Japan.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Malaysia.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Malaysia.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Mexico.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Mexico.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Petroleum.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Petroleum.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Railways.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Railways.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Roadways.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Roadways.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Satellite.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Satellite.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Saudi Arabia.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Saudi Arabia.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Singapore.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Singapore.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Switzerland.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Switzerland.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Travelling Duty.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Travelling Duty.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/UNO25.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/UNO25.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/UNO4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/UNO4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/USA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/USA.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/Waterways.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/Waterways.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/colour_house_wise_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/colour_house_wise_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local_data/one_game_net_trans.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/one_game_net_trans.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_data/white_level_wise_trans.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_data/white_level_wise_trans.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/transactions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/visits.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +71,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ravi G\Desktop\Aditya\BusinessSimulation\global_data_ops" />
