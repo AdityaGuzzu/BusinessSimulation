@@ -7,7 +7,14 @@
 #include<numeric>
 #include<fstream>
 #include<vector>
+#include<direct.h>
 using namespace std;
+
+/*
+	Find the current working directory
+*/
+char buff[_MAX_FNAME];
+std::string cwd = _getcwd(buff,_MAX_FNAME);
 
 /* The class block is the base class of all tickets, general blocks.
 	-------------------------------------------------------------------------------

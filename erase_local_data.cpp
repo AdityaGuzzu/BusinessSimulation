@@ -17,17 +17,16 @@
 #include "class_definitions.h"
 void erase_local_data(block *blocks[])
 {
-    string cwd = "C:/Users/Ravi G/Desktop/Aditya/BusinessSimulation";
     //open the CSV file with write mode to erase the existing data
     for(int iter=0; iter<36; iter++)
     {
-        std::string file_name = cwd + "local_data/"+blocks[iter]->name+".csv"; 
+        std::string file_name = cwd + "/local_data/"+blocks[iter]->name+".csv"; 
         std::fstream ClearFile(file_name,std::ios::out);
         ClearFile.close();
     }
 
     //clear the visits.csv file from local data
-    std::fstream visits(cwd + "local_data/visits.csv",std::ios::out);
+    std::fstream visits(cwd + "/local_data/visits.csv",std::ios::out);
     visits.close();
 
     //clear the local IR_ratio.csv file
@@ -35,7 +34,7 @@ void erase_local_data(block *blocks[])
     // IR_ratio.close();
 
     //clear the transactions.txt file
-    std::fstream transactions_file(cwd + "transactions.txt",std::ios::out);
+    std::fstream transactions_file(cwd + "/transactions.txt",std::ios::out);
     transactions_file.close();
 
     //clear the colour_house_wise_IR csv file

@@ -15,12 +15,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 #now, create a file object and read all the data into a buffer with each row as a dict
-game_data_df = pd.read_csv(cwd +'/global_data/global_block_data.csv')
+ROI_df = pd.read_csv(cwd +'/global_data/global_IR_ratio.csv')
 
 
 #plotting the line graph
 sns.set_style("darkgrid")
 plt.xticks(rotation=90)
-plt.bar(game_data_df['Block Name'], game_data_df['Net Transaction Value'], color="aqua")
-plt.title('Global Net Transaction value')
+plt.bar(ROI_df['Block Name'], ROI_df['IR ratio value'], color="aqua")
+plt.title('ROI')
 plt.show()
