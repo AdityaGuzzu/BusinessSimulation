@@ -30,15 +30,19 @@ void erase_local_data(block *blocks[])
     visits.close();
 
     //clear the local IR_ratio.csv file
-    // std::fstream IR_ratio("local_data/IR_ratio.csv",std::ios::out);
-    // IR_ratio.close();
+    std::fstream IR_ratio("local_data/IR_ratio.csv",std::ios::out);
+    IR_ratio.close();
 
     //clear the transactions.txt file
     std::fstream transactions_file(cwd + "/transactions.txt",std::ios::out);
     transactions_file.close();
 
     //clear the colour_house_wise_IR csv file
-    //std::fstream chwIR("local_data/house_wise_IR.csv");
-    //chwIR.close();
+    std::fstream chwIR(cwd+"/local_data/house_wise_IR.csv",std::ios::out);
+    chwIR.close();
+
+    //clear output file
+    std::fstream output_file(cwd+"/local_data/output.txt",std::ios::out);
+    output_file.close();
 }
 

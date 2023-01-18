@@ -52,12 +52,50 @@ const int total_bank_money = 166500;
 */
 int main()
 {
-	
-	
+	//Number of times the user wants to simulate
+	int number_of_simulations;
 
+	std::cout<<"How many times do you want to simulate? ";
+	std::cin>>number_of_simulations;
+	//A variable to store the number of players
+	int num_of_players;
+
+	//Get the number of players
+	cout<<"Enter the number of players";
+
+	//original number of players
+	int org_num_of_players;
+
+	get_players:
+	try
+	{
+		std::cin>>num_of_players;
+		if(num_of_players > 8 || num_of_players <2)
+		{
+			throw num_of_players;
+		}
+		org_num_of_players = num_of_players;
+	}
+
+	catch(int)
+	{
+		cerr<<"\nEnter correct number of players. The maximum limit of players is 8 and the minimum is 2.";
+		goto get_players;
+	} 
+
+	for(int sim_var=0;sim_var<number_of_simulations;sim_var++)
+	{
+	num_of_players = org_num_of_players;
+	
 	//Lets open the output file
 	std::fstream out("output.txt",std::ios::out);
 
+	//a reference to number of players 
+	int &num_of_players_ref = num_of_players;
+
+/*
+	Simulating multiple times
+*/
 
 	//Lets create the general blocks
 
@@ -266,36 +304,8 @@ int main()
 		int house_rents[4] = {1300, 2600, 3900, 4900};
 		blocks[35] = new block("Singapore", 3000, 300, 1500, true, 3000, house_rents);
 	}
-
-	//A variable to stor the number of players
-	int num_of_players;
-
-	//original number of players
-	int org_num_of_players;
-
-	//a reference to number of players 
-	int &num_of_players_ref = num_of_players;
-
-	//Get the number of players
-	cout<<"Enter the number of players";
-
-	get_players:
-	try
-	{
-		std::cin>>num_of_players;
-		if(num_of_players > 8 || num_of_players <2)
-		{
-			throw num_of_players;
-		}
-		org_num_of_players = num_of_players;
-	}
-
-	catch(int)
-	{
-		cerr<<"\nEnter correct number of players. The maximum limit of players is 8 and the minimum is 2.";
-		goto get_players;
-	} 
 	
+
 	//Create a pointer array of size 'number of players'
 	std::vector<player *> players;
 
@@ -629,7 +639,7 @@ int main()
 	//Update the global data
 	system("python global_data_ops/update_global_data.py");
 	
-	//Lets check the transaction vector of all tickets 
+	//check the transaction vector of all tickets 
 	for(int i=0; i<36;i++)
 	{
 		std::fstream OutFile("transactions.txt",std::ios::app);
@@ -652,6 +662,8 @@ int main()
 	
 
 	players.erase(players.begin(),players.end());
+
+	}
 
 	return 0;
 } 
