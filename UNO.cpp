@@ -141,8 +141,8 @@ void UNO_class::UNO(vector<player *> players, player *current_player, block *blo
                 break;
 
         case 8:
-                current_player->balance += number_of_players*200;
-                TRANSACTION(number_of_players*200);
+                current_player->balance += (number_of_players-1)*200;
+                TRANSACTION((number_of_players-1)*200);
                 blocks[18]->visits++;
 
                 //for first UNO

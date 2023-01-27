@@ -122,6 +122,7 @@ class block
 		this->colour = false;
 		this->owner_num = -1;		//when a ticket is created, its not owned by anyone.
 		this->current_rent = basic_rent;
+		this->number_of_houses = 0;
 
 		for(int num=0;num<2;num++)
 		{
@@ -144,7 +145,7 @@ class block
 		void transaction(int);
 
 		/*
-			A fucntion to calculate the net transaction value of each block
+			A function to calculate the net transaction value of each block
 			----------------------------------------------------------------------------
 			PARAMETERS:
 			---> NONE

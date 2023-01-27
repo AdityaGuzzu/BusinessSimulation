@@ -87,7 +87,7 @@ int main()
 	{
 	num_of_players = org_num_of_players;
 	
-	//Lets open the output file
+	//open the output file
 	std::fstream out("output.txt",std::ios::out);
 
 	//a reference to number of players 
